@@ -6,7 +6,7 @@ plugins:
 markdown: kramdown
 kramdown:
   parse_block_html: true
-title: "Writeups"
-description: "This repository contains writeups for HTB , different CTFs and other challenges."
+title: "HELLO"
+description: "Hello."
 google_analytics: G-VSNWH55C79
 
