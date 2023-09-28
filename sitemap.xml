@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://aftab700.github.io/</loc>
+  <lastmod>2023-09-28T14:55:29+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/DVWA-Writeup/</loc>
+  <lastmod>2023-09-28T06:53:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/HTB/</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/Others/</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/HTB/Challenges/</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/HTB/Machines/</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/CloudSEK_Nullcon_Cyber_Security_CTF_2023.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/The_Hacker101_CTF.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/Cyber_Heroines_CTF.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/CyberHavoc.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/LnC2023/</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/picoCTF/</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/FooBar_CTF_2023/</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/NahamCon_CTF_2022/</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/Others/Saptang_Labs_Hiring_Challenge.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/HTB/Challenges/xorxorxor.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/HTB/Challenges/Baby_Time_Capsule.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/HTB/Machines/Stocker.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/HTB/Machines/Precious.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/picoCTF/crypto/</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/NahamCon_CTF_2022/Prisoner.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/NahamCon_CTF_2022/Flagcat.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/NahamCon_CTF_2022/Quirky.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/NahamCon_CTF_2022/Exit_Vim.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/NahamCon_CTF_2022/Crash_Override.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/NahamCon_CTF_2022/Read_The_Rules.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/NahamCon_CTF_2022/Wizard.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/NahamCon_CTF_2022/Technical_Support.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/NahamCon_CTF_2022/Personnel.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/NahamCon_CTF_2022/Flaskmetal_Alchemist.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/NahamCon_CTF_2022/Poller.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aftab700.github.io/Writeups/CTF/picoCTF/crypto/Easy_Peasy.html</loc>
+  <lastmod>2023-09-28T06:50:26+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+
+
+</urlset>
