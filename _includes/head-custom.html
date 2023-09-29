@@ -2,13 +2,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-    <!-- <title>
-    {% if page.title == "Home" %}
+    <title>
+    {% if page.title == "" %}
       {{ site.title }}{% if site.tagline %} | {{ site.tagline }}{% endif %}
     {% else %}
       {{ page.title }} | {{ site.title }} {% endif %}
-    </title> -->
- 
+    </title>
+
+<!-- page.title = {% if page.title == "" %}
+site.title = {{ site.title }}
+site.tagline = {{ site.tagline }} -->
 
 {% include head-custom-google-analytics.html %}
 
