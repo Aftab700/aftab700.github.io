@@ -1,12 +1,49 @@
-theme: jekyll-theme-cayman
+description: "Personal website of Aftab Sama"
+google_analytics: G-VSNWH55C79
+ga_analytics: G-VSNWH55C79
+
+# Setup
+title: Dark Poole
+url: https://aftab700.github.io/
+paginate: 1
+baseurl: "https://aftab700.github.io/"
+permalink: pretty
+
+# Gems
 plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
   - jemoji
   - jekyll-feed
-  - jekyll-seo-tag
-markdown: kramdown
-kramdown:
-  parse_block_html: true
-title: "HELLO"
-description: "Hello."
-google_analytics: G-VSNWH55C79
+  - jekyll-remote-theme
 
+# Optimize Jekyll
+exclude:
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Options
+
+# Specify the author for blog posts
+author:
+  name: Aftab Sama
+  url: https://github.com/Aftab700/
+  email: mrmr40873@gmail.com
+
+# Custom vars
+version: 0.0.1
+
+# Navbar page list
+nav:
+  - title: Blog
+    url: /archive
+
+  - title: About
+    url: /about
