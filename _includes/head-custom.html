@@ -4,8 +4,7 @@
   
     <title>
         {% if page.title == "Home" %} {{ site.title }}
-        {% if site.tagline %} 1&vert; {{ site.tagline }}{% endif %} {% else %} 
-        {{ page.title }} &vert; {{ site.title }} {% endif %}
+        {% if page.title %} &vert; {{ site.title }} {% endif %}
     </title>
  
 
