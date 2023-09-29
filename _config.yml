@@ -6,7 +6,7 @@ ga_analytics: G-VSNWH55C79
 title: Dark Poole
 url: https://aftab700.github.io/
 paginate: 1
-baseurl: "https://aftab700.github.io/"
+baseurl: "/"
 permalink: pretty
 
 # Gems
