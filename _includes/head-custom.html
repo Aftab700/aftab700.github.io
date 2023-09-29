@@ -1,13 +1,32 @@
-<!-- xxx start custom head snippets, customize with your own _includes/head-custom.html file -->
-
-<!-- xxx Setup Google Analytics xxx -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <title>
+      {% if page.title == "Home" %} {{ site.title }}{% if site.tagline %} &middot;
+      {{ site.tagline }}{% endif %} {% else %} {{ page.title }} &middot; {{
+      site.title }} {% endif %}
+    </title>
+ 
 
 {% include head-custom-google-analytics.html %}
 
-
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="{{ 'styles.css' | relative_url }}" />
+  <link
+    rel="apple-touch-icon-precomposed"
+    sizes="144x144"
+    href="{{ '/apple-touch-icon-precomposed.png' | relative_url }}"
+  />
+  <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" />
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="{{ site.title }}"
+    href="{{ 'atom.xml' | relative_url }}"
+  />
 
-
-
+  {% seo title=false %}
+</head>
 <!-- end custom head snippets -->
