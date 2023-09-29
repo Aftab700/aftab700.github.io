@@ -1,10 +1,9 @@
 ---
-layout: default
 title: Home
 ---
 
 
-# Hello there...
+Hello there...
 
 
 - [https://aftab700.github.io/DVWA-Writeup/](https://aftab700.github.io/DVWA-Writeup/)
