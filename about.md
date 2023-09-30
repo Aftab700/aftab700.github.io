@@ -9,6 +9,9 @@ title: About
 
 single quote `single quote`
 
+Writeups of HTB Machines and challanges, and different CTFs<a target="_blank" herf="https://github.com/Aftab700/Writeups"> arrow_upper_right </a> 
+
+
 > aaaa
 > sss <pa class="float-right">Pune,India</pa>
 
