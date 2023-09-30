@@ -15,14 +15,14 @@ I am a Security Researcher. I play Capture the Flag (CTF) challenges in my free 
 
 ### Security Researcher Intern
 
-> Quick Heal Technologies
-<pa class="float-right">Pune,India</pa>
-> January 2023 - August 2023
+<pa class="float-right" style="color: #adb5bd;">Pune,India </pa>
+<pa style="color: #adb5bd;"> Quick Heal Technologies </pa>
+<pa style="color: #adb5bd;"> January 2023 - August 2023 </pa>
 
--   Developed proofs-of-concept (PoCs) for RDP and SMB brute force attacks
--   Shadowed on malware cases to learn about the investigation process
--   Developed a log collection tool for the support team using Python
--   Validated indicators of compromise (IoCs) for physical samples from the CertIN and OTX samples, 
+-  Developed proofs-of-concept (PoCs) for RDP and SMB brute force attacks
+-  Shadowed on malware cases to learn about the investigation process
+-  Developed a log collection tool for the support team using Python
+-  Validated indicators of compromise (IoCs) for physical samples from the CertIN and OTX samples, 
 and made Python scripts to automate the IoC validation process
 
 <br />
@@ -31,10 +31,10 @@ and made Python scripts to automate the IoC validation process
 
 ------
 
-- Certified Ethical Hacker(CEH Practical)
-- API Penetration Testing course on APIsec University
-- Practical Ethical Hacking - TCM Security Course 
-- Cloud Computing - NPTEL Course
+-  Certified Ethical Hacker(CEH Practical)
+-  API Penetration Testing course on APIsec University
+-  Practical Ethical Hacking - TCM Security Course 
+-  Cloud Computing - NPTEL Course
 
 <br />
 
@@ -42,8 +42,8 @@ and made Python scripts to automate the IoC validation process
 
 -------------
 
-- 8th place in Anveshanam CTF Organized by IIT Jammu - March 2023
-- Top 100 in TCS HackQuest Season 7 - March 2023
+-  8th place in Anveshanam CTF Organized by IIT Jammu - March 2023
+-  Top 100 in TCS HackQuest Season 7 - March 2023
 
 <br />
 
@@ -51,7 +51,7 @@ and made Python scripts to automate the IoC validation process
 
 -----------
 
-- Writeups for all the challenges of Damn Vulnerable Web Application(DVWA)<a target="_blank" herf="https://github.com/Aftab700/DVWA-Writeup"> :arrow_upper_right: </a> 
-- Writeups of HTB Machines and challanges, and different CTFs<a target="_blank" herf="https://github.com/Aftab700/Writeups"> :arrow_upper_right: </a> 
+-  Writeups for all the challenges of Damn Vulnerable Web Application(DVWA)<a target="_blank" herf="https://github.com/Aftab700/DVWA-Writeup"> <img src="https://github.githubassets.com/images/icons/emoji/unicode/2197.png"> </a> 
+-  Writeups of HTB Machines and challanges, and different CTFs<a target="_blank" herf="https://github.com/Aftab700/Writeups"> arrow_upper_right </a> 
 
 
