@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}" data-theme="dark-poole">
+<html lang="en" >
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     
     {% include head-custom.html %}
-
-{% seo %}
+    {% seo %}
 
   </head>
+
   <body>
     <div class="container content">
       <header class="masthead">
@@ -24,13 +24,6 @@
           </nav>
         </h3>
       </header>
-      <!-- <div id="navbar">
-        <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-        {% for nav in site.nav %}
-        <a href="{{ nav.url }}">{{ nav.title }}</a>
-        {% endfor %}
-      </div> -->
-
       <main>
         {{ content }}
       </main>
