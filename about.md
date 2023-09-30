@@ -11,32 +11,18 @@ title: About
 Hello
 ```
 
-Hi
-
-```Hello```
-
-Hiii
-
-python
-
-```
-print("Hi")
-```
-
-<code>
+{% highlight js %}
 var adder = new Function("a", "b", "return a + b");
 
 // Call the function
 adder(2, 6);
 // > 8
-</code>
+{% endhighlight %}
 
-> Hiii
-
-<code>
+{% highlight python %}
 a = "Jack"
 print(f"Hi {Jack}")
-</code>
+{% endhighlight %}
 
 In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
 
