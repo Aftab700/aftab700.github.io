@@ -1,11 +1,11 @@
 <head>
     
     <title>
-    {% if page.title %} {{ site.title }}
-      {% if site.tagline %} | {{ site.tagline }}{% endif %}
-    {% else %}
+    {% if page.title %}
       {{ page.title }} | {{ site.title }}
     {% endif %}
+    {% if site.tagline %} | {{ site.tagline }}{% endif %}
+    
     </title>
 
 <!-- page.title = "{{ page.title }}"
