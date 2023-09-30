@@ -1,15 +1,15 @@
 <head>
     
     <title>
-    {% if page.title == "" %}
+    {% if page.title == " " %}
       {{ site.title }}{% if site.tagline %} | {{ site.tagline }}{% endif %}
     {% else %}
       {{ page.title }} | {{ site.title }} {% endif %}
     </title>
 
-<!-- page.title = {{ page.title }}
-site.title = {{ site.title }}
-site.tagline = {{ site.tagline }} -->
+<!-- page.title = "{{ page.title }}"
+site.title = "{{ site.title }}"
+site.tagline = "{{ site.tagline }}" -->
 
 {% include head-custom-google-analytics.html %}
 
