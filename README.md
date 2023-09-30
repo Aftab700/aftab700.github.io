@@ -17,6 +17,7 @@ I am a Security Researcher. I play Capture the Flag (CTF) challenges in my free 
 
 <pa class="float-right" style="color: #adb5bd;">Pune,India </pa>
 <pa style="color: #adb5bd;"> Quick Heal Technologies </pa>
+
 <pa style="color: #adb5bd;"> January 2023 - August 2023 </pa>
 
 -  Developed proofs-of-concept (PoCs) for RDP and SMB brute force attacks
