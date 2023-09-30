@@ -10,7 +10,13 @@ title: About
 single quote `single quote`
 
 > aaaa
-> sss
+> sss <pa class="float-right">Pune,India</pa>
+
+
+> Quick Heal Technologies
+<pa class="float-right">Pune,India</pa>
+> January 2023 - August 2023
+
 
 aaaaaaaaaaaaaaaaaaaa
 - akkd d dd 

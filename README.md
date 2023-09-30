@@ -15,15 +15,15 @@ I am a Security Researcher. I play Capture the Flag (CTF) challenges in my free 
 
 ### Security Researcher Intern
 
-> Quick Heal Technologies  
-<nav>Pune,India</nav>
+> Quick Heal Technologies
+<pa class="float-right">Pune,India</pa>
 > January 2023 - August 2023
 
-- Developed proofs-of-concept (PoCs) for RDP and SMB brute force attacks
-- Shadowed on malware cases to learn about the investigation process
-- Developed a log collection tool for the support team using Python
-- Validated indicators of compromise (IoCs) for physical samples from the CertIN and OTX samples, and made 
-Python scripts to automate the IoC validation process
+-   Developed proofs-of-concept (PoCs) for RDP and SMB brute force attacks
+-   Shadowed on malware cases to learn about the investigation process
+-   Developed a log collection tool for the support team using Python
+-   Validated indicators of compromise (IoCs) for physical samples from the CertIN and OTX samples, 
+and made Python scripts to automate the IoC validation process
 
 <br />
 
