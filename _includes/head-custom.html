@@ -2,10 +2,10 @@
     
     <title>
     {% if page.title %}
-      {{ page.title }} | {{ site.title }}
+      {{ page.title }} &verbar; {{ site.title }}
+    {% if site.tagline %} &verbar; {{ site.tagline }}{% endif %}
+    {% else %} {{ site.title }}
     {% endif %}
-    {% if site.tagline %} | {{ site.tagline }}{% endif %}
-    
     </title>
 
 <!-- page.title = "{{ page.title }}"
