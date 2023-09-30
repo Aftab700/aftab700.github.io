@@ -2,7 +2,7 @@
   --gray-000: #f8f9fa;
   --gray-100: #f1f3f5;
   --gray-200: #e9ecef;
-  --gray-300: #dee2e6;
+  --white-color: #ffffff;
   --gray-400: #ced4da;
   --gray-500: #adb5bd;
   --gray-600: #868e96;
@@ -14,6 +14,8 @@
   --dark-poole-002: hsl(0, 0%, 85%);
   --dark-poole-link-color: rgba(255, 255, 255, 0.75);
   --dark-poole-link-hover: #fff;
+
+  --h1-size: 3.82rem;
 
   --red: #fa5252;
   --pink: #e64980;
@@ -31,9 +33,7 @@
   --blue-400: #4dabf7;
   --yellow-100: #fff3bf;
 
-  --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --body-font: "Roboto Mono","Lucida Console", "Monaco", "Monospace";
   --body-font-size: 20px;
   --body-line-height: 1.5;
   --body-color: var(--gray-700);
@@ -44,11 +44,10 @@
 
   --heading-color: var(--gray-900);
 
-  --border-color: var(--gray-300);
+  --border-color: var(--white-color);
   --border-radius: 0.25rem;
 
-  --code-font: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
+  --code-font: "Consolas", "Monaco", "Lucida Console", "Monospace";
   --code-color: var(--grape);
   --code-bg: var(--gray-000);
 
@@ -59,7 +58,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --body-color: var(--gray-300);
+    --body-color: var(--white-color);
     --body-bg: var(--black);
 
     --heading-color: #fff;
