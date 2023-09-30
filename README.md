@@ -3,66 +3,49 @@
 
 # Aftab Sama
 
-<br />
+## Well hello there!!
+
+I am a Security Researcher. I play Capture the Flag (CTF) challenges in my free time. Apart from security, I read Stoicism and Psychology. Drop me a message on LinkedIn for my resume!
 
 
-- [https://aftab700.github.io/DVWA-Writeup/](https://aftab700.github.io/DVWA-Writeup/)
-- [https://aftab700.github.io/Writeups/](https://aftab700.github.io/Writeups/)
+## Experience
+
+--------
+
+### Security Researcher Intern
+> Quick Heal Technologies  <nav>Pune,India</nav>
+> January 2023 - August 2023
+
+- Developed proofs-of-concept (PoCs) for RDP and SMB brute force attacks
+- Shadowed on malware cases to learn about the investigation process
+- Developed a log collection tool for the support team using Python
+- Validated indicators of compromise (IoCs) for physical samples from the CertIN and OTX samples, and made 
+Python scripts to automate the IoC validation process
 
 
-Here goes list
-- Hey bro
-    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+### Certifications & Courses
 
-* _Lorem_ *Ipsum* is __simply__ **dummy** ~~text of the printing~~ and typesetting<sub>subscript</sub> industry.
-  -  Lorem<sup>superscript</sup> Ipsum is simply dummy text of the printing and typesetting industry.
-  - > Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+------
 
-1. James Madison
-1. James Monroe
-1. John Quincy Adams
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-> industry's standard dummy text ever since the 1500s, when an unknown.
-
-- [x] #739
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Add delight to the experience when all tasks are complete :tada:
-
-@octocat :+1: This PR looks great - it's ready to merge! :shipit:
-
-Here is a simple footnote[^1].
-
-A footnote can also have multiple lines[^2].
-
-[^1]: My reference.
-[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
-  This is a second line.
-
-> [!NOTE]
-> Highlights information that users should take into account, even when skimming.
-
-> [!IMPORTANT]
-> Crucial information necessary for users to succeed.
-
-> [!WARNING]
-> Critical content demanding immediate user attention due to potential risks.
+- Certified Ethical Hacker(CEH Practical)
+- API Penetration Testing course on APIsec University
+- Practical Ethical Hacking - TCM Security Course 
+- Cloud Computing - NPTEL Course
 
 
+### Awards
 
-# h11111asd
+-------------
 
-## h2h11111asd
+- 8th place in Anveshanam CTF Organized by IIT Jammu - March 2023
+- Top 100 in TCS HackQuest Season 7 - March 2023
 
-### h3h11111asd
 
-#### about
+### Writeups
 
-#### archive
+-----------
+
+- Writeups for all the challenges of Damn Vulnerable Web Application(DVWA)<a target="_blank" herf="https://github.com/Aftab700/DVWA-Writeup"> :arrow_upper_right: </a> 
+- Writeups of HTB Machines and challanges, and different CTFs<a target="_blank" herf="https://github.com/Aftab700/Writeups"> :arrow_upper_right: </a> 
 
 

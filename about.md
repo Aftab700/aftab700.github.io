@@ -7,6 +7,23 @@ title: About
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
 </p>
 
+single quote `single quote`
+
+> aaaa
+> sss
+
+aaaaaaaaaaaaaaaaaaaa
+- akkd d dd 
+> xkmfmf
+- fmlfmsf
+- > lmflmfsfsfmskf
+
+>> dfmlmflfmf f s fs f sf
+
+>>> lkmdkfmkfmksfmlsd sdf sfd dfs d
+
+
+
 ```
 Hello
 ```
@@ -20,8 +37,8 @@ adder(2, 6);
 {% endhighlight %}
 
 {% highlight python %}
-a = "Jack"
-print(f"Hi {Jack}")
+name = "Jack"
+print(f"Hi {name}")
 {% endhighlight %}
 
 In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
