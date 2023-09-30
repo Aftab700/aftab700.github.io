@@ -11,7 +11,7 @@
 
 Here goes list
 - Hey bro
-- Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
 * _Lorem_ *Ipsum* is __simply__ **dummy** ~~text of the printing~~ and typesetting<sub>subscript</sub> industry.
   -  Lorem<sup>superscript</sup> Ipsum is simply dummy text of the printing and typesetting industry.
