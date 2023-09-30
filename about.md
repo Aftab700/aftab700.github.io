@@ -18,9 +18,11 @@ Hi
 Hiii
 
 python
+
 ```
 print("Hi")
 ```
+
 <code>
 var adder = new Function("a", "b", "return a + b");
 
@@ -30,6 +32,7 @@ adder(2, 6);
 </code>
 
 > Hiii
+
 <code>
 a = "Jack"
 print(f"Hi {Jack}")
