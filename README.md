@@ -7,13 +7,16 @@
 
 I am a Security Researcher. I play Capture the Flag (CTF) challenges in my free time. Apart from security, I read Stoicism and Psychology. Drop me a message on LinkedIn for my resume!
 
+<br />
 
 ## Experience
 
 --------
 
 ### Security Researcher Intern
-> Quick Heal Technologies  <nav>Pune,India</nav>
+
+> Quick Heal Technologies  
+<nav>Pune,India</nav>
 > January 2023 - August 2023
 
 - Developed proofs-of-concept (PoCs) for RDP and SMB brute force attacks
@@ -22,8 +25,9 @@ I am a Security Researcher. I play Capture the Flag (CTF) challenges in my free 
 - Validated indicators of compromise (IoCs) for physical samples from the CertIN and OTX samples, and made 
 Python scripts to automate the IoC validation process
 
+<br />
 
-### Certifications & Courses
+## Certifications & Courses
 
 ------
 
@@ -32,16 +36,18 @@ Python scripts to automate the IoC validation process
 - Practical Ethical Hacking - TCM Security Course 
 - Cloud Computing - NPTEL Course
 
+<br />
 
-### Awards
+## Awards
 
 -------------
 
 - 8th place in Anveshanam CTF Organized by IIT Jammu - March 2023
 - Top 100 in TCS HackQuest Season 7 - March 2023
 
+<br />
 
-### Writeups
+## Writeups
 
 -----------
 
