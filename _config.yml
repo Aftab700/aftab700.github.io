@@ -18,6 +18,10 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+
 # Optimize Jekyll
 exclude:
   - .git
