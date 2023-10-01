@@ -19,11 +19,11 @@ I am a Security Researcher. I play Capture the Flag (CTF) challenges in my free 
 <pa style="color: #adb5bd;"> Quick Heal Technologies </pa>
 <pa style="color: #adb5bd; display: block; margin-bottom: 1rem;"> January 2023 - August 2023 </pa>
 
--  Developed proofs-of-concept (PoCs) for RDP and SMB brute force attacks
+-  Developed <abbr title="Proof of Concept">PoC</abbr> for RDP and SMB brute force attacks
 -  Shadowed on malware cases to learn about the investigation process
 -  Developed a log collection tool for the support team using Python
--  Validated indicators of compromise (IoCs) for physical samples from the CertIN and OTX samples, 
-and made Python scripts to automate the IoC validation process
+-  Validated <abbr title="Indicators of Compromise">IoC</abbr> for samples from the CertIN and OTX 
+samples, and made Python scripts to automate the IoC validation process
 
 <br />
 
@@ -42,8 +42,8 @@ and made Python scripts to automate the IoC validation process
 
 -------------
 
--  8th place in Anveshanam CTF Organized by IIT Jammu -March 2023
--  Top 100 in TCS HackQuest Season 7 -March 2023
+-  8th place in Anveshanam CTF Organized by IIT Jammu  - March 2023
+-  Top 100 in TCS HackQuest Season 7 - March 2023
 
 <br />
 
