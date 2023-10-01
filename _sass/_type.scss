@@ -57,14 +57,14 @@ hr {
 }
 
 abbr {
-  font-size: 85%;
-  font-weight: bold;
+  // font-size: 85%;
+  // font-weight: bold;
   color: var(--gray-600);
-  text-transform: uppercase;
+  // text-transform: uppercase;
 
   &[title] {
     cursor: help;
-    border-bottom: 1px dotted var(--border-color);
+    // border-bottom: 1px dotted var(--border-color);
   }
 }
 
