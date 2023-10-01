@@ -42,8 +42,8 @@ and made Python scripts to automate the IoC validation process
 
 -------------
 
--  8th place in Anveshanam CTF Organized by IIT Jammu - March 2023
--  Top 100 in TCS HackQuest Season 7 - March 2023
+-  8th place in Anveshanam CTF Organized by IIT Jammu -March 2023
+-  Top 100 in TCS HackQuest Season 7 -March 2023
 
 <br />
 
