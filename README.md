@@ -51,7 +51,7 @@ and made Python scripts to automate the IoC validation process
 
 -----------
 
--  Writeups for all the challenges of Damn Vulnerable Web Application(DVWA)<a target="_blank" herf="https://github.com/Aftab700/DVWA-Writeup"> <img src="https://github.githubassets.com/images/icons/emoji/unicode/2197.png"> </a> 
--  Writeups of HTB Machines and challanges, and different CTFs<a target="_blank" herf="https://github.com/Aftab700/Writeups"> arrow_upper_right </a> 
+-  Writeups for all the challenges of Damn Vulnerable Web Application(DVWA)[ :arrow_upper_right: ](https://github.com/Aftab700/DVWA-Writeup){:target="_blank"}
+-  Writeups of HTB Machines and challanges, and different CTFs[ :arrow_upper_right: ](https://github.com/Aftab700/Writeups){:target="_blank"}
 
 

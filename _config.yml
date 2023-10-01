@@ -19,8 +19,8 @@ plugins:
   - jekyll-remote-theme
 
 markdown: kramdown
-kramdown:
-  parse_block_html: true
+# kramdown:
+#   parse_block_html: true
 
 # Optimize Jekyll
 exclude:
@@ -46,8 +46,5 @@ version: 0.0.1
 
 # Navbar page list
 nav:
-  - title: Blog
-    url: "#archive"
-
   - title: About
     url: /about
