@@ -61,6 +61,7 @@ abbr {
   // font-weight: bold;
   color: var(--gray-600);
   // text-transform: uppercase;
+  text-decoration-line: none;
 
   &[title] {
     cursor: help;

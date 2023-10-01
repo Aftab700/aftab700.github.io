@@ -15,7 +15,7 @@ I am a Security Researcher. I play Capture the Flag (CTF) challenges in my free 
 
 ### Security Researcher Intern
 
-<pa class="float-right" style="color: #adb5bd;">Pune,India </pa>
+<pa class="float-right" style="color: #adb5bd;">Remote </pa>
 <pa style="color: #adb5bd;"> Quick Heal Technologies </pa>
 <pa style="color: #adb5bd; display: block; margin-bottom: 1rem;"> January 2023 - August 2023 </pa>
 
