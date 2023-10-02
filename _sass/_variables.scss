@@ -9,7 +9,7 @@
   --gray-700: #495057;
   --gray-800: #343a40;
   --gray-900: #212529;
-  --black: #000000;
+  --black-color: #000000;
   --dark-poole-001: hsl(200, 3%, 12%);
   --dark-poole-002: hsl(0, 0%, 85%);
   --dark-poole-link-color: rgba(255, 255, 255, 0.75);
@@ -59,7 +59,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --body-color: var(--white-color);
-    --body-bg: var(--black);
+    --body-bg: var(--black-color);
 
     --heading-color: #fff;
 
@@ -72,10 +72,10 @@
   }
 }
 
-// Dark Poole theme
-[data-theme="dark-poole"] {
+// Dark theme
+[data-theme="dark-theme"] {
   --body-color: var(--white-color);
-    --body-bg: var(--black);
+    --body-bg: var(--black-color);
 
     --heading-color: #fff;
 
@@ -83,6 +83,20 @@
     --link-hover-color: var(--blue-400);
 
     --border-color: rgba(255, 255, 255, 0.15);
+
+    --code-bg: var(--gray-900);
+}
+// Light theme
+[data-theme="light-theme"] {
+  --body-color: var(--black-color);
+    --body-bg: var(--white-color);
+
+    --heading-color: var(--black-color);
+
+    --link-color: var(--blue-300);
+    --link-hover-color: var(--blue-400);
+
+    --border-color: rgba(23, 6, 6, 0.779);
 
     --code-bg: var(--gray-900);
 }
