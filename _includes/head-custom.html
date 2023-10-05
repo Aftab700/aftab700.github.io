@@ -1,5 +1,4 @@
 <head>
-    
     <title>
     {% if page.title %}
       {{ page.title }} &verbar; {{ site.title }}
@@ -8,28 +7,15 @@
     {% endif %}
     </title>
 
-<!-- page.title = "{{ page.title }}"
-site.title = "{{ site.title }}"
-site.tagline = "{{ site.tagline }}" -->
-
 {% include head-custom-google-analytics.html %}
 
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" media="(prefers-color-scheme: dark)"  content="black">
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/apple-touch-icon-precomposed.png' | relative_url }}" /> -->
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ 'atom.xml' | relative_url }}" />
 <link rel="stylesheet" href="{{ 'styles.css' | relative_url }}" />
-  <link
-    rel="apple-touch-icon-precomposed"
-    sizes="144x144"
-    href="{{ '/apple-touch-icon-precomposed.png' | relative_url }}"
-  />
-  <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" />
-  <link
-    rel="alternate"
-    type="application/atom+xml"
-    title="{{ site.title }}"
-    href="{{ 'atom.xml' | relative_url }}"
-  />
-
 </head>
 
 <!-- end custom head snippets -->
