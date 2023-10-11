@@ -10,9 +10,9 @@ title: About
 
 single quote `single quote`
 
-[1](https://aftab700.github.io/Writeups/)
-
-[2](https://aftab700.github.io/DVWA-Writeup/)
+[](https://aftab700.github.io/Writeups/)
+[](https://aftab700.github.io/DVWA-Writeup/) 
+[](https://aftab700.github.io/Random-Stoic-Quotes)
 
 
 > aaaa
