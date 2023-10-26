@@ -1,13 +1,4 @@
 User-agent: *
-Allow: /
 
-User-agent: *
-Allow: /Writeups/
-
-User-agent: *
-Allow: /DVWA-Writeup/
-
-User-agent: *
-Allow: /*
 
 Sitemap: https://aftab700.github.io/sitemap.xml
