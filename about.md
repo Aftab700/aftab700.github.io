@@ -11,6 +11,7 @@ title: About
 [](https://aftab700.github.io/Writeups/)
 [](https://aftab700.github.io/DVWA-Writeup/) 
 [](https://aftab700.github.io/Random-Stoic-Quotes)
+[](https://www.instagram.com/aftab__sama)
 
 
 {% highlight js %}
