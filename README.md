@@ -27,9 +27,9 @@ the <abbr title="Computer Emergency Response Team - India">CertIN</abbr> and <ab
 
 ### Security Analyst Intern
 
-<pa class="float-right" style="color: var(--gray-600);">Mumbai · Hybrid </pa>
-<pa style="color: var(--gray-600);"> KPMG India </pa>
-<pa style="color: var(--gray-600); display: block; margin-bottom: 1rem;"> Jan 2023 - Apr 2023 </pa>
+<pa class="float-right" style="color: var(--gray-600);">Mumbai - Hybrid</pa>
+<pa style="color: var(--gray-600);">KPMG India </pa>
+<pa style="color: var(--gray-600); display: block; margin-bottom: 1rem;">Jan 2023 - Apr 2023</pa>
 
 
 <br />
