@@ -5,7 +5,7 @@
 
 ## Well hello there!!
 
-I am a Security Researcher. I play Capture the Flag (CTF) challenges in my free time. Apart from security, I read Stoicism and Psychology. Drop me a message on LinkedIn for my resume!
+I am a Offensive Security enthusiast. I play Capture the Flag (CTF) challenges in my free time. Apart from security, I read Stoicism and Psychology. Drop me a message on LinkedIn for my resume!
 
 <br />
 
