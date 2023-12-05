@@ -38,16 +38,14 @@ the <abbr title="Computer Emergency Response Team - India">CertIN</abbr> and <ab
 
 ------
 
- <div class="columns">
-      <div class="column">
-Certified Ethical Hacker(CEH Practical)
-      </div>
-    <div class="column">
-API Penetration Testing course on APIsec University
-      </div>
-</div>
-
-
+<!-- <div class="columns"> -->
+<!--       <div class="column"> -->
+<!--       </div> -->
+<!--     <div class="column"> -->
+<!--       </div> -->
+<!-- </div> -->
+-  Certified Ethical Hacker(CEH Practical)
+-  API Penetration Testing course on APIsec University
 -  Practical Ethical Hacking - TCM Security Course 
 -  Cloud Computing - NPTEL Course
 
