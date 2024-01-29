@@ -67,7 +67,7 @@ the <abbr title="Computer Emergency Response Team - India">CertIN</abbr> and <ab
 
 -----------
 
--  Writeups for all the challenges of Damn Vulnerable Web Application(DVWA) [ :arrow_upper_right: ](https://github.com/Aftab700/DVWA-Writeup#readme){:target="_blank"}{:.d-inline-flex}
--  Writeups of HTB Machines and challanges, and different CTFs [ :arrow_upper_right: ](https://github.com/Aftab700/Writeups#readme){:target="_blank"}{:.d-inline-flex}
+-  Writeups for all the challenges of Damn Vulnerable Web Application(DVWA) [ :arrow_upper_right: ](https://aftab700.github.io/DVWA-Writeup/){:target="_blank"}{:.d-inline-flex}
+-  Writeups of HTB Machines and challanges, and different CTFs [ :arrow_upper_right: ](https://aftab700.github.io/Writeups/){:target="_blank"}{:.d-inline-flex}
 
 
