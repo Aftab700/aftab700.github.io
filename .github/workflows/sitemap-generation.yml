@@ -37,7 +37,7 @@ jobs:
           the [generate-sitemap](https://github.com/cicirello/generate-sitemap) 
           GitHub action.  
         commit-message: "Automated sitemap update."
-        author: Aftab Sama
-        committer: Aftab Sama
-        #branch: create-pull-request/sitemap
-        #delete-branch: true
+        author: Aftab Sama <79740895+Aftab700@users.noreply.github.com>
+        committer: Aftab Sama <79740895+Aftab700@users.noreply.github.com>
+        branch: create-pull-request/sitemap
+        delete-branch: true
