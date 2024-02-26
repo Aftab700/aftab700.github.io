@@ -58,6 +58,7 @@ the <abbr title="Computer Emergency Response Team - India">CertIN</abbr> and <ab
 
 -------------
 
+-  5th place in WEC CTF 2024 - February 2024
 -  Top 10 in the Wizer CTF event - February 2024
 -  8th place in Anveshanam CTF Organized by IIT Jammu - March 2023
 -  Top 100 in TCS HackQuest Season 7 - March 2023
