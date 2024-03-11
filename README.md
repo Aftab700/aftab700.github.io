@@ -5,7 +5,7 @@
 
 ## Well hello there!!
 
-I am an Offensive Security enthusiast with a keen interest in network and web applications penetration testing and red teaming.
+I am an Offensive Security enthusiast with a keen interest in Application Security and penetration testing.
 
 I play Capture the Flag (CTF) challenges in my free time. Apart from security, I read Stoicism and Psychology. Drop me a message on LinkedIn for my resume!
 
