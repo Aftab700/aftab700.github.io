@@ -11,6 +11,8 @@ title: About
 
 <br>
 
+
+
 [![HTB](https://img.shields.io/badge/-HackTheBox-000000?style=plastic&logo=hackthebox)](https://app.hackthebox.com/profile/668328) 
 
 [![THM](https://img.shields.io/badge/-TryHackMe-000000?logo=tryhackme&logoColor=red&style=plastic)](https://tryhackme.com/p/Aftab700) 
@@ -31,13 +33,14 @@ title: About
 
 [![Instagram](https://img.shields.io/badge/-Instagram-000000?style=plastic&logo=Instagram)](https://instagram.com/aftab__sama)
 
+[Linktree](linktr.ee/aftab700)
 
 
-[](https://aftab700.github.io/Writeups/)
-[](https://aftab700.github.io/DVWA-Writeup/) 
-[](https://aftab700.github.io/Random-Stoic-Quotes)
-[](https://www.instagram.com/aftab__sama)
 
+
+<br>
+
+Thanks for reading!
 
 
 <!--
@@ -58,7 +61,7 @@ adder(2, 6);
 name = "Jack"
 print(f"Hi {name}")
 {% endhighlight %} -->
-
-<br>
-
-Thanks for reading!
+[](https://aftab700.github.io/Writeups/)
+[](https://aftab700.github.io/DVWA-Writeup/) 
+[](https://aftab700.github.io/Random-Stoic-Quotes)
+[](https://www.instagram.com/aftab__sama)
