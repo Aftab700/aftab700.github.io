@@ -19,7 +19,7 @@ title: About
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-000000?logo=linkedin&style=plastic)](https://linkedin.com/in/aftab-sama)
 
-[![Twitter](https://img.shields.io/badge/-Twitter-000000?style=plastic&logo=Twitter)](https://twitter.com/AftabSama700) 
+[![Twitter](https://img.shields.io/badge/-Twitter-000000?style=plastic&logo=Twitter)](https://x.com/AftabSama700) 
 
 [![Medium](https://img.shields.io/badge/-Medium-000000?logo=medium&style=plastic)](https://medium.com/@Aftab700) 
 
