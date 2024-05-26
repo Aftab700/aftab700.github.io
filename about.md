@@ -33,7 +33,7 @@ title: About
 
 [![Instagram](https://img.shields.io/badge/-Instagram-000000?style=plastic&logo=Instagram)](https://instagram.com/aftab__sama)
 
-[Linktree](linktr.ee/aftab700)
+[![Linktree](https://img.shields.io/badge/-LinkTree-000000?style=plastic&logo=linktree)](linktr.ee/aftab700)
 
 
 
