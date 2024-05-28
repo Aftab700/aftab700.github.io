@@ -47,6 +47,7 @@ the <abbr title="Computer Emergency Response Team - India">CertIN</abbr> and <ab
 <!--     <div class="column"> -->
 <!--       </div> -->
 <!-- </div> -->
+-  Burp Suite Certified Practitioner(BSCP)
 -  Certified Ethical Hacker(CEH Practical)
 -  API Penetration Testing course on APIsec University
 -  Practical Ethical Hacking - TCM Security Course 
