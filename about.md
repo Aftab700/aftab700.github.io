@@ -1,8 +1,11 @@
-
+---
+title: About
+---
 
 
 I am currently exploring new opportunities to bring my expertise to a dynamic team. If my skills and vision resonate with you, please don’t hesitate to connect with me via email or LinkedIn for a detailed resume and to discuss how I can contribute to your organization’s success.
 
+<br>
 
 ## 🌐 Socials:
 
