@@ -21,11 +21,9 @@ I am currently exploring new opportunities to bring my expertise to a dynamic te
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-000000?logo=linkedin&style=plastic)](https://linkedin.com/in/aftab-sama)
 
-[![Twitter](https://img.shields.io/badge/-Twitter-000000?style=plastic&logo=Twitter)](https://x.com/AftabSama700) 
+[![X/Twitter](https://img.shields.io/badge/-X/Twitter-000000?style=plastic&logo=X)](https://x.com/AftabSama700)  
 
 [![Medium](https://img.shields.io/badge/-Medium-000000?logo=medium&style=plastic)](https://medium.com/@Aftab700) 
-
-<!-- [![Telegram](https://img.shields.io/badge/-Telegram-000000?style=plastic&logo=Telegram)](https://tttttt.me/Jack_Sparrow_1337)  -->
 
 [![YouTube](https://img.shields.io/badge/-YouTube-000000?style=plastic&logo=YouTube&logoColor=FC2503)](https://youtube.com/@Aftab700) 
 
