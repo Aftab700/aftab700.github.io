@@ -1,5 +1,6 @@
 # Basic Information
 baseURL: "https://aftab700.github.io/"
+# baseURL: "https://aftab700.pages.dev/" # hugo hugo --gc --minify --baseURL $CF_PAGES_URL
 languageCode: en-us
 title: "Aftab Sama"
 theme: PaperMod #Kamigo

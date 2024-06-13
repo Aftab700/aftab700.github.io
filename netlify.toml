@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "hugo --gc --minify"
+  command = "hugo --gc --minify --baseURL 'https://aftab700.netlify.app/'"
 
 [build.environment]
   HUGO_VERSION = "0.127.0"
