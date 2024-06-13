@@ -1,0 +1,17 @@
+<footer class="footer">
+    {{- if site.Copyright }}
+    <span>{{ site.Copyright | markdownify }}</span>
+    {{- else }}
+    <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
+    {{- print " · "}}
+    <span><a href="/privacy" rel="privacy-policy">Privacy Policy</a>
+        {{- print " · "}}
+        <a href="/disclaimer">Disclaimer</a>
+        <!-- {{- print " · "}}
+        <a href="https://status.hiiruki.dev/">Status</a></span> -->
+        {{- print " · "}}
+        Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hugo</a> & <a href="https://github.com/hiiruki/hugo-Kamigo/" target="_blank" rel="external nofollow noopener">Kamigo</a>
+        <br>
+    </span>
+</footer>
+{{- end }}

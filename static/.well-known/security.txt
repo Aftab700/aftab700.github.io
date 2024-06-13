@@ -1,0 +1,33 @@
+Security Contact Information
+
+Well, this is a static site but yeah no system is safe.
+Just to implement the RFC 9116 (https://www.rfc-editor.org/rfc/rfc9116)
+
+            .-""-.
+           / .--. \
+          / /    \ \
+          | |    | |
+          | |.-""-.|
+         ///`.::::.`\
+        ||| ::/  \:: ;
+        ||; ::\__/:: ;
+         \\\ '::::' /
+          `=':-..-'`
+
+# Security Address
+Contact: mailto:Aftab700@proton.me
+
+# PGP/GPG Key
+Encryption: https://aftab700.github.io/pgp.txt
+
+# Security Acknowledgments Page
+Acknowledgments: https://aftab700.github.io/.well-known/hof.txt
+
+# Preferred Languages to Report a Vulnerability
+Preferred-Languages: EN
+
+# security.txt File Location
+Canonical: https://aftab700.github.io/.well-known/security.txt
+
+security.txt - A proposed standard which allows websites to define security policies.
+[https://securitytxt.org/]
