@@ -7,11 +7,41 @@
     <span><a href="/privacy" rel="privacy-policy">Privacy Policy</a>
         {{- print " · "}}
         <a href="/disclaimer">Disclaimer</a>
-        <!-- {{- print " · "}}
-        <a href="https://status.hiiruki.dev/">Status</a></span> -->
         {{- print " · "}}
-        Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hugo</a> & <a href="https://github.com/hiiruki/hugo-Kamigo/" target="_blank" rel="external nofollow noopener">Kamigo</a>
-        <br>
+        <a href="https://aftab.betteruptime.com/">Status</a></span>
+    {{- print " · "}}
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hugo</a> & <a
+        href="https://github.com/hiiruki/hugo-Kamigo/" target="_blank" rel="external nofollow noopener">Kamigo</a>
+    <br>
     </span>
 </footer>
 {{- end }}
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        var links = document.getElementsByTagName("a");
+        var i;
+        for (i = 0; i < links.length; i++) {
+            if (location.hostname !== links[i].hostname) {
+                links[i].rel = "external nofollow noopener noreferrer";
+                links[i].target = "_blank";
+            }
+        }
+    });
+
+    // ['contextmenu', 'selectstart'].forEach((e) => { document.addEventListener(e, (e) => e.preventDefault()); });
+    ['contextmenu'].forEach((e) => { document.addEventListener(e, (e) => e.preventDefault()); });
+    function ctrlShiftKey(e, keyCode) {
+        return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+    }
+    document.onkeydown = (e) => {
+        if (
+            event.keyCode === 123 ||
+            ctrlShiftKey(e, 'I') ||
+            ctrlShiftKey(e, 'J') ||
+            ctrlShiftKey(e, 'C') ||
+            (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+        )
+            return false;
+    };
+</script>

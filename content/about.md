@@ -118,7 +118,7 @@ F1085BD5 D359788F 05F936D8 3185A5BE
 </details>
 <br> -->
 
-<!-- 📊 [Status](https://status.hiiruki.dev/ "Hiiruki's Status Page")<br> -->
+📊 [Status](https://aftab.betteruptime.com/ "Aftab's Status Page")<br>
 
 🧑‍💼 [humans.txt](/humans.txt)
 
