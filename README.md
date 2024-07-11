@@ -48,5 +48,3 @@ The source code of this website is licensed under [MIT](/LICENSE)
 ## Credits:
 
 - The code for this website was obtained from https://github.com/hiiruki/hiiruki.dev. I have made modifications according to my requirements.
-
-![](https://aftab700.pythonanywhere.com/api/github/Aftab700.github.io)
