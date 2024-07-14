@@ -16,7 +16,7 @@ Technologies:
 - Standards  : HTML, CSS, JavaScript, Markdown
 - Frameworks : Hugo
 - IDE        : Visual Studio Code
-- Hosting    : Netlify, Vercel, GitHub
+- Hosting    : Netlify, Vercel, GitHub, Cloudflare
 - OS         : Windows 11, Kali Linux
 
 /* THANKS */
@@ -25,6 +25,7 @@ Technologies:
 - GitHub [https://github.com/]
 - Netlify [https://www.netlify.com/]
 - Vercel [https://vercel.com/]
+- Cloudflare [https://www.cloudflare.com/]
 - MDN Web Docs by Mozilla [https://developer.mozilla.org/en-US/]
 - WebDev by Google [https://web.dev/]
 - w3schools [https://www.w3schools.com/]
