@@ -1,7 +1,7 @@
 ---
 title: "How I was able to unbrick my Lenovo TB-7504x"
-description: "I unbricked my Lenovo TB-7504x tablet by using mtkclient to unlock the bootloader, resolving a boot loop, and bypassing the SP flash tool’s authentication to flash a custom ROM."
-summary: "I unbricked my Lenovo TB-7504x tablet by using mtkclient to unlock the bootloader, resolving a boot loop, and bypassing the SP flash tool’s authentication to flash a custom ROM."
+description: "How I unbrick my Lenovo TB-7504x tablet using mtkclient to unlock the bootloader, resolve the boot loop, and bypass the SP flash tool’s authentication to flash a custom ROM."
+summary: "How I unbrick my Lenovo TB-7504x tablet using mtkclient to unlock the bootloader, resolve the boot loop, and bypass the SP flash tool’s authentication to flash a custom ROM."
 date: 2023-06-28
 draft: false
 author: "Aftab Sama" # ["Me", "You"] # multiple authors
