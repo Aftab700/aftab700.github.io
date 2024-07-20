@@ -63,7 +63,7 @@ pip install esptool
 
 #### Installing Drivers:
 
-OS will attempt to install the necessary drivers for ESP32 automatically. If it fails, you can download `CP210x USB to UART Bridge VCP Drivers` from [here](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads).
+OS will attempt to install the necessary drivers for ESP32 automatically. If it fails, We can download `CP210x USB to UART Bridge VCP Drivers` from [here](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads).
 
 Once the drivers are installed, after connecting the esp32 to your computer, We should be able to see it in the `Device Manager` for Windows.
 
@@ -134,6 +134,9 @@ Now the ESP32 is connected to the internet, and we can also modify the Wi-Fi's M
 
 - https://github.com/dchristl/esp32_nat_router_extended
 - https://www.youtube.com/watch?v=41Lymi6rXA8
+
+**Here is the link to buy an ESP32 microcontroller chip.**
+- https://robocraze.com/products/esp32-development-board
 
 <br>
 
