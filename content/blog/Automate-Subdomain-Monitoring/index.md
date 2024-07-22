@@ -113,7 +113,8 @@ Now that we have our script, we want to automatically run this script at certain
 
 ### Scheduled Task in windows
 
-In Windows, you can create a scheduled task to automatically run a PowerShell script at specific times or intervals. You can use the following PowerShell command to create a scheduled task: 
+In Windows, you can create a scheduled task to automatically run a PowerShell script at specific times or intervals. \
+You can use the following PowerShell command to create a scheduled task that will run every Sunday at midnight.
 - Save the PowerShell script as `monitor.ps1`.
 
 ```powershell
@@ -189,4 +190,4 @@ while ($true) {
 
 <br>
 
-Happy Hacking
+Thank you for reading this far. Happy hacking!

@@ -1,7 +1,7 @@
 ---
 title: "Build a Hackable Router using ESP32"
-description: "Use ESP32 to create a Wi-Fi network."
-summary: "Use ESP32 to create a Wi-Fi network."
+description: "Use ESP32 microcontroller chip to create a Wi-Fi network."
+summary: "Use ESP32 microcontroller chip to create a Wi-Fi network."
 date: 2024-07-20
 draft: false
 author: "Aftab Sama" # ["Me", "You"] # multiple authors
@@ -136,8 +136,9 @@ Now the ESP32 is connected to the internet, and we can also modify the Wi-Fi's M
 - https://www.youtube.com/watch?v=41Lymi6rXA8
 
 **Here is the link to buy an ESP32 microcontroller chip.**
+- https://robu.in/product-category/iot-and-wireless/esp-wifi-module/
 - https://robocraze.com/products/esp32-development-board
 
 <br>
 
-Happy Hacking
+Thank you for reading this far. Happy hacking!

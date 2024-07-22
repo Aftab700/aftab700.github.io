@@ -1,7 +1,7 @@
 ---
 title: "How I was able to unbrick my Lenovo TB-7504x"
-description: "How I unbrick my Lenovo TB-7504x tablet using mtkclient to unlock the bootloader, resolve the boot loop, and bypass the SP flash tool’s authentication to flash a custom ROM."
-summary: "How I unbrick my Lenovo TB-7504x tablet using mtkclient to unlock the bootloader, resolve the boot loop, and bypass the SP flash tool’s authentication to flash a custom ROM."
+description: "How to unbrick Lenovo TB-7504x tablet using mtkclient to unlock the bootloader. Resolve the boot loop issue and bypass the SP flash tool’s authentication to flash a custom ROM."
+summary: "How to unbrick Lenovo TB-7504x tablet using mtkclient to unlock the bootloader. Resolve the boot loop issue and bypass the SP flash tool’s authentication to flash a custom ROM."
 date: 2023-06-28
 draft: false
 author: "Aftab Sama" # ["Me", "You"] # multiple authors
@@ -98,4 +98,4 @@ Run the SP flash tool and connect the device.
 Here, I have used the `"Lenovo_Tab_7_TB-7504X_MT6737M_HW20_India_S000041_180828_(by_firmwarefile.com)"` firmware file with the same model Because It must use the same chipset as the device.
 
 
-Happy Hacking
+Thank you for reading this far. Happy hacking!
