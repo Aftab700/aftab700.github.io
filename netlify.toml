@@ -1,11 +1,18 @@
 [build]
-  publish = "public"
-  command = "hugo --gc --minify --baseURL 'https://aftab700.netlify.app/'"
+publish = "public"
+command = "hugo --gc --minify --baseURL 'https://aftab700.netlify.app/'"
 
 [build.environment]
-  HUGO_VERSION = "0.127.0"
-  HUGO_ENV = "production"
-  HUGO_ENABLEGITINFO = "true"
+HUGO_VERSION = "0.127.0"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
 
 [context.deploy-preview]
-  command = "sed -i 's/! Content-Security-Policy//g' static/_headers && hugo --minify"
+command = "sed -i 's/! Content-Security-Policy//g' static/_headers && hugo --minify"
+
+# [[redirects]]
+# from = "/*"
+# to = "https://aftab700.github.io/"
+# status = 301
+# force = false
+# headers = { X-From = "Netlify" }

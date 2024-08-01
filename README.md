@@ -22,13 +22,13 @@ This is my personal website. It's built with [Hugo](https://gohugo.io/) and usin
 
 - [Hugo](https://gohugo.io/) is responsible for using templates and markdown files to create pages, as well as building other files needed for cosmetics (it's a static site generator).
 - [Cloudflare Pages](https://pages.cloudflare.com/) is responsible for building the website and deploying it to the Cloudflare edge network. It's used as the [main hosting](https://aftab700.pages.dev/).
-- [Netlify](https://www.netlify.com/) is responsible for building the website and deploying it to the Netlify edge network. Now it's used as a secondary or [backup hosting](https://aftab700.netlify.app/).
-- [Vercel](https://vercel.com/) is responsible for building the website and deploying it to the Vercel edge network. Now it's used as a secondary or [backup hosting](https://afta700.vercel.app/).
-- [GitHub](https://github.com) is used for version control and hosting the source code of the website.
 - [GitHub Pages](https://docs.github.com/en/pages) is responsible for building the website and deploying it to the GitHub Pages. Now it's used as a secondary or [backup hosting](https://aftab700.github.io/).
+- [GitHub](https://github.com) is used for version control and hosting the source code of the website.
+<!-- - [Netlify](https://www.netlify.com/) is responsible for building the website and deploying it to the Netlify edge network. Now it's used as a secondary or [backup hosting](https://aftab700.netlify.app/). -->
+<!-- - [Vercel](https://vercel.com/) is responsible for building the website and deploying it to the Vercel edge network. Now it's used as a secondary or [backup hosting](https://aftab700.vercel.app/). -->
 - [Kamigo](https://github.com/hiiruki/hugo-Kamigo) is a Hugo theme that [hiiruki](https://github.com/hiiruki) created. It's a fork of the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. It's focused on customization, improving code quality, UI/UX improvement, and security improvement or hardening to the original/previous mod theme.
 
-Host your site with services such as [CloudCannon](https://cloudcannon.com/), [Cloudflare Pages](https://pages.cloudflare.com/), [GitHub Pages](https://pages.github.com/), [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/), and [Netlify](https://www.netlify.com/).
+Host your site with services such as [CloudCannon](https://cloudcannon.com/), [Cloudflare Pages](https://pages.cloudflare.com/), [GitHub Pages](https://pages.github.com/), [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/), [Vercel](https://vercel.com/), and [Netlify](https://www.netlify.com/).
 
 ## License
 
