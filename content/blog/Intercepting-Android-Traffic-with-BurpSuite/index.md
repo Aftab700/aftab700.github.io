@@ -5,7 +5,7 @@ summary: "Intercept Android app traffic with BurpSuite and bypass SSL certificat
 date: 2024-07-31
 draft: false
 author: "Aftab Sama" # ["Me", "You"] # multiple authors
-tags: ["Burp Suite", "Android"]
+tags: ["Burp Suite", "Android", "SSL Pinning"]
 canonicalURL: ""
 showToc: true
 TocOpen: false
@@ -74,7 +74,7 @@ Locate and install `burp.pem`, PEM format certificate file we previously convert
 
 ![install CA certificate on Android](images/image-6.png)
 
-### Copying the certificate to Android device using adb
+### Copying the Certificate to Android device using adb
 
 First, ensure that your Android device appears in the `adb devices` command.
 
@@ -123,7 +123,7 @@ Now that we have installed a certificate and set up a proxy, we are able to view
 SSL pinning is a security technique used on the client side to protect against man-in-the-middle attacks. It works by embedding(or pinning) a list of trusted certificates into the client application during development. \
 At runtime, the server certificate is compared against the local copy of trusted certificates. If there is a mismatch, the connection is disrupted, preventing any user data from being sent to the server. This ensures that user devices only communicate with trusted, dedicated servers.
 
-## Bypassing SSL Certificate Pinning
+## Bypassing SSL Certificate Pinning Using Frida (Requires Root)
 
 It is often possible to bypass certificate pinning in most applications within seconds, but only if the app uses the API functions that these tools cover. If the app implements SSL pinning using a custom framework or library, SSL pinning must be manually patched and deactivated, which can be a time-consuming process.
 
@@ -158,7 +158,35 @@ To verify Frida is running, run the command `frida-ps -U` on your PC to list the
 
 ![frida-ps output](images/image-9.png)
 
-### Instagram SSL pinning bypass script
+### SSL Pinning Bypass Script
+
+Different apps utilize different methods to implement SSL pinning, so there is no one-size-fits-all solution. However, you can try the following general scripts:
+
+#### Universal Android SSL Pinning Bypass with Frida
+
+Download the `frida-android-repinning.js` file from [here](https://codeshare.frida.re/@pcipolloni/universal-android-ssl-pinning-bypass-with-frida/).
+
+Move the `burp.pem` file, which was previously [converted](#convert-burpsuites-certificate-to-pem-format) from `cacert.der`, to `/data/local/tmp/cert-der.crt` on Android.
+```
+adb push burp.pem /data/local/tmp/cert-der.crt
+```
+Use frida to run the `frida-android-repinning.js` code into the target application.
+```
+frida -U -l frida-android-repinning.js -f com.test.app
+```
+
+
+#### Frida Multiple Unpinning
+
+Download the `frida_multiple_unpinning.js` file from [here](https://gist.githubusercontent.com/akabe1/5632cbc1cd49f0237cbd0a93bc8e4452/raw/ec5b598eb506de05d8bbb1f8f6cb85f4b6d8a190/frida_multiple_unpinning.js) or [here](https://codeshare.frida.re/@akabe1/frida-multiple-unpinning/).
+
+Use frida to run the `frida_multiple_unpinning.js` code into the target application.
+```
+frida -U -l frida_multiple_unpinning.js -f com.test.app
+```
+
+
+### Instagram SSL Pinning Bypass Script
 
 To bypass SSL on the Instagram app, download the [instagram-ssl-pinning-bypass.js](https://github.com/Eltion/Instagram-SSL-Pinning-Bypass/blob/main/instagram-ssl-pinning-bypass.js) script and run the following command:
 ```
@@ -167,10 +195,6 @@ frida -U -l instagram-ssl-pinning-bypass.js -f com.instagram.android
 ![instagram-ssl-pinning-bypass.js output](images/image-11.png)
 
 ![Instagram traffic](images/image-10.png)
-
-Different apps utilize different methods to implement SSL pinning, so there is no one-size-fits-all solution. However, you can try the following general scripts:
-- https://codeshare.frida.re/@pcipolloni/universal-android-ssl-pinning-bypass-with-frida/
-- https://codeshare.frida.re/@akabe1/frida-multiple-unpinning/
 
 
 ## References
