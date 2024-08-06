@@ -80,22 +80,26 @@ params:
 
 # Social
   socialIcons:
-    - name: matrix
-      url: "https://matrix.to/#/@aftab700:matrix.org"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/aftab-sama/"
     - name: github
       url: "https://github.com/Aftab700"
-    - name: mastodon
-      url: "https://infosec.exchange/@Aftab"
+    - name: instagram
+      url: "https://www.instagram.com/aftab__sama/"
     - name: X
       url: "https://x.com/AftabSama700"
-    # - name: discord
-    #   url: "http://discordapp.com/users/759615120820928513"
-    # - name: telegram
-    #   url: "https://t.me/"
-    # - name: xmpp => There is a bug in the URL, when using `xmpp:` as a protocol in the URL, it will be converted to http://xmpp:hiiruki@yourdataforsale which results in 404.
-    #   url: "xmpp:hiiruki@yourdata.forsale"
+    - name: mastodon
+      url: "https://infosec.exchange/@Aftab"
+    - name: youtube
+      url: "https://youtube.com/@Aftab700"
+    - name: medium
+      url: "https://medium.com/@Aftab700"
     - name: email
       url: "mailto:Aftab700@proton.me"
+    # - name: matrix
+    #   url: "https://matrix.to/#/@aftab700:matrix.org"
+    # - name: discord
+    #   url: "http://discordapp.com/users/759615120820928513"
     # - name: pgp
     #   url: "/pgp.txt"
     - name: rss
