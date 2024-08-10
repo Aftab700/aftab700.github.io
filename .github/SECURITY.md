@@ -15,7 +15,7 @@
 
 **Please do not report security vulnerabilities through public GitHub issues.**
 
-If you discover a security issue in this repository, please submit it through my [email](mailto:github.z8641@aleeas.com) address.
+If you discover a security issue in this repository, please submit it through my [email](mailto:Aftab700@proton.me) address.
 
 ## Preferred Languages to Report a Vulnerability
 

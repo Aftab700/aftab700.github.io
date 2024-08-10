@@ -41,27 +41,29 @@ cover:
 
 ### History of UNIX
 
-The [UNIX](https://en.wikipedia.org/wiki/Unix) operating system was developed by [AT&T](https://en.wikipedia.org/wiki/AT%26T_Corporation) Corporation’s Bell Laboratories in the late 1960s. In 1969, a team led by computer scientists [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson) and [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie) created the first version of UNIX.
+The `UNIX` operating system was developed by `AT&T` Corporation’s Bell Laboratories in the late 1960s. In 1969, a team led by computer scientists Ken Thompson and Dennis Ritchie created the first version of UNIX.
 
-The formal presentation of the Unix operating system to the outside world took place at the 1973 [Symposium on Operating Systems Principles](https://en.wikipedia.org/wiki/Symposium_on_Operating_Systems_Principles), where Ritchie and Thompson delivered a paper. This gained interest, but due to a [1956 consent decree](https://economics.yale.edu/sites/default/files/how_antitrust_enforcement.pdf) in settlement of an antitrust case, the Bell System (the parent organization of Bell Labs) was restricted from entering any business other than "common carrier communications services" and was obligated to license any patents it had upon request. As a result, UNIX could not be commercialized.
+The formal presentation of the Unix operating system to the outside world took place at the 1973 Symposium on Operating Systems Principles, where Ritchie and Thompson delivered a paper. This gained interest, but due to a [1956 consent decree](https://economics.yale.edu/sites/default/files/how_antitrust_enforcement.pdf) in settlement of an antitrust case, the Bell System (the parent organization of Bell Labs) was restricted from entering any business other than "common carrier communications services" and was obligated to license any patents it had upon request. As a result, UNIX could not be commercialized.
 
 In 1983, the U.S. Department of Justice settled its second antitrust case against AT&T, leading to the breakup of the Bell System. This relieved AT&T of the 1956 consent decree and allowed the company to commercialize UNIX.
 
-On another note, various [Unix-like](https://en.wikipedia.org/wiki/Unix-like) operating systems originated from the University of California, Berkeley's version of Unix, such as the one used today on Apple computers, known as OS X. They are termed "Unix-like" because the developers of the [Berkeley Software Distribution (BSD)](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) Unix worked to eliminate all the original AT&T code, ensuring that their software and its descendants could be freely distributed.
+On another note, various `Unix-like` operating systems originated from the University of California, Berkeley's version of Unix, such as the one used today on Apple computers, known as OS X. They are termed "Unix-like" because the developers of the Berkeley Software Distribution (BSD) Unix worked to eliminate all the original AT&T code, ensuring that their software and its descendants could be freely distributed.
 
-Legal issues arose when AT&T's Unix subsidiary sued [Berkeley Software Design, Inc.](https://en.wikipedia.org/wiki/Berkeley_Software_Design)(BSDi) for copyright infringement and other charges related to BSD; subsequently, the University of California countersued. The resulting legal complications delayed the development of free Unix-like clones, including [386BSD](https://en.wikipedia.org/wiki/386BSD), intended for the Intel 386 chip, which was commonly used in IBM PCs at that time.
+Legal issues arose when AT&T's Unix subsidiary sued `Berkeley Software Design, Inc.`(BSDi) for copyright infringement and other charges related to BSD; subsequently, the University of California countersued. The resulting legal complications delayed the development of free Unix-like clones, including `386BSD`, intended for the Intel 386 chip, which was commonly used in IBM PCs at that time.
 
-The competition among vendors to establish a standard for the Unix operating system in the late 1980s and early 1990s was known as the [Unix wars](https://en.wikipedia.org/wiki/Unix_wars), which ultimately led to the development of [POSIX](https://en.wikipedia.org/wiki/POSIX).
+The competition among vendors to establish a standard for the Unix operating system in the late 1980s and early 1990s was known as the `Unix wars`, which ultimately led to the development of `POSIX`.
+
 ![Unix genealogy tree](images/Unix-genealogy-tree.png)
 
 ### Portable Operating System Interface (POSIX)
 
-[POSIX], which stands for Portable Operating System Interface, comprises a set of standards defined by the [IEEE Computer Society](https://en.wikipedia.org/wiki/IEEE_Computer_Society). These standards are aimed at ensuring compatibility among different operating systems. 
+**POSIX**, which stands for Portable Operating System Interface, comprises a set of standards defined by the IEEE Computer Society. These standards are aimed at ensuring compatibility among different operating systems. 
+
 POSIX encompasses both system and user-level application programming interfaces (APIs), as well as command-line shells and utility interfaces, to facilitate software compatibility (portability) with various Unix versions and other operating systems.
 
 ### GNU Project
 
-In September 1983, [Richard Stallman](https://en.wikipedia.org/wiki/Richard_Stallman) announced his intention to start coding the [GNU Project](https://en.wikipedia.org/wiki/GNU_Project) in a [Usenet](https://en.wikipedia.org/wiki/Usenet) message.
+In September 1983, Richard Stallman announced his intention to start coding the GNU Project in a `Usenet` message.
 
 By June 1987, the project had accumulated and developed free software for an assembler, an almost finished portable optimizing C compiler (GCC), an editor (GNU Emacs), and various Unix utilities such as `ls`, `grep`, `awk`, `make`, `ld`, `tar`, and `bash`.
 
@@ -69,7 +71,8 @@ By 1992, the GNU project had completed all major operating system utilities but 
 
 ### Linux
 
-In April 1991, [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds), a 21-year-old computer science student at the [University of Helsinki](https://en.wikipedia.org/wiki/Helsinki_University_of_Technology), began working on an operating system inspired by UNIX for personal computers. 
+In April 1991, Linus Torvalds, a 21-year-old computer science student at the University of Helsinki, began working on an operating system inspired by UNIX for personal computers.
+
 On 25 August 1991, Torvalds shared the following message on comp.os.minix, a newsgroup on Usenet:
 ```
 Hello everybody out there using minix -  
@@ -93,7 +96,7 @@ It is NOT protable (uses 386 task switching etc), and it probably never
 will support anything other than AT-harddisks, as that's all I have :-(.
 ```
 
-Linus Torvalds originally wanted to name his invention `Freax` and stored the files under that name for about six months. However, he also considered the name `Linux` but initially thought it was too egotistical. In September 1991, the files were uploaded to the FTP server (ftp.funet.fi) of [FUNET](https://en.wikipedia.org/wiki/FUNET) to facilitate development.
+Linus Torvalds originally wanted to name his invention `Freax` and stored the files under that name for about six months. However, he also considered the name `Linux` but initially thought it was too egotistical. In September 1991, the files were uploaded to the FTP server (ftp.funet.fi) of FUNET to facilitate development.
 
 Ari Lemmke at Helsinki University of Technology (HUT), who was one of the volunteer administrators for the FTP server, didn't like the name `Freax` and decided to name the project `Linux` on the server without consulting Torvalds. Torvalds later agreed to the name `Linux`.
 
@@ -112,14 +115,14 @@ A stable version (or variant) of GNU can be run by combining the GNU packages wi
 
 A Linux distribution is an operating system that includes the Linux kernel, along with a package management system.
 
-The typical components of a Linux distribution are the Linux kernel, an init system (such as [systemd](https://en.wikipedia.org/wiki/Systemd), [OpenRC](https://en.wikipedia.org/wiki/OpenRC), or [runit](https://en.wikipedia.org/wiki/Runit)), [GNU](https://en.wikipedia.org/wiki/GNU) tools, and libraries. In addition, to provide a desktop interface, a Linux distribution might include a display server, a desktop environment (such as [GNOME](http://www.gnome.org/), [MATE](https://mate-desktop.com/), [KDE Plasma](https://en.wikipedia.org/wiki/KDE_Plasma), [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_environment)), or [Xfce](https://xfce.org/)), and other related software.
+The typical components of a Linux distribution are the Linux kernel, an init system (such as `systemd`, `OpenRC`, or `runit`), GNU tools, and libraries. In addition, to provide a desktop interface, a Linux distribution might include a display server, a desktop environment (such as [GNOME](http://www.gnome.org/), [MATE](https://mate-desktop.com/), KDE Plasma, Cinnamon, or [Xfce](https://xfce.org/)), and other related software.
 
 Each distribution is tailored to meet different user needs, such as ease of use, performance, or specific applications. They are designed to serve different purposes. Some are created for enterprise users, while others are intended for home users. \
 Some are meant to run only on specific systems, such as embedded devices, mobile devices, personal computers, servers, and powerful supercomputers.
 
 ### Slackware
 
-[Slackware](https://en.wikipedia.org/wiki/Slackware) is a Linux distribution created by [Patrick Volkerding](https://en.wikipedia.org/wiki/Patrick_Volkerding) in 1993. Initially based on the [Softlanding Linux System](https://en.wikipedia.org/wiki/Softlanding_Linux_System), [Slackware](http://www.slackware.com/) has served as the foundation for numerous other Linux distributions, particularly the early versions of [SUSE Linux](https://en.wikipedia.org/wiki/SUSE_Linux). It holds the distinction of being the oldest maintained distribution.
+[Slackware](http://www.slackware.com/) is a Linux distribution created by Patrick Volkerding in 1993. Initially based on the Softlanding Linux System, Slackware has served as the foundation for numerous other Linux distributions, particularly the early versions of SUSE Linux. It holds the distinction of being the oldest maintained distribution.
 
 ### Debian
 
@@ -152,7 +155,7 @@ It's known for focusing on security, performance, and reliability.
 
 Red Hat primarily uses a subscription-based business model. It generates revenue through subscriptions that provide access to RHEL, consulting services, training and certification.
 
-Its popular descendants include [RHEL](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux), [Fedora](https://fedoraproject.org/), and [CentOS](https://www.centos.org/).
+Its popular descendants include RHEL, [Fedora](https://fedoraproject.org/), and [CentOS](https://www.centos.org/).
 
 ### Arch & Gentoo
 

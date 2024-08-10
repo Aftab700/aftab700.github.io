@@ -1,5 +1,5 @@
 # Basic Information
-baseURL: "https://aftab700.github.io/"
+baseURL: "https://aftabsama.com/"
 # baseURL: "https://aftab700.pages.dev/" # hugo hugo --gc --minify --baseURL $CF_PAGES_URL
 languageCode: en-us
 title: "Aftab Sama"
@@ -95,7 +95,7 @@ params:
     - name: medium
       url: "https://medium.com/@Aftab700"
     - name: email
-      url: "mailto:Aftab700@proton.me"
+      url: "mailto:hi@aftabsama.com"
     # - name: matrix
     #   url: "https://matrix.to/#/@aftab700:matrix.org"
     # - name: discord

@@ -44,13 +44,13 @@ You can learn more about my professional experience on my [LinkedIn profile](htt
 <!-- 📡 [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat "IRC @ Wikipedia") - hiiruki @ [Rizon](https://www.rizon.net/)<br> -->
 <!-- 📡 [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat "IRC @ Wikipedia") - hiiruki @ [tilde.chat](https://tilde.chat/)<br> -->
 
-📧 [E-mail](mailto:Aftab700@proton.me)
+📧 [E-mail](mailto:hi@aftabsama.com)
 
 <details>
 <summary> 🔑 PGP Public Key </summary>
 
 ```shell
-curl -sL https://aftab700.github.io/pgp | gpg --import
+curl -sL https://aftabsama.com/pgp | gpg --import
 
 # Fingerprint: [0BE8B166C93FA382] • 52DD C5E6 F700 2761 BD9D  BFD6 0BE8 B166 C93F A382
 ```
@@ -118,7 +118,7 @@ F1085BD5 D359788F 05F936D8 3185A5BE
 </details>
 <br> -->
 
-📊 [Status](https://aftab.betteruptime.com/ "Aftab's Status Page")<br>
+📊 [Status](https://status.aftabsama.com/ "Aftab's Status Page")<br>
 
 🧑‍💼 [humans.txt](/humans.txt)
 

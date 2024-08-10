@@ -3,8 +3,8 @@
 /* TEAM */
 
 Aftab Sama
-- Site    : https://aftab700.github.io/
-- Contact : https://aftab700.github.io/about
+- Site    : https://aftabsama.com/
+- Contact : https://aftabsama.com/about
 - GitHub  : https://github.com/Aftab700
 
 /* SITE */
@@ -23,14 +23,14 @@ Technologies:
 
 - Hugo [https://gohugo.io/]
 - GitHub [https://github.com/]
+- Cloudflare [https://www.cloudflare.com/]
 - Netlify [https://www.netlify.com/]
 - Vercel [https://vercel.com/]
-- Cloudflare [https://www.cloudflare.com/]
+- Hiiruki's Lab [https://hiiruki.dev/]
 - MDN Web Docs by Mozilla [https://developer.mozilla.org/en-US/]
 - WebDev by Google [https://web.dev/]
 - w3schools [https://www.w3schools.com/]
 - JSFiddle [https://jsfiddle.net/]
-- Hiiruki's Lab [https://hiiruki.dev/]
 
 The humans responsible & technology colophon
 [http://humanstxt.org]

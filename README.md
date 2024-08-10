@@ -4,7 +4,7 @@ _yet another personal website._
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/14797980-6739-4b0f-b1c5-a0e61c31ddcf/deploy-status)](https://app.netlify.com/sites/aftab700/deploys)
 
-This is my personal website. It's built with [Hugo](https://gohugo.io/) and using [Kamigo](https://github.com/hiiruki/hugo-Kamigo) theme. You can visit [here](https://aftab700.pages.dev/).
+This is my personal website. It's built with [Hugo](https://gohugo.io/) and using [Kamigo](https://github.com/hiiruki/hugo-Kamigo) theme. You can visit [here](https://aftabsama.com/).
 
 ## Pagespeed Insights
 
@@ -21,8 +21,9 @@ This is my personal website. It's built with [Hugo](https://gohugo.io/) and usin
 ## Architecture
 
 - [Hugo](https://gohugo.io/) is responsible for using templates and markdown files to create pages, as well as building other files needed for cosmetics (it's a static site generator).
-- [Cloudflare Pages](https://pages.cloudflare.com/) is responsible for building the website and deploying it to the Cloudflare edge network. It's used as the [main hosting](https://aftab700.pages.dev/).
-- [GitHub Pages](https://docs.github.com/en/pages) is responsible for building the website and deploying it to the GitHub Pages. Now it's used as a secondary or [backup hosting](https://aftab700.github.io/).
+- [Cloudflare Pages](https://pages.cloudflare.com/) is responsible for building the website and deploying it to the Cloudflare edge network. It's used as the [main hosting](https://aftabsama.com/).
+- Backup hosting is available on [GitHub Pages](https://aftab700.github.io/), [Netlify](https://aftab700.netlify.app/), and [Vercel](https://aftab700.vercel.app/).
+<!-- - [GitHub Pages](https://docs.github.com/en/pages) is responsible for building the website and deploying it to the GitHub Pages. Now it's used as a secondary or [backup hosting](https://aftab700.github.io/). -->
 - [GitHub](https://github.com) is used for version control and hosting the source code of the website.
 <!-- - [Netlify](https://www.netlify.com/) is responsible for building the website and deploying it to the Netlify edge network. Now it's used as a secondary or [backup hosting](https://aftab700.netlify.app/). -->
 <!-- - [Vercel](https://vercel.com/) is responsible for building the website and deploying it to the Vercel edge network. Now it's used as a secondary or [backup hosting](https://aftab700.vercel.app/). -->

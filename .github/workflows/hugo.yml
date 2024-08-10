@@ -54,9 +54,8 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo \
-            --minify --gc \
-            --baseURL "https://aftab700.github.io/"
+          hugo --minify --gc
+        # --baseURL "https://aftab700.github.io/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
