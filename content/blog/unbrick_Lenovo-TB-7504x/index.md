@@ -89,11 +89,11 @@ PS C:\Users\AFTAB SAMA\Downloads\bypass_utility-v.1.4.2\bypass_utility-v.1.4.2>
 
 Now, go to the `options` in the SP flash tool and change the connection setting to _`UART`_.
 
-![Image](images/249391798-035d6f90-4069-4ed7-941d-2236fde54fe7.png)
+![Image](images/249391798-035d6f90-4069-4ed7-941d-2236fde54fe7.webp)
 
 Run the SP flash tool and connect the device.
 
-![Image](images/249392390-034940e7-55be-448b-bfe8-122d04112cd7.png)
+![Image](images/249392390-034940e7-55be-448b-bfe8-122d04112cd7.webp)
 
 Here, I have used the `"Lenovo_Tab_7_TB-7504X_MT6737M_HW20_India_S000041_180828_(by_firmwarefile.com)"` firmware file with the same model Because It must use the same chipset as the device.
 

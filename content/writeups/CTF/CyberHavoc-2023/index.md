@@ -143,7 +143,7 @@ flag: CHCTF{BONSOIRELLIOT}
 
 file: `Is it True.pcapng`
 
-there is one png file `zero or one.jpg` to extract it open Wireshark 
+there is one png file `zero or one.png` to extract it open Wireshark 
 
 `File > Export Objects > HTTP` and select file and save.
 

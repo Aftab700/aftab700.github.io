@@ -36,7 +36,7 @@ In this CTF we are given target machines
 
 port 80 is open
 
-<img width="216" alt="image" src="/images/md/29b257f2-f236-4076-ad40-7d3e204862cc.png">
+<img width="216" alt="image" src="/images/md/29b257f2-f236-4076-ad40-7d3e204862cc.webp">
 
 from the response header we notice that it is running on `Apache/2.4.49` version and by googling we know that it is [vulnerable to LFI](https://www.exploit-db.com/exploits/50383)
 
@@ -56,7 +56,7 @@ to know the username `BRCTF` we read the `/etc/passwd` file using the same explo
 
 we are able to login and we can use `cpio` with sudo without password
 
-<img width="612" alt="image" src="/images/md/035a6044-63df-4077-8d65-0d9b4436ec7f.png">
+<img width="612" alt="image" src="/images/md/035a6044-63df-4077-8d65-0d9b4436ec7f.webp">
 
 we can use cpio to change the `/etc/sudoers` file so we can run any binary with sudo without password
 
@@ -82,7 +82,7 @@ this base64 content is our modified file and we save it in current directory\
 `--no-preserve-owner` : Do not change the ownership of the files\
 It will save our modified file in /etc folder overwriting the existing one and without changing the file ownership or it will create error
 
-<img width="531" alt="image" src="/images/md/30d1a28a-3078-45da-8abd-149d99cfbac6.png">
+<img width="531" alt="image" src="/images/md/30d1a28a-3078-45da-8abd-149d99cfbac6.webp">
 
 now we are root
 
@@ -92,12 +92,12 @@ now we are root
 
 port 3000 is open
 
-<img width="533" alt="image" src="/images/md/7265c220-8c42-4880-a483-714968a82d3a.png">
+<img width="533" alt="image" src="/images/md/7265c220-8c42-4880-a483-714968a82d3a.webp">
 
 it running grafana v8.2.6 and it is [vulnerable](https://github.com/jas502n/Grafana-CVE-2021-43798) to LFI\
 just like privious challange we read the `/home/BRCTF/.ssh/id_rsa` file and connect to ssh
 
-<img width="735" alt="image" src="/images/md/fbc82bb8-82dc-43ce-becc-87e77c82feaa.png">
+<img width="735" alt="image" src="/images/md/fbc82bb8-82dc-43ce-becc-87e77c82feaa.webp">
 
 we can now connect to ssh
 
@@ -105,7 +105,7 @@ we can now connect to ssh
 ssh BRCTF@10.0.13.9 -i .\id_rsa.txt
 ```
 
-<img width="572" alt="image" src="/images/md/626b6143-5fef-447e-aa23-264fd5002cf2.png">
+<img width="572" alt="image" src="/images/md/626b6143-5fef-447e-aa23-264fd5002cf2.webp">
 
 we use https://gtfobins.github.io/gtfobins/ansible-playbook/#sudo payload to get root 
 
@@ -115,6 +115,6 @@ echo '[{hosts: localhost, tasks: [shell: /bin/sh </dev/tty >/dev/tty 2>/dev/tty]
 sudo ansible-playbook $TF
 ```
 
-<img width="402" alt="image" src="/images/md/0d5ff1cc-cc32-4a21-be83-e8b869dc698d.png">
+<img width="402" alt="image" src="/images/md/0d5ff1cc-cc32-4a21-be83-e8b869dc698d.webp">
 
 Happy Hacking

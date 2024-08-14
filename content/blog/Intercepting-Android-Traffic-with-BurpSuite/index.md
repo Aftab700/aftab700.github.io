@@ -49,7 +49,7 @@ In the emulator, adb debugging is enabled by default. If you are using an Androi
 
 Once you have Burp running in the background, you can visit the [proxy URL](http://127.0.0.1:8080/cert) to download the certificate.
 
-![Burp CA Certificate](images/image-1.png)
+![Burp CA Certificate](images/image-1.webp)
 
 After downloading the `cacert.der` BurpSuites certificate file, run the following `openssl` command to convert this certificate to PEM format.
 
@@ -62,7 +62,7 @@ Now we need to rename this file to the hash of the subject of the certificate. W
 openssl x509 -inform pem -subject_hash_old -in burp.pem | head -1
 ```
 
-![PEM Certificate](images/image-2.png)
+![PEM Certificate](images/image-2.webp)
 
 
 ## Installing CA Certificate
@@ -72,13 +72,13 @@ openssl x509 -inform pem -subject_hash_old -in burp.pem | head -1
 To install the CA certificate on Android, go to settings and search for the certificate. Depending on the device, you should be able to see the option to install the certificate. \
 Locate and install `burp.pem`, PEM format certificate file we previously converted.
 
-![install CA certificate on Android](images/image-6.png)
+![install CA certificate on Android](images/image-6.webp)
 
 ### Copying the Certificate to Android device using adb
 
 First, ensure that your Android device appears in the `adb devices` command.
 
-![adb devices](images/image-3.png)
+![adb devices](images/image-3.webp)
 
 We need to copy our `9a5ba575.0` file to the `/system/etc/security/cacerts/` directory on the Android device.
 
@@ -86,7 +86,7 @@ We need to copy our `9a5ba575.0` file to the `/system/etc/security/cacerts/` dir
 adb push 9a5ba575.0 /system/etc/security/cacerts/
 ```
 
-![Read-only file system error](images/image-4.png)
+![Read-only file system error](images/image-4.webp)
 
 We get an error saying `Read-only file system`. To resolve this, We must remount to read-write .
 
@@ -94,7 +94,7 @@ We get an error saying `Read-only file system`. To resolve this, We must remount
 adb shell mount -o remount,rw /system
 ```
 
-![remount,rw](images/image-5.png)
+![remount,rw](images/image-5.webp)
 
 
 ## Setup Proxy
@@ -113,7 +113,7 @@ adb shell settings put global http_proxy :0
 ```
 Change the burp proxy settings to listen on all the interfaces. After setting up the proxy, you should be able to see some traffic. To test this, you can open any HTTPS site on an Android browser, and you should see that traffic in Burp Suite.
 
-![HTTPS traffic](images/image-7.png)
+![HTTPS traffic](images/image-7.webp)
 
 Now that we have installed a certificate and set up a proxy, we are able to view the HTTPS traffic for some apps, but not all. This is because certain applications use SSL pinning, which stops the app from recognizing our intercepting certificate as valid. As a result, we are unable to monitor the traffic between the application and the server.
 
@@ -141,7 +141,7 @@ To figure out which Android file to download, run the following command:
 adb shell uname -a
 ```
 
-![uname output-x86_64](images/image-8.png)
+![uname output-x86_64](images/image-8.webp)
 
 For me, it will be [frida-server-16.4.7-android-x86_64](https://github.com/frida/frida/releases/download/16.4.7/frida-server-16.4.7-android-x86_64.xz).
 
@@ -156,7 +156,7 @@ adb shell "/data/local/tmp/frida-server* &"
 
 To verify Frida is running, run the command `frida-ps -U` on your PC to list the running processes in Android.
 
-![frida-ps output](images/image-9.png)
+![frida-ps output](images/image-9.webp)
 
 ### SSL Pinning Bypass Script
 
@@ -192,9 +192,9 @@ To bypass SSL on the Instagram app, download the [instagram-ssl-pinning-bypass.j
 ```
 frida -U -l instagram-ssl-pinning-bypass.js -f com.instagram.android
 ```
-![instagram-ssl-pinning-bypass.js output](images/image-11.png)
+![instagram-ssl-pinning-bypass.js output](images/image-11.webp)
 
-![Instagram traffic](images/image-10.png)
+![Instagram traffic](images/image-10.webp)
 
 
 ## References

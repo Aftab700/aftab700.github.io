@@ -44,7 +44,7 @@ ShowRssButtonInSectionTermList: true
 
 Flag is in `iwcon-ctf` channel
 
-<img width="396" alt="image" src="/images/md/89de8ffe-c4e1-421f-9fb8-f0d591c9f2fc.png">
+<img width="396" alt="image" src="/images/md/89de8ffe-c4e1-421f-9fb8-f0d591c9f2fc.webp">
 
 Flag: `IWCON{y0u_w3r3_h3r3_f!rst}`
 
@@ -93,7 +93,7 @@ public static void main(String[] var0) {
    }
 ```
 
-<img width="586" alt="image" src="/images/md/5887d9de-d232-4534-8825-6c621f3551bc.png">
+<img width="586" alt="image" src="/images/md/5887d9de-d232-4534-8825-6c621f3551bc.webp">
 
 Flag: `IWCON{y0u_4r3_a_r3v3rs3_3ngin33r}`
 
@@ -123,7 +123,7 @@ read the rules
 
 in the source code of rules page we can see this comment
 
-<img width="165" alt="image" src="/images/md/3318cae8-6b9f-4b78-8e7d-ab0e86514c56.png">
+<img width="165" alt="image" src="/images/md/3318cae8-6b9f-4b78-8e7d-ab0e86514c56.webp">
 
 this is rot13 of `M0V_M3_T0_G3T_TH3_FL4G`
 
@@ -135,7 +135,7 @@ Flag: `IWCON{M0V_M3_T0_G3T_TH3_FL4G}`
 - Dive into the world of ChromaCrypt, a mysterious box that conceals messages within encoded color sequences. Unraveling the mapping between colors and characters to unveil the hidden message.
 - Flag format: IWCON{}
 
-<img width="415" alt="c0l0r" src="/images/md/dc06dae6-c2d9-4ab7-8bdc-4e13e2c1a13b.png">
+<img width="415" alt="c0l0r" src="/images/md/dc06dae6-c2d9-4ab7-8bdc-4e13e2c1a13b.webp">
 
 This is **Hexahue** cipher https://www.dcode.fr/hexahue-cipher \
 decoded value: HU3H3XACRYPT
@@ -179,7 +179,7 @@ Flag: `iwconctf{tr3asur3_9n_7h3_95land}`
 
 This zip file have 9 images of partial qr code, i used GIMP to organize qr code 
 
-![image](/images/md/45e3c320-269e-4be4-a3a8-8a25daae195d.png)
+![image](/images/md/45e3c320-269e-4be4-a3a8-8a25daae195d.webp)
 
 This qr code decode to `https://pastebin.com/3UpH81pz` \
 It have this following code at line 161 `<iframe src='SVdDT057WTBVXzRSM180X0czTjFVU30='>` It is Base64 encoded flag.
@@ -199,7 +199,7 @@ i did recursive grep for `SVdDT05` which is Base64 of `IWCON` (from flag format)
 grep -ira "SVdDT05" *
 ```
 
-<img width="465" alt="image" src="/images/md/956b53e2-579c-488d-a94f-60ee00afb8b0.png">
+<img width="465" alt="image" src="/images/md/956b53e2-579c-488d-a94f-60ee00afb8b0.webp">
 
 Here we can see the Base64 encoded flag.
 

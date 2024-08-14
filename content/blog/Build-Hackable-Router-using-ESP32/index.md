@@ -67,7 +67,7 @@ OS will attempt to install the necessary drivers for ESP32 automatically. If it 
 
 Once the drivers are installed, after connecting the esp32 to your computer, We should be able to see it in the `Device Manager` for Windows.
 
-![ESP32 COM Port](image/image-1.png#center)
+![ESP32 COM Port](image/image-1.webp#center)
 
 ### Flashing ESP32
 
@@ -113,19 +113,19 @@ Hard resetting via RTS pin...
 ### Setting up ESP32 NAT
 
 After flashing the firmware into the ESP32, We should be able to see a wifi network named `ESP32_NAT_Router`.
-![ESP32 Wi-Fi](image/image-2.png#center)
+![ESP32 Wi-Fi](image/image-2.webp#center)
 
 Connect to the `ESP32_NAT_Router` and visit the gateway IP in your browser.
-![ESP32 Wi-Fi Gateway](image/image-3.png#center)
+![ESP32 Wi-Fi Gateway](image/image-3.webp#center)
 
-![ESP32 Nat Router Config Page](image/image-4.png#center)
+![ESP32 Nat Router Config Page](image/image-4.webp#center)
 
 We don't yet have an internet connection. To achieve this, we have to set up an uplink WiFi network.
 To do that, we require an SSID and password. \
 We have the option to manually enter the SSID or utilize the Wi-Fi Scan feature to search for available Wi-Fi networks and use them.
 
-![SSID Scan](image/image-5.png#center)
-![uplink Wi-Fi Settings](image/image-6.png#center)
+![SSID Scan](image/image-5.webp#center)
+![uplink Wi-Fi Settings](image/image-6.webp#center)
 
 Now the ESP32 is connected to the internet, and we can also modify the Wi-Fi's Mac address, SSID, and password.
 

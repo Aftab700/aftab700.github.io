@@ -140,7 +140,7 @@ two files are given: base_madness.txt, base_madness.zip
 
 base_madness.txt is base64 encoded: `thisisthepasswordtounlockthefile`
 
-unzip the file with this file. There is one image ayaka.jpg 
+unzip the file with this file. There is one image ayaka.png 
 
 open this image with notepad there is flag.
 
@@ -195,7 +195,7 @@ flag: LNC2023{konoyodeichibandekinaiko}
 
 Description: _It looks like there is a secret message that is embeded into the picture. Find a way to retrieve the embeded materials from the image to obtain the flag._
 
-attached file: [Flag.jpg](https://user-images.githubusercontent.com/79740895/232201150-433884d6-e09f-4c73-ada8-9ddc9e2b9f3f.jpg)
+attached file: [Flag.png](https://user-images.githubusercontent.com/79740895/232201150-433884d6-e09f-4c73-ada8-9ddc9e2b9f3f.png)
 
 word document file is embedded in this image.
 

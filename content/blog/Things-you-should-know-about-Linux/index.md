@@ -53,7 +53,7 @@ Legal issues arose when AT&T's Unix subsidiary sued `Berkeley Software Design, I
 
 The competition among vendors to establish a standard for the Unix operating system in the late 1980s and early 1990s was known as the `Unix wars`, which ultimately led to the development of `POSIX`.
 
-![Unix genealogy tree](images/Unix-genealogy-tree.webp)
+![Unix genealogy tree](images/Unix-genealogy-tree.webp#center)
 
 ### Portable Operating System Interface (POSIX)
 
@@ -175,7 +175,7 @@ There are custom versions of Android known as custom ROMs, which offer extra fea
 
 The Linux kernel is the core component of the Linux operating system and it is written in C Programming language. It acts as a bridge between the hardware of a computer and its software applications.
 
-![An oversimplification of how a kernel connects application software to the hardware of a computer](images/kernel-image.webp)
+![An oversimplification of how a kernel connects application software to the hardware of a computer](images/kernel-image.webp#center)
 
 When you press the power button on a computer, several steps occur to start the system:
 1. **Power On**: The power supply turns on and sends a “Power Good” signal to the CPU.
@@ -197,7 +197,7 @@ Here are some key aspects of the Linux kernel:
 
 System calls (syscalls) are the fundamental interface between an application and the Linux kernel. They allow user-space programs to request services and resources from the kernel, such as file operations, process management, and network communication.
 
-![Linux System Call interface](images/Linux-System-Call-Interface.png)
+![Linux System Call interface](images/Linux-System-Call-Interface.webp#center)
 
 ## Shell
 
@@ -249,7 +249,7 @@ Linux uses a permission and ownership model to control access to files and direc
 - **Owner**: The user who owns the file.
 - **Group**: A group of users who have specific permissions.
 - **Permissions**: Read, write, and execute permissions for the owner, group, and others.
-![](images/File-Permissions.webp)
+![File Permissions](images/File-Permissions.webp#center)
 ### Mounting and Unmounting
 
 - **Mounting**: The process of making a file system accessible at a certain point in the directory tree.
@@ -269,7 +269,7 @@ Commands with a single bracket overwrite the destination's existing contents:
 - `>`: standard output
 - `<`: standard input
 - `2>`: Standard error
-![Standard I/O Overwrite](images/standard-i-o-Overwrite.webp)
+![Standard I/O Overwrite](images/standard-i-o-Overwrite.webp#center)
 
 #### Append
 Commands with a double bracket do not overwrite the destination's existing contents; instead, they append to it:
@@ -277,14 +277,14 @@ Commands with a double bracket do not overwrite the destination's existing conte
 - `<<`: standard input
 - `2>>`: standard error
 
-![Standard I/O Append](images/Standard-I-O-Append.webp)
+![Standard I/O Append](images/Standard-I-O-Append.webp#center)
 
 ### Pipes
 
 Pipes are used to redirect the output of one command to another command. When a command's standard output is sent to another through a pipe, the first command’s output will be used as input for the second command rather than being printed on the terminal. Only the data returned by the second command will be displayed.
 
 The Linux pipe is represented by a vertical bar `|`.
-![](images/pipe-command-output.webp)
+![Pipe command output](images/pipe-command-output.webp#center)
 
 ## Bash Script
 
@@ -309,7 +309,7 @@ We can define a variable by using the syntax `variable_name=value`. To access th
 name="Aftab"  # A simple variable example
 echo "Hello $name"
 ```
-![Bash Variable Image](images/variables-bash-1.webp)
+![Bash Variable Image](images/variables-bash-1.webp#center)
 
 #### Linux Commands
 

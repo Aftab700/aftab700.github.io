@@ -37,7 +37,7 @@ cover:
 ---
 
 
-![windows terminal prompt image](images/windows-terminal-prompt.png#center)
+![windows terminal prompt image](images/windows-terminal-prompt.webp#center)
 
 In PowerShell, you can use the `ESC[<n>m` sequence to set the format of the screen and text. The `<n>` number represents different formatting modes.
 
@@ -50,7 +50,7 @@ Code 32 will set Foreground to Green.
 echo "$([char]27)[32m Green Colour text $([char]27)[0m"
 
 ```
-![Foreground Green Colour text](images/Foreground-Green.png#center)
+![Foreground Green Colour text](images/Foreground-Green.webp#center)
 
 To see all the available colours run the following powershell code:
 ```powershell
@@ -61,7 +61,7 @@ foreach ($Color in $Colors)
 }
 ```
 
-![All Foreground Colours](images/all-foreground-colours.png#center)
+![All Foreground Colours](images/all-foreground-colours.webp#center)
 
 The "\`r\`n" sequence is eqivalent to `\n` newline character.
 Environment variable `$env:UserName` and `$env:COMPUTERNAME` will print the username and computer name.
@@ -75,7 +75,7 @@ To test this, run the following command:
 echo "`r`n$ESC[32m┌──PS($ESC[94m$env:UserName@$env:COMPUTERNAME$ESC[32m)-[$ESC[0m$(Get-Location)$ESC[32m]`r`n└─$ESC[94m$ $ESC[0m"
 ```
 
-![Test Custom Prompt](images/test-custom-prompt.png#center)
+![Test Custom Prompt](images/test-custom-prompt.webp#center)
 
 Now use the prompt function in PowerShell to set the command prompt prefix.
 ```powershell
@@ -83,7 +83,7 @@ $ESC = [char]27
 function prompt { "`r`n$ESC[32m┌──PS($ESC[94m$env:UserName@$env:COMPUTERNAME$ESC[32m)-[$ESC[0m$(Get-Location)$ESC[32m]`r`n└─$ESC[94m$ $ESC[0m" }
 ```
 
-![Set Custom Prompt](images/set-custom-command-prompt.png#center)
+![Set Custom Prompt](images/set-custom-command-prompt.webp#center)
 
 That’s it, Now we have a Kali Linux-like command prompt.
 
@@ -100,7 +100,7 @@ $ESC = [char]27
 function prompt { "`r`n$ESC[32m┌──PS($ESC[94m$env:UserName@$env:COMPUTERNAME$ESC$ESC[32m)-[$ESC[0m$($(Get-Location) -replace "^$([regex]::Escape($HOME+"\"))", '~\' -replace "^$([regex]::Escape($HOME))", '~')$ESC[32m]`r`n└─$ESC[94m$ $ESC[0m" }
 ```
 
-![Custom Prompt with ~ sign](images/Custom-Prompt-with-tilde-sign.png#center)
+![Custom Prompt with ~ sign](images/Custom-Prompt-with-tilde-sign.webp#center)
 
 <br>
 Happy Hacking

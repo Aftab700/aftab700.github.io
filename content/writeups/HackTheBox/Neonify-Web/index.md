@@ -36,9 +36,9 @@ It's time for a shiny new reveal for the first-ever text neonifier. Come test ou
 
 This is a simple web application written in Ruby. It will take the user input using the POST method and render it using a template.
 
-![source code](images/1.png)
+![source code](images/1.webp)
 
-![template file](images/2.png)
+![template file](images/2.webp)
 
 But to achieve Template Injection, We need to pass the regex check else it will only render  "Malicious Input Detected" and not our input. \
 The regex is `/^[0-9a-z ]+$/i`. It will check if the input is alphanumerical and spaces.
@@ -53,7 +53,7 @@ Reference: https://ruby-doc.com/docs/ProgrammingRuby/html/language.html#UL
 Now, We can give our payload after the `%0a`(URL encoded new line character). \
 To read the file using Template-Injection, we can use a payload like `<%= File.open('flag.txt').read %>`
 
-![flag](images/flag.png)
+![flag](images/flag.webp)
 
 Flag: `HTB{r3pl4c3m3n7_s3cur1ty}`
 

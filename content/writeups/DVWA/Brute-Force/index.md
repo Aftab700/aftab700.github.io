@@ -42,7 +42,7 @@ The goal is to brute force an HTTP login page.
 
 On submitting the username and password we see that it is using get request 
 
-![Challenge page](images/185153021-af373095-102b-4d68-88c7-573499351bc5.png)
+![Challenge page](images/185153021-af373095-102b-4d68-88c7-573499351bc5.webp)
 So let’s use hydra for brute force:
 
 ``` 

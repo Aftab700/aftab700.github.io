@@ -78,19 +78,19 @@ To access the Marauder in Flipper Zero goto: `Apps > GPIO > ESP > WiFi Marauder`
 
 In a Rick Roll Beacon attack, specially crafted beacon frames are transmitted. This causes the lyrics of "Never Gonna Give You Up" to display in the network lists of devices in range of the transmission.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/35KG0rjKFFI?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/35KG0rjKFFI?rel=0" title="YouTube video player" frameborder="0" loading="lazy" referrerpolicy="no-referrer" allowfullscreen></iframe>
 
 ### Beacon Spam
 
 In the beacon spam attack, the ESP32 broadcasts beacon frames for each SSID contained within its list of SSIDs. We can add SSIDs to the list, or we can generate random names.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zKtVT1SYAVQ?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zKtVT1SYAVQ?rel=0" title="YouTube video player" frameborder="0" loading="lazy" referrerpolicy="no-referrer" allowfullscreen></iframe>
 
 ### Sniff EAPOL/PMKID
 
 Using Marauder, we can sniff the Wi-Fi packets and capture the four-way Wi-Fi handshakes. To do that, we will capture all the raw packets.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2aMRRhJw0Tk?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2aMRRhJw0Tk?rel=0" title="YouTube video player" frameborder="0" loading="lazy" referrerpolicy="no-referrer" allowfullscreen></iframe>
 
 
 
