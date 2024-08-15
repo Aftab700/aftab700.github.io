@@ -25,18 +25,18 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 # UseHugoToc: true
 cover:
-    image: "images/cover.webp#center" # image path/url
-    alt: "Cover: Precious Machine Logo" # alt text
+    image: "images/cover.webp" # image path/url
+    alt: "Precious Machine Logo" # alt text
     caption: "" # display caption under cover
-    relative: false # when using page bundles set this to true
+    relative: true # when using page bundles set this to true
     hidden: false # only hide on current single page
+    # hiddenInList: false
+    # hiddenInSingle: false
 # editPost:
 #     URL: "https://github.com/"
 #     Text: "Suggest Changes" # edit text
 #     appendFilePath: true # to append file path to Edit link
 ---
-
-![](images/cover.webp#center)
 
 ------------------------
 

@@ -4,9 +4,9 @@
     {{- else }}
     <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
     {{- print " · "}}
-    <span><a href="/privacy" rel="privacy-policy">Privacy Policy</a>
+    <span><a href="{{ absURL "privacy" }}" rel="privacy-policy">Privacy Policy</a>
         {{- print " · "}}
-        <a href="/disclaimer">Disclaimer</a>
+        <a href="{{ absURL "disclaimer" }}">Disclaimer</a>
         {{- print " · "}}
         <a href="https://status.aftabsama.com/">Status</a></span>
     {{- print " · "}}
