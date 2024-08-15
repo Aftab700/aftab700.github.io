@@ -50,7 +50,7 @@ Code 32 will set Foreground to Green.
 echo "$([char]27)[32m Green Colour text $([char]27)[0m"
 
 ```
-![Foreground Green Colour text](images/Foreground-Green.webp#center)
+![Foreground Green Colour text](images/foreground-green.webp#center)
 
 To see all the available colours run the following powershell code:
 ```powershell
@@ -100,7 +100,7 @@ $ESC = [char]27
 function prompt { "`r`n$ESC[32m┌──PS($ESC[94m$env:UserName@$env:COMPUTERNAME$ESC$ESC[32m)-[$ESC[0m$($(Get-Location) -replace "^$([regex]::Escape($HOME+"\"))", '~\' -replace "^$([regex]::Escape($HOME))", '~')$ESC[32m]`r`n└─$ESC[94m$ $ESC[0m" }
 ```
 
-![Custom Prompt with ~ sign](images/Custom-Prompt-with-tilde-sign.webp#center)
+![Custom Prompt with ~ sign](images/custom-prompt-with-tilde-sign.webp#center)
 
 <br>
 Happy Hacking

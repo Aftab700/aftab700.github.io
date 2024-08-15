@@ -105,7 +105,7 @@ Unplug the USB device and reconnect to run the Rubber Ducky payload.
 
 To enable or disable the Pico from showing as a USB mass storage device, connect pin 18 (`GND`) and pin 20 (`GPIO15`).
 
-![USB enable or disable mode](images/USB-enable-or-disable-mode.webp#center)
+![USB enable or disable mode](images/usb-enable-or-disable-mode.webp#center)
 
 ### Setup mode
 
@@ -120,7 +120,7 @@ If you are facing any errors and want to debug, connect to the Raspberry Pi Pico
 
 In PuTTY, connect to the correct `COM` port using a serial connection type.
 
-![PuTTY serial port connection](images/PuTTY-connect-Pico-board.webp#center)
+![PuTTY serial port connection](images/putty-connect-pico-board.webp#center)
 
 ## References
 - https://github.com/dbisu/pico-ducky
