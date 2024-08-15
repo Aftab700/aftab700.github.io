@@ -1,5 +1,4 @@
 /*
-    Content-Security-Policy: default-src 'self'
     Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
     referrer-policy: same-origin
     X-Content-Type-Options: nosniff
