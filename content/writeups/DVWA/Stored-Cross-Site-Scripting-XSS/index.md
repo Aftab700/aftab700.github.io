@@ -13,7 +13,7 @@ TocSide: 'right'  # or 'left'
 weight: 11
 # aliases: ["/first"]
 hidemeta: false
-comments: false
+comments: true
 disableHLJS: true # to disable highlightjs
 disableShare: true
 hideSummary: false

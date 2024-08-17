@@ -1,6 +1,6 @@
-[submodule "themes/themes/Kamigo"]
-	path = themes/themes/Kamigo
-	url = https://github.com/hiiruki/hugo-Kamigo.git
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "themes/Kamigo"]
+	path = themes/Kamigo
+	url = https://github.com/hiiruki/hugo-Kamigo.git
