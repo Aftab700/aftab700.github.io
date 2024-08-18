@@ -32,6 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.127.0 #0.124.1
+      YouTube_Data_API_key: ${{ secrets.YOUTUBE_DATA_API_KEY }}
     steps:
       - name: Install Hugo CLI
         run: |

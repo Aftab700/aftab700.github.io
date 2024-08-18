@@ -19,10 +19,5 @@
 {{- end }}
 
 
-<!-- Custom JS -->
+{{- /* Custom JS */ -}}
 {{- partial "custom_js.html" . }}
-
-<!-- Add Script for youtube embed videos -->
-{{- if (.Param "youtube_embed") }}
-    {{- partial "youtube_embed_js.html" . }}
-{{- end }}
