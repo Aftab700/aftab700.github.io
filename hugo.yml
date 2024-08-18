@@ -11,6 +11,13 @@ buildFuture: false
 buildExpired: false
 enableGitInfo: true # https://gohugo.io/variables/git/#gitinfo-variables
 
+security:
+  funcs:
+    getenv:
+    - ^HUGO_
+    - ^CI$
+    - YouTube_Data_API_key
+
 permalinks:
   posts: "/:filename"
 
@@ -41,6 +48,7 @@ params:
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false
+  youtube_embed: false
   hidemeta: false
   hideSummary: false
   # copyright: ''

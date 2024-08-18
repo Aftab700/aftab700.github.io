@@ -1,0 +1,41 @@
+.yt-image-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.yt-background-image {
+  display: block;
+}
+
+.yt-overlay-image {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 60%;
+  /* border: 1px solid green; */
+}
+
+.yt-top-left-text {
+  position: absolute;
+  top: 24px;
+  left: 52px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 1px;
+}
+
+.play-icon {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  /* transform: translate(-60%, -50%); */
+  /* font-size: 55px; */
+  /* color: white; */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* border-radius: 50%; */
+  /* padding-inline: 20px; */
+}

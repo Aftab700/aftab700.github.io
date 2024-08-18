@@ -1,10 +1,18 @@
 <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function () {
+        // Add attributes to link tag
         var links = document.getElementsByTagName("a");
         var i;
         for (i = 0; i < links.length; i++) {
             if (location.hostname !== links[i].hostname) {
-                links[i].rel = "external nofollow noopener noreferrer";
+                var relValues = links[i].rel.split(' ').filter(Boolean);
+                var newRelValues = ["external", "nofollow", "noopener", "noreferrer"];
+                newRelValues.forEach(function (value) {
+                    if (!relValues.includes(value)) {
+                        relValues.push(value);
+                    }
+                });
+                links[i].rel = relValues.join(' ');
                 links[i].target = "_blank";
             }
         }

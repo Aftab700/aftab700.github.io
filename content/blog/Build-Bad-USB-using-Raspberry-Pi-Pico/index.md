@@ -14,6 +14,7 @@ TocSide: 'right'  # or 'left'
 # aliases: ["/first"]
 hidemeta: false
 comments: true
+youtube_embed: true
 disableHLJS: true # to disable highlightjs
 disableShare: true
 hideSummary: false
@@ -96,7 +97,7 @@ Unplug the USB device and reconnect to run the Rubber Ducky payload.
 
 ## Demo Video
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Mskv-wwqtX0?rel=0" title="YouTube video player" frameborder="0" loading="lazy" referrerpolicy="no-referrer" allowfullscreen></iframe>
+{{< youtube id="Mskv-wwqtX0" width="560" height="315" >}}
 
 
 ## Troubleshoot
