@@ -11,6 +11,11 @@ buildFuture: false
 buildExpired: false
 enableGitInfo: true # https://gohugo.io/variables/git/#gitinfo-variables
 
+imaging:
+  quality: 100
+  hint: photo
+  resampleFilter: Lanczos
+
 security:
   funcs:
     getenv:
@@ -30,7 +35,7 @@ params:
   env: production
   title: "Aftab Sama"
   description: "Thoughts and research on security, privacy, *nix based systems, and other IT stuff."
-  keywords: [Blog, Research, Security, Privacy, Linux, Programming, CTF, Writeups, Walkthrough, Infosec, EthicalHacking, Aftab Sama, CyberSecurity]
+  keywords: [Blog, Research, Security, Privacy, Linux, Programming, CTF, Writeups, Walkthrough, Infosec, EthicalHacking, "Aftab Sama", "Cyber Security", "Offensive Security"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
