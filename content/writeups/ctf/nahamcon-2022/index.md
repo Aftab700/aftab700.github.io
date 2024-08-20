@@ -47,7 +47,7 @@ ssh -p 32233 user@challenge.nahamcon.com
 It turns out that the shell dropped us into a running python terminal. This can exit the python interpreter with the CTRL + D keys.
 then,we run some basic python to attain command execution and get the flag
 
-![image](/images/md/220685652-3a7304a1-e937-46e2-93b8-f581ee5e861b.webp)
+![image](md/220685652-3a7304a1-e937-46e2-93b8-f581ee5e861b.webp)
 
 ```
 flag{c31e05a24493a202fad0d1a827103642}

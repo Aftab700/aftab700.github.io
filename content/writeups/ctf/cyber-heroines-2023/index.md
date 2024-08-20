@@ -93,7 +93,7 @@ Link: https://cyberheroines-web-srv2.chals.io/vulnerable.php
 
 On this site we can execute few commands on running `dir` command we can see all files:
 
-<img width="583" alt="image" src="/images/md/b1b5bd6a-1b58-44fb-a0d4-9b2fbc6faf23.webp">
+![image](md/b1b5bd6a-1b58-44fb-a0d4-9b2fbc6faf23.webp)
 
 The flag is in the `https://cyberheroines-web-srv2.chals.io/cyberheroines.sh` file.
 
@@ -136,7 +136,7 @@ file: `Apollo-Mystery.png`
 
 This is archive file open this with 7zip and there is a new image `margaret_flag.png` it have flag in it.
 
-<img width="501" alt="image" src="/images/md/8e6aeb0b-054c-495c-8bfa-76fd90eb15ce.webp">
+![image](md/8e6aeb0b-054c-495c-8bfa-76fd90eb15ce.webp)
 
 flag: `chctf{i_wr1t3_code_by_h4nd}`
 

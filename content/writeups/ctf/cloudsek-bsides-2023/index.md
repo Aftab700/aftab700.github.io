@@ -41,7 +41,7 @@ Points: 100
 
 When connecting to the server we are given with double encoded text Hex > Base64 and we have to submit the Hex > Base64 decoded text in the input but doing so it keep asking for new decode text.
 
-<img width="620" alt="image" src="/images/md/d45774ac-dc89-4ad8-9e5d-e62fb93f8727.webp">
+![image](md/d45774ac-dc89-4ad8-9e5d-e62fb93f8727.webp)
 
 Looking at the challenge category (`Scripting`), we can figure out that this process requires automation with the use of any scripting language. I'm am using Python here.
 

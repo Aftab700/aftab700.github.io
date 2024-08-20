@@ -45,7 +45,7 @@ When connecting to the server we are given with Base64 encoded text and we have 
 for new Base64 text
 
 
-![image](/images/md/aac2df14-9be2-4a4c-a9cf-ade5dccf249a.webp)
+![image](md/aac2df14-9be2-4a4c-a9cf-ade5dccf249a.webp)
 
 Looking at the challenge category (`Scripting`), we can figure out that this process requires automation with the use of any scripting language. I'm am using  Python here
 
@@ -118,7 +118,7 @@ Description:
 
 On the webpage we can see the php code.
 
-![image](/images/md/f610570a-6070-4f62-b5ba-b84f0f129bfc.webp)
+![image](md/f610570a-6070-4f62-b5ba-b84f0f129bfc.webp)
 
 PHP code:
 
@@ -192,7 +192,7 @@ $obj = unserialize($data);
 ```
 
 
-![image](/images/md/614e9955-4dfe-4861-93dc-727be8da744a.webp)
+![image](md/614e9955-4dfe-4861-93dc-727be8da744a.webp)
 
 
 In this code we can see that it is checking if GET parameter `sess` exist if yes Base64 decode it and parse it to php unserialize() 
@@ -202,7 +202,7 @@ There is also  `__wakeup()` function which is called on unserialize
 to get the flag we have to call `GetMeDemFlagz` function. __wakeup function will perform rot13 on `func_name` and value of `func_no` should be index of the name of function in `func_map` array.
 
 
-![image](/images/md/26d57175-a6e9-4afa-a12d-265deadf4863.webp)
+![image](md/26d57175-a6e9-4afa-a12d-265deadf4863.webp)
 
 Now lets create the payload
 
@@ -220,7 +220,7 @@ https://webctf.cloudsek.com/serialization-saga?sess=Tzo4OiJDbG91ZFNFSyI6Mjp7czo3
 ```
 
 
-![image](/images/md/828ee104-9265-40a6-980d-7bd5e97a6a9f.webp)
+![image](md/828ee104-9265-40a6-980d-7bd5e97a6a9f.webp)
 
 Flag: `CSEK{PhP_0Bj3CT_D3$3R1L1Z@T10N}`
 
