@@ -4,7 +4,7 @@
         var links = document.getElementsByTagName("a");
         var i;
         for (i = 0; i < links.length; i++) {
-            if (location.hostname !== links[i].hostname) {
+            if ((location.hostname !== links[i].hostname) && (new URL("{{ .Site.BaseURL }}").hostname !== links[i].hostname)) {
                 var relValues = links[i].rel.split(' ').filter(Boolean);
                 var newRelValues = ["external", "nofollow", "noopener", "noreferrer"];
                 newRelValues.forEach(function (value) {
