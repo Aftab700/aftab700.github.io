@@ -6,7 +6,11 @@
         for (i = 0; i < links.length; i++) {
             if ((location.hostname !== links[i].hostname) && (new URL("{{ .Site.BaseURL }}").hostname !== links[i].hostname)) {
                 var relValues = links[i].rel.split(' ').filter(Boolean);
+                {{ if eq .Permalink .Site.BaseURL }}
+                var newRelValues = ["external", "noopener", "noreferrer"];
+                {{ else }}
                 var newRelValues = ["external", "nofollow", "noopener", "noreferrer"];
+                {{ end }}
                 newRelValues.forEach(function (value) {
                     if (!relValues.includes(value)) {
                         relValues.push(value);
@@ -17,7 +21,6 @@
             }
         }
     });
-
     // ['contextmenu', 'selectstart'].forEach((e) => { document.addEventListener(e, (e) => e.preventDefault()); });
     ['contextmenu'].forEach((e) => { document.addEventListener(e, (e) => e.preventDefault()); });
     function ctrlShiftKey(e, keyCode) {
