@@ -39,6 +39,8 @@ UseHugoToc: true
 
 In this blog, we will install and configure the BIND DNS server on Windows. My motivation for this was to use a wildcard DNS record for a domain because the `etc/hosts` file doesn't support wildcards.
 
+Why <abbr title="Berkeley Internet Name Domain">BIND</abbr>? Because BIND is the most commonly used DNS server software on the Internet and it is **open-source** software.
+
 ## Installing BIND
 
 ### Download Bind9 for windows
