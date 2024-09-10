@@ -2,7 +2,7 @@
 
 _yet another personal website._
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/14797980-6739-4b0f-b1c5-a0e61c31ddcf/deploy-status)](https://app.netlify.com/sites/aftab700/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/14797980-6739-4b0f-b1c5-a0e61c31ddcf/deploy-status)](#)
 
 This is my personal website. It's built with [Hugo](https://gohugo.io/) and using [PaperMod](https://github.com/adityatelange/hugo-PaperMod/) theme. You can visit [here](https://aftabsama.com/).
 

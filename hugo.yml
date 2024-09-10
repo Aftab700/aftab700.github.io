@@ -106,7 +106,7 @@ params:
     - name: youtube
       url: "https://youtube.com/@Aftab700"
     - name: medium
-      url: "https://medium.com/@Aftab700"
+      url: "https://aftab700.medium.com/"
     - name: email
       url: "mailto:hi@aftabsama.com"
     # - name: matrix
