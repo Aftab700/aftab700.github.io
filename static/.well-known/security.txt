@@ -15,7 +15,7 @@ Just to implement the RFC 9116 (https://www.rfc-editor.org/rfc/rfc9116)
           `=':-..-'`
 
 # Security Address
-Contact: mailto:hi@aftabsama.com
+Contact: mailto:security@aftabsama.com
 
 # PGP/GPG Key
 Encryption: https://aftabsama.com/pgp.txt
