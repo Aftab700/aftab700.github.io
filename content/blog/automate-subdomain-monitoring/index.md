@@ -36,10 +36,6 @@ UseHugoToc: true
 #     appendFilePath: true # to append file path to Edit link
 ---
 
-# Automate Subdomain Monitoring
-
-Set up an automated system to monitor and alert for newly discovered subdomains.
-
 ## Tool used:
 - [notify](https://github.com/projectdiscovery/notify)
 - [haktrails](https://github.com/hakluke/haktrails)

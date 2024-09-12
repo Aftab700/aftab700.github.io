@@ -94,9 +94,10 @@ zone "aftabsama.com" {
      file "C:\Program Files\ISC BIND 9\zones\ext.zone";
 };
 
-zone "." IN {
-     type hint;
-     file "C:\Program Files\ISC BIND 9\zones\db.root.hint.zone";
+// zone file for the root servers
+zone "." {
+  type hint;
+  file "C:\Program Files\ISC BIND 9\zones\named.root";
 };
 ```
 
@@ -232,37 +233,35 @@ logging {
 
 ```
 options {
-        directory "C:\Program Files\ISC BIND 9\zones";                  # Sets the location of the root hints file
-        recursion yes;                              # Allows recursive queries (looking-up unknown hosts)
-        allow-recursion { any; };                   # Allows any DNS client to make recursive queries
-        listen-on { any; };                         # Listen on all IPv4 addresses (but not IPv6)
-        listen-on-v6 { any; };
-        version none;                               # Prevents attackers getting the BIND version
-        prefetch 10 60;                             # Prefetches any cached record with a TTL > 60 seconds when it gets to within 10 seconds of expiry)
-        rate-limit { responses-per-second 10; };    # Tries to limit DNS DDoS attacks
-        querylog yes;                               # Ensure query logging is enabled
-        
-        #blackhole {                                # Drop queries that result in IPs for these ranges
-            #10/8;                                  #  - remove this line if you are running on a 10.x.y.z network
-            #172.16/12;                             #  - remove this line if you are running on a 172.16.x.y network
-            #192.168/16;                            #  - remove this line if you are running on a 192.168.x.y network
-        #};
-
-        dnssec-validation auto;                     # sets the DNS root zone as the trust anchor for DNSSEC
-        
-        // Forward DNS queries to public DNS resolvers
-        forwarders {
-            8.8.8.8;    // Google Public DNS
-            8.8.4.4;    // Google Public DNS
-            1.1.1.1;    // Cloudflare DNS
-            1.0.0.1;    // Cloudflare DNS
-        };
-
-        // Use the system's default DNS server if the above fail
-        forward only;
-
-        // Other options
-        auth-nxdomain no;    // Conform to RFC1035
+          directory "C:\Program Files\ISC BIND 9\zones";    # Sets the location of the root hints file
+          recursion yes;                                    # Allows recursive queries (looking-up unknown hosts)
+          allow-recursion { any; };                         # Allows any DNS client to make recursive queries
+          listen-on { any; };                               # Listen on all IPv4 addresses (but not IPv6)
+          listen-on-v6 { any; };
+          allow-query { any; };
+          allow-transfer { none; };                         # disable zone transfers by default
+          version none;                                     # Prevents attackers getting the BIND version
+          prefetch 10 60;                                   # Prefetches any cached record with a TTL > 60 seconds when it gets to within 10 seconds of expiry)
+          rate-limit { responses-per-second 10; };          # Tries to limit DNS DDoS attacks
+          querylog yes;                                     # Ensure query logging is enabled
+          #blackhole {                                      # Drop queries that result in IPs for these ranges
+          #    10/8;                                        #  - remove this line if you are running on a 10.x.y.z network
+          #    172.16/12;                                   #  - remove this line if you are running on a 172.16.x.y network
+          #    192.168/16;                                  #  - remove this line if you are running on a 192.168.x.y network
+          #};
+          // Forward DNS queries to public DNS resolvers
+          forwarders {
+            8.8.8.8;        // Google Public DNS
+            8.8.4.4;        // Google Public DNS
+            1.1.1.1;        // Cloudflare DNS
+            1.0.0.1;        // Cloudflare DNS
+            192.168.0.1;    // Default DNS
+          };
+          // indicates all queries will be forwarded other than for defined zones
+          //forward only;
+          dnssec-validation auto;                           # sets the DNS root zone as the trust anchor for DNSSEC
+          // Other options
+          auth-nxdomain no;    // Conform to RFC1035
 };
 ```
 
@@ -301,13 +300,15 @@ mail.aftabsama.com.    IN    MX    4 route1.mx.cloudflare.net.
 
 ```
 
-#### *`db.root.hint.zone`* file
+#### *`named.root`* file
 
 Run this command in the `zones` directory:
 
 ```shell
-dig NS . @m.root-servers.net > db.root.hint.zone
+dig NS . @m.root-servers.net > named.root
 ```
+
+or download it from [here](https://www.internic.net/domain/named.root).
 
 ### Generating the RNDC keyfile
 
