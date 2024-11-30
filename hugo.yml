@@ -42,10 +42,10 @@ params:
   mainSections:
     - blog
     - writeups
-
   author: "Aftab Sama"
   ShowReadingTime: true
-  ShowShareButtons: false
+  ShowShareButtons: true
+  ShareButtons: ["linkedin", "twitter"] # To customize which share buttons to be enabled on page
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
