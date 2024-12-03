@@ -89,15 +89,19 @@ include "C:\Program Files\ISC BIND 9\etc\named.conf.logging";
 ### *`etc/named.conf.local`* file
 
 ```conf
-zone "aftabsama.com" {
-     type master;
-     file "C:\Program Files\ISC BIND 9\zones\ext.zone";
-};
-
-// zone file for the root servers
 zone "." {
   type hint;
   file "C:\Program Files\ISC BIND 9\zones\named.root";
+};
+
+zone "htb" {
+     type master;
+     file "C:\Program Files\ISC BIND 9\zones\htb.zone";
+};
+
+zone "oastify.com" {
+     type master;
+     file "C:\Program Files\ISC BIND 9\zones\burp.zone";
 };
 ```
 
@@ -267,38 +271,48 @@ options {
 
 ### Zone files
 
-#### *`zones/ext.zone`* file
+#### *`zones/burp.zone`* file
 
 ```zone
 $TTL 3600
-@    IN    SOA   adrian.ns.cloudflare.com. dns.cloudflare.com. (
-                7 ; Serial
-                10000       ; Refresh
-                2400       ; Retry
-                604800    ; Expire
+@    IN    SOA   ns1.oastify.com. admin.oastify.com. (
+                6 ; Serial
+                3600       ; Refresh
+                1800       ; Retry
+                1209600    ; Expire
                 3600 )     ; Minimum TTL
 
-;; NS Records
-aftabsama.com.    86400    IN    NS    adrian.ns.cloudflare.com.
-aftabsama.com.    86400    IN    NS    carmelo.ns.cloudflare.com.
+@    IN    NS    ns1.oastify.com.
+@    IN    NS    ns2.oastify.com.
 
-aftabsama.com.    IN    A    185.199.108.153
+ns1  IN    A     3.248.33.252
+ns2  IN    A     54.77.139.23
 
-;; CNAME Records
-status.aftabsama.com.    IN    CNAME    statuspage.betteruptime.com.
-www.aftabsama.com.    IN    CNAME    aftab700.github.io.
+@  IN    A     3.248.33.252
+@  IN    A     54.77.139.23
 
-;; MX Records
-aftabsama.com.    IN    MX    50 mx3.zoho.in.
-aftabsama.com.    IN    MX    20 mx2.zoho.in.
-aftabsama.com.    IN    MX    10 mx.zoho.in.
-mail.aftabsama.com.    IN    MX    18 route3.mx.cloudflare.net.
-mail.aftabsama.com.    IN    MX    47 route2.mx.cloudflare.net.
-mail.aftabsama.com.    IN    MX    4 route1.mx.cloudflare.net.
-
-*    IN    CNAME     aftab700.github.io.
-
+*    IN    CNAME PublicInteractionNLB-3bddf5ff6abb91b6.elb.eu-west-1.amazonaws.com.
 ```
+
+
+#### *`zones/htb.zone`* file
+
+```zone
+$TTL 86400
+@    IN    SOA   ns1.htb. admin.htb. (
+            2024091201 ; Serial
+            3600       ; Refresh
+            1800       ; Retry
+            1209600    ; Expire
+            86400 )    ; Minimum TTL
+
+     IN    NS    ns1.htb.
+
+ns1  IN    A     192.168.1.1
+
+*    IN    A     192.168.1.2
+```
+
 
 #### *`named.root`* file
 
