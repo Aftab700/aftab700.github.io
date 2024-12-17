@@ -2,6 +2,7 @@
 title: About
 description: $ cat /home/about
 hidemeta: true
+disableShare: true
 ---
 
 > "Information is power. But like all power, there are those who want to keep it for themselves."
@@ -37,7 +38,8 @@ You can learn more about my professional experience on my [LinkedIn profile](htt
 
 💬 [Matrix](https://matrix.to/#/@aftab700:matrix.org "@aftab700:matrix.org") \
 💬 [Discord](http://discordapp.com/users/759615120820928513 "@jack.sparrow__") \
-💬 [Session](https://getsession.org/) - [Session ID](/session.txt "Session ID: 05f16f9b407d69d5be0d2268129e40eccf4ae2440ddbaa74e208740f7a5e299339") \
+💬 [Session](https://getsession.org/) - [Session ID](/session.txt "Session ID: 05f16f9b407d69d5be0d2268129e40eccf4ae2440ddbaa74e208740f7a5e299339")
+
 <!-- 💬 [XMPP](https://en.wikipedia.org/wiki/XMPP "XMPP @ Wikipedia") - [hiiruki@yourdata.forsale](xmpp:hiiruki@yourdata.forsale) -->
 
 <!-- 📡 [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat "IRC @ Wikipedia") - hiiruki @ [Libera.Chat](https://libera.chat/)<br> -->
