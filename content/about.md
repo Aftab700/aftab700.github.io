@@ -10,7 +10,7 @@ disableShare: true
 
 <details>
 <summary> <code>$ whoami</code> </summary>
-Hi! I'm <code>echo 'QWZ0YWI=' | base64 --decode</code> 👋
+Hi, My name is Aftab Sama! 👋
 </details><br>
 
 I am an Offensive Security enthusiast. I play Capture the Flag (CTF) challenges in my free time. Apart from security, I read Stoicism and Psychology.

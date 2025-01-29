@@ -110,7 +110,7 @@ The exam stages are linear. If you don't get the first stage (normal user accoun
 
 You may fall into a rabbit hole, so allocate your time carefully. If you found something but are not getting anything even after putting in a lot of time, take a note of it and look at some other place. Maybe you need to chain it with something else.
 
-### My Thoughts on Exam
+### My Thoughts on the Exam
 
 
 Was it easy? No. I wouldn't say it was easy. The Black Box approach to the exam makes it difficult. It is similar to a practice exam, but slightly more difficult. However, Each person's experience is different.
