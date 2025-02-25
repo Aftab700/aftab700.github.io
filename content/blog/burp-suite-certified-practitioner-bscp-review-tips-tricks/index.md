@@ -90,6 +90,7 @@ You must use a Burp project file for the full period of the exam and submit that
 ### More Tips
 
 Finding a vulnerability isn't enough. You also need to exploit it. This could involve chaining it to other vulnerabilities and demonstrating the actual security impact.
+
 You may get caught out by a filter. So keep your payloads/poc ready for different scenarios you may face.
 For this, you can make your own notes to quickly search and find the relevant payload, or you can use the other existing cheatsheets that others have already made.
 - Reference:
@@ -102,20 +103,23 @@ For this, you can make your own notes to quickly search and find the relevant pa
 	- [Payloads All The Things](https://swisskyrepo.github.io/PayloadsAllTheThings/)
 
 Setup and configure all the tools that you may need in the exam, like [ysoserial](https://github.com/frohoff/ysoserial), [PHPGGC](https://github.com/ambionics/phpggc), [sqlmap](https://github.com/sqlmapproject/sqlmap), Burp Extensions, etc., and get yourself familiar with using them. because the exam timing is short, you can't waste any time configuring the tools.
+
 While taking the practice exam, I didn't have `ysoserial` installed, and when I installed it, my current Java version was not supported by the tool, so I had to install the different Java version during the exam. Don't do this type of mistakes.
 
 Take the snapshot of the VM after setting up all the tools.
 
-The exam stages are linear. If you don't get the first stage (normal user account), You never know which vulnerabilities will be there in the following stage. The above reference links also contain information on what types of vulnerabilities you may get at different stages. 
+The exam stages are linear. If you don't get the first stage (normal user account), You never know which vulnerabilities will be there in the following stage. The above reference links also contain information on what types of vulnerabilities you may get at different stages. New functionalities you get with each stage are the right place to look for vulnerabilities.
 
 You may fall into a rabbit hole, so allocate your time carefully. If you found something but are not getting anything even after putting in a lot of time, take a note of it and look at some other place. Maybe you need to chain it with something else.
+
+Get comfortable with mystery labs and review all the lab solutions before attempting the exam.
 
 ### My Thoughts on the Exam
 
 
-Was it easy? No. I wouldn't say it was easy. The Black Box approach to the exam makes it difficult. It is similar to a practice exam, but slightly more difficult. However, Each person's experience is different.
+I wouldn't say it was easy. Completing the exam in the given time with a total black box approach makes it difficult. It is similar to a practice exam, but slightly more difficult. However, each person's experience is different.
 
-Get comfortable with mystery labs and review all the lab solutions before attempting the exam.
+The Burp Suite Certified Practitioner exam consists of dynamic questions, ensuring each attempt presents different vulnerabilities and unique lab scenarios. This approach keeps the challenge fresh and engaging every time, adding to the exam's value and credibility—even in the event of question leaks.
 
 The burp scanner was a great help and exam timing feels short to complete all 6 stages.
 
