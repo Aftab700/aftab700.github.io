@@ -49,3 +49,9 @@ The source code of this website is licensed under [MIT](/LICENSE)
 ## Credits:
 
 - The code for this website was obtained from https://github.com/hiiruki/hiiruki.dev. I have made modifications according to my requirements.
+
+<br>
+
+----
+
+<!-- GitAds-Verify: 4NC7ZG92CXXC18EX1ALVX415XJNWBGH8 -->
