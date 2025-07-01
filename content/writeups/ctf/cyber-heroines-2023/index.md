@@ -4,26 +4,7 @@ description: "Write-ups for the Cyber Heroines CTF 2023 challenges."
 summary: "Solutions to the CTF challenges."
 date: 2023-09-08
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Web", "Crypto", "Cyber Heroines", "CTF", "Forensics"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------

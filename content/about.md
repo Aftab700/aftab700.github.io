@@ -3,6 +3,7 @@ title: About
 description: $ cat /home/about
 hidemeta: true
 disableShare: true
+comments: false
 ---
 
 > "Information is power. But like all power, there are those who want to keep it for themselves."
@@ -123,4 +124,3 @@ F1085BD5 D359788F 05F936D8 3185A5BE
 📊 [Status](https://status.aftabsama.com/ "Aftab's Status Page")<br>
 
 🧑‍💼 [humans.txt](/humans.txt)
-

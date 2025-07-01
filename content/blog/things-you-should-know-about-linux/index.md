@@ -4,36 +4,7 @@ description: "Things you should know about Linux, including its strange history 
 summary: "Things you should know about Linux, including its strange history and why there are so many different distributions."
 date: 2024-08-06
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Linux", "Unix"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
-# cover:
-#     image: "<image path/url>" # image path/url
-#     alt: "<alt text>" # alt text
-#     caption: "<text>" # display caption under cover
-#     relative: false # when using page bundles set this to true
-#     hidden: true # only hide on current single page
-# editPost:
-#     URL: "https://github.com/"
-#     Text: "Suggest Changes" # edit text
-#     appendFilePath: true # to append file path to Edit link
 ---
 
 
@@ -57,7 +28,7 @@ The competition among vendors to establish a standard for the Unix operating sys
 
 ### Portable Operating System Interface (POSIX)
 
-**POSIX**, which stands for Portable Operating System Interface, comprises a set of standards defined by the IEEE Computer Society. These standards are aimed at ensuring compatibility among different operating systems. 
+**POSIX**, which stands for Portable Operating System Interface, comprises a set of standards defined by the IEEE Computer Society. These standards are aimed at ensuring compatibility among different operating systems.
 
 POSIX encompasses both system and user-level application programming interfaces (APIs), as well as command-line shells and utility interfaces, to facilitate software compatibility (portability) with various Unix versions and other operating systems.
 
@@ -75,24 +46,24 @@ In April 1991, Linus Torvalds, a 21-year-old computer science student at the Uni
 
 On 25 August 1991, Torvalds shared the following message on comp.os.minix, a newsgroup on Usenet:
 ```
-Hello everybody out there using minix -  
+Hello everybody out there using minix -
 
-I'm doing a (free) operating system (just a hobby, won't be big and  
-professional like gnu) for 386(486) AT clones.  This has been brewing  
-since april, and is starting to get ready.  I'd like any feedback on  
-things people like/dislike in minix, as my OS resembles it somewhat  
-(same physical layout of the file-system (due to practical reasons)  
-among other things).  
+I'm doing a (free) operating system (just a hobby, won't be big and
+professional like gnu) for 386(486) AT clones.  This has been brewing
+since april, and is starting to get ready.  I'd like any feedback on
+things people like/dislike in minix, as my OS resembles it somewhat
+(same physical layout of the file-system (due to practical reasons)
+among other things).
 
-I've currently ported bash(1.08) and gcc(1.40), and things seem to work.  
-This implies that I'll get something practical within a few months, and  
-I'd like to know what features most people would want.  Any suggestions  
-are welcome, but I won't promise I'll implement them :-)  
+I've currently ported bash(1.08) and gcc(1.40), and things seem to work.
+This implies that I'll get something practical within a few months, and
+I'd like to know what features most people would want.  Any suggestions
+are welcome, but I won't promise I'll implement them :-)
 
-                Linus (torva[...](https://web.archive.org/web/20130509134305/http://groups.google.com/groups/unlock?_done=/group/comp.os.minix/msg/b813d52cbc5a044b&msg=b813d52cbc5a044b)@kruuna.helsinki.fi)  
+                Linus (torva[...](https://web.archive.org/web/20130509134305/http://groups.google.com/groups/unlock?_done=/group/comp.os.minix/msg/b813d52cbc5a044b&msg=b813d52cbc5a044b)@kruuna.helsinki.fi)
 
-PS.  Yes - it's free of any minix code, and it has a multi-threaded fs.  
-It is NOT protable (uses 386 task switching etc), and it probably never  
+PS.  Yes - it's free of any minix code, and it has a multi-threaded fs.
+It is NOT protable (uses 386 task switching etc), and it probably never
 will support anything other than AT-harddisks, as that's all I have :-(.
 ```
 
@@ -126,7 +97,7 @@ Some are meant to run only on specific systems, such as embedded devices, mobile
 
 ### Debian
 
-[Debian](https://www.debian.org/), also known as Debian GNU/Linux, is a Linux distribution established by Ian Murdock on August 16, 1993. 
+[Debian](https://www.debian.org/), also known as Debian GNU/Linux, is a Linux distribution established by Ian Murdock on August 16, 1993.
 
 The word "Debian" comes from the first name of his then-girlfriend (later ex-wife) Debra Lynn and his own first name.
 
@@ -167,7 +138,7 @@ Both distributions cater to advanced users who prefer a high degree of customiza
 
 ### Android
 
-[Android](https://www.android.com/) is an operating system that is based on the Linux kernel, but it differs from traditional Linux distributions such as Ubuntu or Fedora. Unlike traditional Linux distributions, Android does not include GNU software like the GNU C Library; instead, it uses its own C library called Bionic, along with custom components. In addition, Android uses the Android Runtime (ART) for running applications, which is not part of the standard Linux runtime environments. 
+[Android](https://www.android.com/) is an operating system that is based on the Linux kernel, but it differs from traditional Linux distributions such as Ubuntu or Fedora. Unlike traditional Linux distributions, Android does not include GNU software like the GNU C Library; instead, it uses its own C library called Bionic, along with custom components. In addition, Android uses the Android Runtime (ART) for running applications, which is not part of the standard Linux runtime environments.
 
 There are custom versions of Android known as custom ROMs, which offer extra features and customization options. Some popular custom Android distributions include [LineageOS](https://lineageos.org/), [Paranoid Android](https://paranoidandroid.co/), and [GrapheneOS](https://grapheneos.org/).
 

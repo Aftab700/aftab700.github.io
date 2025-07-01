@@ -4,37 +4,7 @@ description: "The password is yet again hidden in an unknown file. Sam's daughte
 summary: "The password is yet again hidden in an unknown file. Sam's daughter has begun learning PHP, and has a small script to demonstrate her knowledge. Requirements: Knowledge of SSI (dynamic html executed by the server, rather than the browser)"
 date: 2024-05-08T17:30:00.000Z
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Hack This Site", "writeup", "challenge"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: "right" # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
-cover:
-  image: "files/level-8.webp" # image path/url
-  alt: "Cover: Level 8" # alt text
-  caption: "" # display caption under cover
-  relative: true # when using page bundles set this to true
-  hiddenInSingle: false
-  hidden: false # only hide on current single page
-# editPost:
-#     URL: "https://github.com/"
-#     Text: "Suggest Changes" # edit text
-#     appendFilePath: true # to append file path to Edit link
 ---
 
 **Description:**

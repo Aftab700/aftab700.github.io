@@ -4,26 +4,7 @@ description: "Writeups for the Cyberyami Web Warriors Capture The Flag (CTF) eve
 summary: "Writeups for the Cyberyami Web Warriors Capture The Flag (CTF) event."
 date: 2024-09-22
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Cyberyami", "CTF", "Web"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------
@@ -56,7 +37,7 @@ Flag is divided into four parts. The first part can be found in the page's HTML 
 
 ![antique_cafe-1.png](files/antique_cafe-1.png#center)
 
-`http://3.7.252.130/Antique_cafe/` => `CyberYami{Y` 
+`http://3.7.252.130/Antique_cafe/` => `CyberYami{Y`
 
 The second part is in the `robots.txt` file.
 

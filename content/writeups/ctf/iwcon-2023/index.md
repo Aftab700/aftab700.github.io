@@ -4,26 +4,7 @@ description: "Write-ups for the IWCON CTF 2023 challenges."
 summary: "Solutions to the CTF challenges."
 date: 2023-12-15
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Web", "Crypto", "IWCON", "CTF"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------
@@ -177,7 +158,7 @@ Flag: `iwconctf{tr3asur3_9n_7h3_95land}`
 - Flag format: IWCON{}
 - File: `QueueAre.zip`
 
-This zip file have 9 images of partial qr code, i used GIMP to organize qr code 
+This zip file have 9 images of partial qr code, i used GIMP to organize qr code
 
 ![image](md/45e3c320-269e-4be4-a3a8-8a25daae195d.webp)
 
@@ -192,7 +173,7 @@ Flag: `IWCON{Y0U_4R3_4_G3N1US}`
 - Am I FUNCTIONing right?
 - File: `javascript.zip`
 
-In this zip we have tons of js files, so based on my CTF experience i guessed that it would have Base64 of flag so 
+In this zip we have tons of js files, so based on my CTF experience i guessed that it would have Base64 of flag so
 i did recursive grep for `SVdDT05` which is Base64 of `IWCON` (from flag format) 😅
 
 ```

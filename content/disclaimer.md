@@ -2,6 +2,8 @@
 title: Disclaimer
 description: Website disclaimer
 hidemeta: true
+disableShare: true
+comments: false
 ---
 
 - The views expressed on this site are my own and do not reflect those of any individual or entity with which I have been or am currently affiliated with.

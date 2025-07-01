@@ -4,26 +4,7 @@ description: "Write-ups for the CloudSEK - BSides Cyber Security CTF 2023."
 summary: "Solutions to the CloudSEK - BSides Cyber Security CTF 2023."
 date: 2023-12-15
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Firebase", "PHP", "CloudSEK", "CTF"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------
@@ -163,7 +144,7 @@ Decoding this from hex we get somthing like this:
 
 ```
 D
- oon ttsro eahdroced/dneoced drcdeneitla snit ehc do.e 
+ oon ttsro eahdroced/dneoced drcdeneitla snit ehc do.e
 C
 norgta,sY uom da eti .eHeri  soyruf al!gC
 olduES_KeBiVig-ld{_bdaim:ndaim@n89}7
@@ -175,7 +156,7 @@ if we look carefully we realize that every 2 characters are swaped we can use py
 
 ```python
 a = """D
- oon ttsro eahdroced/dneoced drcdeneitla snit ehc do.e 
+ oon ttsro eahdroced/dneoced drcdeneitla snit ehc do.e
 C
 norgta,sY uom da eti .eHeri  soyruf al!gC
 olduES_KeBiVig-ld{_bdaim:ndaim@n89}7

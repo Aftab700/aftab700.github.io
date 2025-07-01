@@ -4,26 +4,7 @@ description: "Write-ups for the SecurityBoat - October CTF 2023."
 summary: "Solutions to the SecurityBoat - October CTF 2023."
 date: 2023-12-15
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Web", "PHP", "Deserialization", "CTF"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------
@@ -43,7 +24,7 @@ we also have the php source code which was shared on the [comments of LinkedIn p
 
 In the source code we can see that code will call unserialize() function on base64 decoded cookie value of `dark_mode`
 
-In the source code we notice the `GetThemeNameFromFile` class contains the `__tostring()` magic method. This will 
+In the source code we notice the `GetThemeNameFromFile` class contains the `__tostring()` magic method. This will
 invoke the `file_get_contents()` method on the `filename` attribute and it will return the file content.
 
 now we have to create serialized PHP object `GetThemeNameFromFile` with `filename` attribute\
@@ -60,7 +41,7 @@ payload:`O:20:"GetThemeNameFromFile":1:{s:8:"filename";s:10:"/home/flag";}`
 ![image](md/080230a4-5b66-438f-a9d4-a0b98a762667.webp)
 
 But it not the correct flag\
-When submitting the wrong flag hint is given: 
+When submitting the wrong flag hint is given:
 
 ```
 That is rabbit hole with wrong path. Please try on other different popular paths as well.

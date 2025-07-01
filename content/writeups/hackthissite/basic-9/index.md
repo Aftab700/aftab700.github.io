@@ -4,37 +4,7 @@ description: "The password is again hidden in an unknown file. However, the scri
 summary: "The password is again hidden in an unknown file. However, the script that was previously used to find it has some limitations. Requirements: Knowledge of SSI, unix directory structure."
 date: 2024-09-09
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Hack This Site", "writeup", "challenge"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: "right" # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
-cover:
-  image: "files/level-9.png" # image path/url
-  alt: "Cover: Level 9" # alt text
-  caption: "" # display caption under cover
-  relative: true # when using page bundles set this to true
-  hiddenInSingle: false
-  hidden: false # only hide on current single page
-# editPost:
-#     URL: "https://github.com/"
-#     Text: "Suggest Changes" # edit text
-#     appendFilePath: true # to append file path to Edit link
 ---
 
 **Description:**

@@ -4,26 +4,7 @@ description: "Write-ups for the BRCTF CTF 2023 challenges."
 summary: "Solutions to the CTF challenges."
 date: 2023-12-15
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["apache", "grafana", "CTF", "BRCTF"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------
@@ -107,7 +88,7 @@ ssh BRCTF@10.0.13.9 -i .\id_rsa.txt
 
 ![image](md/626b6143-5fef-447e-aa23-264fd5002cf2.webp)
 
-we use https://gtfobins.github.io/gtfobins/ansible-playbook/#sudo payload to get root 
+we use https://gtfobins.github.io/gtfobins/ansible-playbook/#sudo payload to get root
 
 ```
 TF=$(mktemp)

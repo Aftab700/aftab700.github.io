@@ -4,26 +4,7 @@ description: "Writeups for the nullcon HackIM CTF Goa 2025 Capture The Flag (CTF
 summary: "Writeups for the nullcon HackIM CTF Goa 2025 Capture The Flag (CTF) event."
 date: 2025-02-02
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["nullcon", "CTF", "HackIM"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 __CTF Event URL__: https://ctf.nullcon.net/challenges \
@@ -248,9 +229,9 @@ Output:
 
 ```shell
 ┌──PS(Aftab@Sama)-[~\Downloads\Nullcon HackIM CTF Goa 2025]
-└─$ php craph.php  
-crc16 = 25010 
-crc8 = 167 
+└─$ php craph.php
+crc16 = 25010
+crc8 = 167
 Match found: 100000010130312
 ```
 

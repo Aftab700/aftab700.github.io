@@ -51,26 +51,31 @@ params:
       "Offensive Security",
     ]
   DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
+  defaultTheme: dark # dark, light
   disableThemeToggle: false
   mainSections:
     - blog
     - writeups
   author: "Aftab Sama"
+  showtoc: true
+  tocopen: false
   ShowReadingTime: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: false
   ShowShareButtons: true
-  ShareButtons: ["linkedin", "twitter"] # To customize which share buttons to be enabled on page
+  ShareButtons: ["linkedin", "x"] # To customize which share buttons to be enabled on page
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowFullTextinRSS: true
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: false
-  youtube_embed: false
+  comments: true
   hidemeta: false
   hideSummary: false
-  hideFooter: true
+  hideFooter: false
+  footer:
+    text: "[Privacy Policy](/privacy) · [Disclaimer](/disclaimer) · [Status](https://status.aftabsama.com/)"
 
   # Static assets
   assets:

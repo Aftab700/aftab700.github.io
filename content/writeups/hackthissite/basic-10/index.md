@@ -4,37 +4,7 @@ description: "This time Sam used a more temporary and 'hidden' approach to authe
 summary: "This time Sam used a more temporary and 'hidden' approach to authenticating users, but he didn't think about whether or not those users knew their way around javascript..."
 date: 2024-09-09
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Hack This Site", "writeup", "challenge"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: "right" # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
-cover:
-  image: "files/level-10.png" # image path/url
-  alt: "Cover: Level 10" # alt text
-  caption: "" # display caption under cover
-  relative: true # when using page bundles set this to true
-  hiddenInSingle: false
-  hidden: false # only hide on current single page
-# editPost:
-#     URL: "https://github.com/"
-#     Text: "Suggest Changes" # edit text
-#     appendFilePath: true # to append file path to Edit link
 ---
 
 **Description:**

@@ -4,37 +4,7 @@ description: "Use the Raspberry Pi Pico as a bad USB (badusb) device."
 summary: "Use the Raspberry Pi Pico as a bad USB (badusb) device."
 date: 2024-08-10
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Bad USB", "Raspberry Pi"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-youtube_embed: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
-# cover:
-#     image: "<image path/url>" # image path/url
-#     alt: "<alt text>" # alt text
-#     caption: "<text>" # display caption under cover
-#     relative: false # when using page bundles set this to true
-#     hidden: true # only hide on current single page
-# editPost:
-#     URL: "https://github.com/"
-#     Text: "Suggest Changes" # edit text
-#     appendFilePath: true # to append file path to Edit link
 ---
 
 ## What is Bad USB?
@@ -97,8 +67,7 @@ Unplug the USB device and reconnect to run the Rubber Ducky payload.
 
 ## Demo Video
 
-{{< youtube id="Mskv-wwqtX0" width="560" height="315" >}}
-
+https://www.youtube-nocookie.com/embed/Mskv-wwqtX0
 
 ## Troubleshoot
 

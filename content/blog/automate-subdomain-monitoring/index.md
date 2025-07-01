@@ -4,36 +4,7 @@ description: "Set up an automated system to monitor and alert for newly discover
 summary: "Set up an automated system to monitor and alert for newly discovered subdomains."
 date: 2024-07-14
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Automation"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
-# cover:
-#     image: "<image path/url>" # image path/url
-#     alt: "<alt text>" # alt text
-#     caption: "<text>" # display caption under cover
-#     relative: false # when using page bundles set this to true
-#     hidden: true # only hide on current single page
-# editPost:
-#     URL: "https://github.com/"
-#     Text: "Suggest Changes" # edit text
-#     appendFilePath: true # to append file path to Edit link
 ---
 
 ## Tool used:
@@ -126,7 +97,7 @@ Register-ScheduledTask -TaskName "Subdomain Monitoring" -Trigger $taskTrigger -A
 ```
 MIN HOUR DOM MON DOW CMD
 ```
-- **MIN** for minutes (0 - 59). 
+- **MIN** for minutes (0 - 59).
 - **HOUR** for hours (0 - 23).
 - **DOM** for day of the month (1 - 31).
 - **MON** for month (1 - 12 or JAN - DEC).
@@ -134,17 +105,17 @@ MIN HOUR DOM MON DOW CMD
 - **CMD** command.
 
 Examples:
-- Every Minute	
+- Every Minute
     - `* * * * * /path/to/script`
-- Every Day at Midnight	
+- Every Day at Midnight
     - `0 0 * * * /path/to/script`
 - Every 1st of the Month
     - `0 0 1 * * /path/to/script`
-- Every Sunday at Midnight	
+- Every Sunday at Midnight
     - `0 0 * * 7 /path/to/script`
-- Every Weekday at 4 AM	
+- Every Weekday at 4 AM
     - `0 4 * * 1-5 /path/to/script`
-- At 4 AM on Tuesdays and Thursdays	
+- At 4 AM on Tuesdays and Thursdays
     - `0 4 * * 2,4 /path/to/script`
 - Every 20 Minutes - Multiple Scripts
     - `*/20 * * * * /path/to/script1; /path/to/script2`

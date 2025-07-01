@@ -4,26 +4,7 @@ description: "https://app.hackthebox.com/challenges/Neonify"
 summary: "Hack The Box Web Challenge Neonify"
 date: 2024-06-19
 draft: true
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Web", "HackTheBox", "Easy", "CTF", "Ruby", "SSTI"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------

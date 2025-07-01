@@ -4,26 +4,7 @@ description: "Write-ups for the FooBar CTF 2023 challenges."
 summary: "Solutions to the CTF challenges."
 date: 2023-12-08
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Web", "Crypto", "FooBar", "CTF"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------
@@ -47,7 +28,7 @@ flag_matrix[i, j] = tuple(
         lambda x: x ^ random.randint(0, 255),
         flag_matrix[i, j]
     )
-)          
+)
 ```
 
 Here the random module of python can be predicted. If we know the seed value than all the next random int are same every time.
@@ -102,7 +83,7 @@ _nc chall.foobar.nitdgplug.org 30001_
 
 file: `chall.py`
 
-In this code we have `rand_gen()` function. if mt_index > 624 than it go inside if statement. 
+In this code we have `rand_gen()` function. if mt_index > 624 than it go inside if statement.
 else it will do the following operations:
 
 ```python
@@ -308,7 +289,7 @@ Let's open this website
 
 <img width="128" alt="image" src="https://user-images.githubusercontent.com/79740895/224526224-ea11b319-230a-42fe-92cf-84090ed2f17a.png">
 
-Hmn Cannot GET / 
+Hmn Cannot GET /
 
 I tried robots.txt and checked http response headers but nothing, so I did directory bruteforce and got this endpoint: `/graphql`
 GraphQL is a query language developed by Facebook

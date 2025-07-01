@@ -4,42 +4,13 @@ description: ""
 summary: "Analyze the JavaScript code to reverse the logic and then submit the word 'success' in order to win."
 date: 2022-08-17
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["writeups", "challenge", "DVWA", "JavaScript"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-weight: 13
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
-# cover:
-#     image: "<image path/url>" # image path/url
-#     alt: "<alt text>" # alt text
-#     caption: "<text>" # display caption under cover
-#     relative: false # when using page bundles set this to true
-#     hidden: true # only hide on current single page
-# editPost:
-#     URL: "https://github.com/"
-#     Text: "Suggest Changes" # edit text
-#     appendFilePath: true # to append file path to Edit link
 ---
 
 
 ### **Security level: low**
 
-Submit the word "success" to win. 
+Submit the word "success" to win.
 
 we have phrase=ChangeMe and we have to change it to "success".
 there is token and the value of token is md5(rot13(phrase).
@@ -91,7 +62,7 @@ JavaScript is performing following 3 steps to generate token:
 
 	token = token + 'ZZ' = "7f1bfaaf829f785ba5801d5bf68c1ecaf95ce04545462c8b8f311dfc9014068aZZ"
 
-	sha256(token) = sha256("7f1bfaaf829f785ba5801d5bf68c1ecaf95ce04545462c8b8f311dfc9014068aZZ") = 
+	sha256(token) = sha256("7f1bfaaf829f785ba5801d5bf68c1ecaf95ce04545462c8b8f311dfc9014068aZZ") =
 "ec7ef8687050b6fe803867ea696734c67b541dfafb286a0b1239f42ac5b0aa84"
 
 	`token=ec7ef8687050b6fe803867ea696734c67b541dfafb286a0b1239f42ac5b0aa84&phrase=success`

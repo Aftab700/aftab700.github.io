@@ -4,37 +4,7 @@ description: "An email script has been set up, which sends the password to the a
 summary: "An email script has been set up, which sends the password to the administrator. Requirements: HTML knowledge, an email address"
 date: 2024-05-07T16:30:00.000Z
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Hack This Site", "writeup", "challenge"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: "right" # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
-cover:
-  image: "files/level-4.webp" # image path/url
-  alt: "Cover: Level 4" # alt text
-  caption: "" # display caption under cover
-  relative: true # when using page bundles set this to true
-  hiddenInSingle: false
-  hidden: false # only hide on current single page
-# editPost:
-#     URL: "https://github.com/"
-#     Text: "Suggest Changes" # edit text
-#     appendFilePath: true # to append file path to Edit link
 ---
 
 **Description:**

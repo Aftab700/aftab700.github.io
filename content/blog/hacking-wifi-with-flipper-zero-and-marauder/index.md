@@ -4,37 +4,7 @@ description: "Install Marauder firmware on ESP32 and use it with Flipper Zero to
 summary: "Install Marauder firmware on ESP32 and use it with Flipper Zero to Hack WiFi."
 date: 2024-07-21
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["ESP32", "WiFi", "IoT", "Flipper Zero"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-youtube_embed: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
-# cover:
-#     image: "<image path/url>" # image path/url
-#     alt: "<alt text>" # alt text
-#     caption: "<text>" # display caption under cover
-#     relative: false # when using page bundles set this to true
-#     hidden: true # only hide on current single page
-# editPost:
-#     URL: "https://github.com/"
-#     Text: "Suggest Changes" # edit text
-#     appendFilePath: true # to append file path to Edit link
 ---
 
 ## Install Marauder firmware on ESP32
@@ -79,19 +49,19 @@ To access the Marauder in Flipper Zero goto: `Apps > GPIO > ESP > WiFi Marauder`
 
 In a Rick Roll Beacon attack, specially crafted beacon frames are transmitted. This causes the lyrics of "Never Gonna Give You Up" to display in the network lists of devices in range of the transmission.
 
-{{< youtube id="35KG0rjKFFI" width="560" height="315" >}}
+https://www.youtube-nocookie.com/embed/35KG0rjKFFI
 
 ### Beacon Spam
 
 In the beacon spam attack, the ESP32 broadcasts beacon frames for each SSID contained within its list of SSIDs. We can add SSIDs to the list, or we can generate random names.
 
-{{< youtube id="zKtVT1SYAVQ" width="560" height="315" >}}
+https://www.youtube-nocookie.com/embed/zKtVT1SYAVQ
 
 ### Sniff EAPOL/PMKID
 
 Using Marauder, we can sniff the Wi-Fi packets and capture the four-way Wi-Fi handshakes. To do that, we will capture all the raw packets.
 
-{{< youtube id="2aMRRhJw0Tk" width="560" height="315" >}}
+https://www.youtube-nocookie.com/embed/2aMRRhJw0Tk
 
 
 ## References

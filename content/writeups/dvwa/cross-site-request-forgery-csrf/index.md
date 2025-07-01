@@ -4,36 +4,7 @@ description: ""
 summary: "Changing the victim's password using CSRF."
 date: 2022-08-17
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["writeups", "challenge", "DVWA", "CSRF"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-weight: 3
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
-# cover:
-#     image: "<image path/url>" # image path/url
-#     alt: "<alt text>" # alt text
-#     caption: "<text>" # display caption under cover
-#     relative: false # when using page bundles set this to true
-#     hidden: true # only hide on current single page
-# editPost:
-#     URL: "https://github.com/"
-#     Text: "Suggest Changes" # edit text
-#     appendFilePath: true # to append file path to Edit link
 ---
 
 
@@ -44,7 +15,7 @@ ShowRssButtonInSectionTermList: true
 Here we can change password, there is no csrf protection. We can create simple form to auto submit and change password of victim.
 
 HTML code for CSRF:
-  
+
 ```html
 <html>
   <body>
@@ -68,7 +39,7 @@ we can host this page so when victim visit page their password will automaticall
 I'm using python to host webpage:
 
 Output:
-  
+
 ```Shell
 C:\Users\AFTAB SAMA\Downloads>python -m http.server 80
 Serving HTTP on :: port 80 (http://[::]:80/) ...

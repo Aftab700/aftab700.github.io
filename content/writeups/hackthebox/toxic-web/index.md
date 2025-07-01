@@ -4,26 +4,7 @@ description: "https://app.hackthebox.com/challenges/Toxic"
 summary: "Hack The Box Web Challenge Toxic"
 date: 2024-01-24
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Web", "HackTheBox", "Easy", "CTF"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------
@@ -43,7 +24,7 @@ In the given source code we can spot that it is vulnerable to deserialization.
 ![image](md/1086d508-0033-4c6b-b6d4-3ec831a0bf87.webp)
 
 
-payload= 
+payload=
 ```
 O:9:"PageModel":1:{s:4:"file";s:11:"/etc/passwd";}
 ```

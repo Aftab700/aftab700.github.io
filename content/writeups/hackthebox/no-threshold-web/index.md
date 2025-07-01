@@ -4,26 +4,7 @@ description: "https://app.hackthebox.com/challenges/No-Threshold"
 summary: "Hack The Box Web Challenge No-Threshold"
 date: 2024-09-01
 draft: true
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["HackTheBox", "CTF", "Web", "SQLi"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------
@@ -50,15 +31,15 @@ URLs are often normalized by web servers, so both of them will resolve to `/auth
 #### Bypass blocked access to verify-2fa
 
 ```cfg
-    # Parse the X-Forwarded-For header value if it exists. If it doesn't exist, add the client's IP address to the X-Forwarded-For header. 
+    # Parse the X-Forwarded-For header value if it exists. If it doesn't exist, add the client's IP address to the X-Forwarded-For header.
     http-request add-header X-Forwarded-For %[src] if !{ req.hdr(X-Forwarded-For) -m found }
-    
+
     # Apply rate limit on the /auth/verify-2fa route.
     acl is_auth_verify_2fa path_beg,url_dec /auth/verify-2fa
 
     # Checks for valid IPv4 address in X-Forwarded-For header and denies request if malformed IPv4 is found. (Application accepts IP addresses in the range from 0.0.0.0 to 255.255.255.255.)
     acl valid_ipv4 req.hdr(X-Forwarded-For) -m reg ^([01]?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.([01]?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.([01]?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.([01]?[0-9][0-9]?|2[0-4][0-9]|25[0-5])$
-    
+
     http-request deny deny_status 400 if is_auth_verify_2fa !valid_ipv4
 
     # Crate a stick-table to track the number of requests from a single IP address. (1min expire)

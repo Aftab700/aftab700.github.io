@@ -4,26 +4,7 @@ description: "Write-ups for the Wizer CTF challenges."
 summary: "Solutions to the CTF challenges."
 date: 2024-02-08
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Web", "JWT", "Wizer", "CTF", "nginx", "Service Worker", "pickle", "Deserialization"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------
@@ -61,17 +42,17 @@ app.use((req, res, next) => {
 
   try {
     // Verify the token using the secret key and support all JWT algorithms
-    const decoded = jwt.verify(token, SECRETKEY, { algorithms: ['HS256', 'HS384', 'HS512', 'RS256', 'RS384', 
+    const decoded = jwt.verify(token, SECRETKEY, { algorithms: ['HS256', 'HS384', 'HS512', 'RS256', 'RS384',
                                                                 'RS512', 'ES256', 'NONE', 'ES384', 'ES512',
                                                                 'PS256', 'PS384', 'PS512'] });
-    
-    req.auth = decoded;                                                                                                                      
+
+    req.auth = decoded;
     next();
   } catch (err) {
     return res.status(403).json({ message: 'Token invalid' });
   }
 });
-    
+
 // API route protected by our authentication middleware
 app.post('/flag', (req, res) => {
   if (req.auth.access.includes('flag')) {
@@ -169,7 +150,7 @@ Here the `location /assets` don't have the trailing slash, so we can read the fi
 Nginx alias directive defines a replacement for the specified location. Here `/assets` is alias of `/usr/share/nginx/html/assets/`. \
 So `/assets../flag.html` will become `/usr/share/nginx/html/assets/../flag.html` and it will return the contents of `flag.html`.
 
-Payload: 
+Payload:
 ```shell
 https://nginx.wizer-ctf.com/assets../flag.html
 ```
@@ -255,10 +236,10 @@ Then it will set `document.getElementById("mode").children[0].id = modeParam;` a
 
 Here if we put GET parameter `mode=sw` then we can control the value of `const sw` it will be what we give in GET parameter `color`.
 
-explanation: 
+explanation:
 
 Parameter Retrieval:
-- `modeParam = searchParams.get('mode')`:  
+- `modeParam = searchParams.get('mode')`:
   1. Stores the value of the query parameter named `mode` in the `modeParam` variable.
 
 - `colorParam = searchParams.get("color")`:
@@ -353,7 +334,7 @@ def profile():
         if username and email and bio:
             profile = Profile(username, email, bio)
             dumped = base64.b64encode(pickle.dumps(profile)).decode()
-            return render_template('profile.html', profile=profile, dumped=dumped)    
+            return render_template('profile.html', profile=profile, dumped=dumped)
 
     load_object = request.args.get('load_object')
     if load_object:
@@ -376,7 +357,7 @@ if __name__ == '__main__':
 ![image](md/e1a9a542-c019-45ff-8f29-1901a0346a4c.webp)
 
 
-Here if GET parameter `load_object` is present it will pass it to `pickle.loads(base64.b64decode(load_object))`. 
+Here if GET parameter `load_object` is present it will pass it to `pickle.loads(base64.b64decode(load_object))`.
 
 `pickle.loads()` is used to unpickle (deserialize) the data and takes a variable containing byte stream as a valid argument.
 
@@ -387,7 +368,7 @@ To exploit this vulnerability, we will use `__reduce__` method. \
 
 I wasted so much time on payload making because i was using `os.system` but it didn't work at last `subprocess.Popen` worked.
 
-> [!NOTE]  
+> [!NOTE]
 > It won't work because `os.system` method uses respective shell of the Operating system that it is running on so for `os.system` to work during Deserialization we need to Serialize the payload on the machine that matches the target OS. \
 > Here target is running Linux so Windows won’t work
 

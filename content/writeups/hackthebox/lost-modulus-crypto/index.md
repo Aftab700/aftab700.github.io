@@ -4,26 +4,7 @@ description: "https://app.hackthebox.com/challenges/lost-modulus"
 summary: "Hack The Box Crypto Challenge Lost Modulus"
 date: 2023-12-31
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Crypto", "HackTheBox", "Easy", "CTF", "RSA"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------

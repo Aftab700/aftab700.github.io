@@ -4,32 +4,13 @@ description: "https://app.hackthebox.com/challenges/xorxorxor"
 summary: "Hack The Box Crypto Challenge xorxorxor"
 date: 2023-04-14
 draft: true
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Crypto", "HackTheBox", "Easy", "CTF", "XOR"]
-canonicalURL: ""
-showToc: false
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------
 
 **Challenge Description**: _Who needs AES when you have XOR?_
- 
+
 By looking at python code for encryption we know that length of key is `4` and `flag` `xor` `key` = `encrypted text` so, if we do `xor` of cipher text and first 4 character of flag that we know is `HTB{` we get the `key`.
 
 (encrypted text) xor `"HTB{"` = `key`

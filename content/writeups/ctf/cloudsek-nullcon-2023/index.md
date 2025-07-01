@@ -4,26 +4,7 @@ description: "Write-ups for the CloudSEK - Nullcon Cyber Security CTF 2023 chall
 summary: "Solutions to the CTF challenges."
 date: 2023-10-18
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Deserialization", "CloudSEK", "CTF"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------
@@ -145,7 +126,7 @@ class CloudSEK  {
             2 => "BeVigil",
             3 => "GetMeDemFlagz",
         );
-        
+
         $func_no = $this->func_no;
         $func_name = str_rot13($this->func_name);
 
@@ -195,7 +176,7 @@ $obj = unserialize($data);
 ![image](md/614e9955-4dfe-4861-93dc-727be8da744a.webp)
 
 
-In this code we can see that it is checking if GET parameter `sess` exist if yes Base64 decode it and parse it to php unserialize() 
+In this code we can see that it is checking if GET parameter `sess` exist if yes Base64 decode it and parse it to php unserialize()
 
 There is also  `__wakeup()` function which is called on unserialize
 
@@ -206,7 +187,7 @@ to get the flag we have to call `GetMeDemFlagz` function. __wakeup function will
 
 Now lets create the payload
 
-Object name would be `CloudSEK` <-- name of the class. 
+Object name would be `CloudSEK` <-- name of the class.
 func_no = 3 and func_name = rot13("GetMeDemFlagz")
 
 ```
@@ -262,7 +243,7 @@ if (isset($_GET['hash'])) {
     } else {
         print "CSEK{n0_4lag_4_u}";
     }
-} 
+}
 ?>
 
 ```

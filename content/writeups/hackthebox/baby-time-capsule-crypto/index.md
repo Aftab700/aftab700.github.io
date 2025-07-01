@@ -4,26 +4,7 @@ description: "https://app.hackthebox.com/challenges/Baby-Time-Capsule"
 summary: "Hack The Box Crypto Challenge Baby Time Capsule"
 date: 2023-04-14
 draft: true
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["Crypto", "HackTheBox", "Easy", "CTF", "CRT"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-# UseHugoToc: true
 ---
 
 ------------------------
@@ -139,13 +120,13 @@ x ≡ c2 (mod n2)
 
 x ≡ c3 (mod n3)
 
-The Chinese Remainder Theorem (CRT) is used to solve a set of different 
+The Chinese Remainder Theorem (CRT) is used to solve a set of different
 congruent equations with one variable but different moduli which are relatively
 prime.
 
 To find x:
 
-x = (c1 <span>&#215;</span> N1 <span>&#215;</span> N1<sup>-1</sup> + c2 <span>&#215;</span> N2 <span>&#215;</span> N2<sup>-1</sup> + 
+x = (c1 <span>&#215;</span> N1 <span>&#215;</span> N1<sup>-1</sup> + c2 <span>&#215;</span> N2 <span>&#215;</span> N2<sup>-1</sup> +
 c3 <span>&#215;</span> N3 <span>&#215;</span> N3<sup>-1</sup>) mod N
 
 here, N = n1 <span>&#215;</span> n2 <span>&#215;</span> n3
@@ -200,7 +181,7 @@ conn.sendline(b'N')
 conn.recvline()
 conn.close()
 ```
-  
+
 Output:
 
 ```shell

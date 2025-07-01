@@ -4,36 +4,7 @@ description: "How to unbrick Lenovo TB-7504x tablet using mtkclient to unlock th
 summary: "How to unbrick Lenovo TB-7504x tablet using mtkclient to unlock the bootloader. Resolve the boot loop issue and bypass the SP flash tool’s authentication to flash a custom ROM."
 date: 2023-06-28
 draft: false
-author: "Aftab Sama" # ["Me", "You"] # multiple authors
 tags: ["mtkclient", "ROM", "Android", "SDK Platform tools"]
-canonicalURL: ""
-showToc: true
-TocOpen: false
-TocSide: 'right'  # or 'left'
-# weight: 1
-# aliases: ["/first"]
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
-# cover:
-#     image: "<image path/url>" # image path/url
-#     alt: "<alt text>" # alt text
-#     caption: "<text>" # display caption under cover
-#     relative: false # when using page bundles set this to true
-#     hidden: true # only hide on current single page
-# editPost:
-#     URL: "https://github.com/"
-#     Text: "Suggest Changes" # edit text
-#     appendFilePath: true # to append file path to Edit link
 ---
 
 I wanted to install a custom ROM on my _Lenovo TB-7504x_.
@@ -41,7 +12,7 @@ I wanted to install a custom ROM on my _Lenovo TB-7504x_.
 First, I tried using SDK Platform-tools, but fastboot was not detecting my device in fastboot mode. It turned out that I was not using the correct driver. After installing all the required drivers, the device was detected. However, when I tried using commands, I encountered different errors such as `"command unknown"` or `"can't run when locked"` (even though OEM was unlocked and USB debugging was enabled).
 
 I attempted to unlock the bootloader using fastboot and various combinations of commands. I even tried using `sn.img`, but it didn't work.
- 
+
 Finally, I successfully unlocked the bootloader using [mtkclient](https://github.com/bkerler/mtkclient). Details on how to use this tool can be found in the repository.
 
 However, After unlocking the bootloader, the device goes into a boot loop and displays an error message that says `"Device verification failed. Device may not work properly. Booting in 5 seconds` and it continues to boot repeatedly.
