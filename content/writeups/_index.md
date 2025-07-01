@@ -4,4 +4,7 @@ summary: Collection of writeups written on different problems/challenges/machine
 description: "Collection of writeups written on different problems/challenges/machines.<br>
 Classified according to the platform they were hosted on."
 type: list
+hidemeta: true
+disableShare: true
+comments: false
 ---

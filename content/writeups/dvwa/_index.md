@@ -5,6 +5,9 @@ description: "Damn Vulnerable Web Application (DVWA) is a PHP/MySQL web applicat
 type: list
 date: 2022-08-18
 weight: 3
+hidemeta: true
+disableShare: true
+comments: false
 ---
 
 ---
