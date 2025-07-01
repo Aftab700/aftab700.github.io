@@ -1,6 +1,4 @@
-# Basic Information
 baseURL: "https://aftabsama.com/"
-# baseURL: "https://aftab700.pages.dev/" # hugo hugo --gc --minify --baseURL $CF_PAGES_URL
 languageCode: en-us
 title: "Aftab Sama"
 theme: PaperMod #Kamigo
@@ -19,12 +17,12 @@ imaging:
 security:
   funcs:
     getenv:
-    - ^HUGO_
-    - ^CI$
-    - YouTube_Data_API_key
+      - ^HUGO_
+      - ^CI$
+      - YouTube_Data_API_key
 
 permalinks:
-  posts: "/:filename"
+  posts: "/:contentbasename"
 
 minify:
   disableXML: true
@@ -35,7 +33,23 @@ params:
   env: production
   title: "Aftab Sama"
   description: "Thoughts and research on security, privacy, *nix based systems, and other IT stuff."
-  keywords: [Blog, Research, Security, Privacy, Linux, Programming, CTF, Writeups, Walkthrough, Infosec, EthicalHacking, "Aftab Sama", "Cyber Security", "Offensive Security"]
+  keywords:
+    [
+      Blog,
+      Research,
+      Security,
+      Privacy,
+      Linux,
+      Programming,
+      CTF,
+      Writeups,
+      Walkthrough,
+      Infosec,
+      EthicalHacking,
+      "Aftab Sama",
+      "Cyber Security",
+      "Offensive Security",
+    ]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -56,12 +70,9 @@ params:
   youtube_embed: false
   hidemeta: false
   hideSummary: false
-  # copyright: ''
   hideFooter: true
-  # showtoc: false
-  # tocopen: false
 
-# Static assets
+  # Static assets
   assets:
     disableHLJS: true # disable highlight.js
     disableFingerprinting: true
@@ -71,27 +82,27 @@ params:
     apple_touch_icon: "/apple-touch-icon.png"
     safari_pinned_tab: "/favicon.svg"
 
-# Home-info mode
+  # Home-info mode
   homeInfoParams:
     title: "Aftab Sama"
     content: Thoughts and research on security, privacy, *nix based systems, and other IT stuff.
 
-# profile-mode
+  # profile-mode
   profileMode:
-      enabled: true # needs to be explicitly set
-      title: Aftab Sama
-      subtitle: "_audentes Fortuna iuvat._"
-      imageUrl: "/images/profile.webp"
-      imageWidth: 120
-      imageHeight: 120
-      imageTitle: Aftab Sama's Profile Picture
-      buttons:
-        - name: Blog
-          url: blog
-        - name: Writeups
-          url: writeups
+    enabled: true # needs to be explicitly set
+    title: Aftab Sama
+    subtitle: "_audentes Fortuna iuvat._"
+    imageUrl: "/images/profile.webp"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: Aftab Sama's Profile Picture
+    buttons:
+      - name: Blog
+        url: blog
+      - name: Writeups
+        url: writeups
 
-# Social
+  # Social
   socialIcons:
     - name: linkedin
       url: "https://www.linkedin.com/in/aftab-sama/"
@@ -115,17 +126,16 @@ params:
     #   url: "http://discordapp.com/users/759615120820928513"
     # - name: pgp
     #   url: "/pgp.txt"
-    - name: rss
-      url: /index.xml
+    # - name: rss
+    #   url: /index.xml
 
   cover:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
-# For search
-  # https://fusejs.io/api/options.html
-  fuseOpts:
+  # For search
+  fuseOpts: # https://fusejs.io/api/options.html
     isCaseSensitive: false
     shouldSort: true
     # ignoreLocation: true
@@ -137,10 +147,10 @@ params:
 
 #Enabling Search
 outputs:
-    home:
-        - HTML
-        - RSS
-        - JSON # is necessary
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
 
 menu:
   main:
@@ -156,9 +166,6 @@ menu:
     - name: Search
       url: /search/
       weight: 4
-    # - name: Alt
-    #   url: https://hiiruki.com/
-    #   weight: 5
 
 # Taxonomies
 taxonomies:
@@ -166,35 +173,29 @@ taxonomies:
 
 # Hugo and the General Data Protection Regulation (GDPR) <https://gohugo.io/about/hugo-and-gdpr/>
 privacy:
-  vimeo:
-  # Simple mode use `{{< vimeo_simple 48912912 >}}` to embed vimeo video using simple media player.
-    disable: false
-    enableDNT: true # https://developer.vimeo.com/guidelines/dnt
-    simple: true # https://developer.vimeo.com/player/embedding
-  twitter:
-  # Simple mode use `{{< twitter_simple 1085870671291310081 >}}` to embed twitter tweet using simple embed mode.
-    disable: false
-    enableDNT: true # https://developer.twitter.com/en/docs/twitter-for-websites/privacy
-    simple: true # https://developer.twitter.com/en/docs/twitter-for-websites/javascript-api/guides/set-up-twitter-for-websites
-# instagram:
-# Error -> instagram shortcode: Missing config value for services.instagram.accessToken. Please set it in config.toml or config.yaml
-# # Simple mode use `{{< instagram_simple CGh4a0iASGS >}}` to embed instagram post using simple embed mode.
-# # Note: Don't paste that Instagram post ID into browser, https://www.instagram.com/p/<post ID> :p
-#   disable: false
-#   disableInlineCSS: true
-#   simple: false # https://developers.facebook.com/docs/instagram/oembed
-  youtube:
-  # Simple mode use `{{< youtube_simple ZJthWmvUzzc >}}` to embed youtube video using simple media player.
-    disable: false
-    privacyEnhanced: true # https://developers.google.com/youtube/player_parameters#privacy-enhanced-mode
-    simple: true # https://developers.google.com/youtube/player_parameters#Loading_a_Video_Player
   disqus:
-    disable: true # https://help.disqus.com/en/articles/1717111-what-is-the-opt-out-feature
+    disable: false
   googleAnalytics:
-    anonymizeIP: true # https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#anonymizeIp
-    disable: true
-    respectDoNotTrack: true # https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#respectDNT
-    useSessionStorage: true # https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#useSessionStorage
+    disable: false
+    respectDoNotTrack: true
+  instagram:
+    disable: false
+    simple: true
+  # twitter:     # <- WARN  deprecated: site config key privacy.twitter.simple was deprecated in Hugo v0.141.0 and will be removed in a future release. Use privacy.x.simple instead.
+  #   disable: false
+  #   enableDNT: true
+  #   simple: true
+  vimeo:
+    disable: false
+    enableDNT: true
+    simple: true
+  x:
+    disable: false
+    enableDNT: true
+    simple: true
+  youTube:
+    disable: false
+    privacyEnhanced: true
 
 # I will never add user tracking of any type because I simply do not care. I don't care how popular the site is or isn't - it exists for my personal satisfaction.
 # analytics:
@@ -205,19 +206,15 @@ privacy:
 #     yandex:
 #       SiteVerificationTag: "XYZabc"
 
-
 # https://gohugo.io/getting-started/configuration-markup/
 markup:
-    highlight: # https://gohugo.io/content-management/syntax-highlighting/
-        style: dracula
-        lineNos: false
-        noClasses: false
-        guessSyntax: true
-        anchorLineNos: false
-    goldmark: # https://gohugo.io/getting-started/configuration-markup/#goldmark
-      renderer:
-        unsafe: true
-        xhtml: false
-
-# # Disqus
-# disqusShortname: hiiruki
+  highlight: # https://gohugo.io/content-management/syntax-highlighting/
+    style: dracula
+    lineNos: false
+    noClasses: false
+    guessSyntax: true
+    anchorLineNos: false
+  goldmark: # https://gohugo.io/getting-started/configuration-markup/#goldmark
+    renderer:
+      unsafe: true
+      xhtml: false
