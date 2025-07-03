@@ -39,9 +39,8 @@ You can learn more about my professional experience on my [LinkedIn profile](htt
 ### Contacts:
 
 💬 [Matrix](https://matrix.to/#/@aftab700:matrix.org "@aftab700:matrix.org") <br>
+💬 [Session](https://getsession.org/) - [Session ID](/session.txt "Session ID: 05f16f9b407d69d5be0d2268129e40eccf4ae2440ddbaa74e208740f7a5e299339")<br>
 💬 [XMPP](https://en.wikipedia.org/wiki/XMPP "XMPP @ Wikipedia") - [aftab700@yourdata.forsale](xmpp:aftab700@yourdata.forsale)<br>
-<!-- 💬 [Discord](http://discordapp.com/users/759615120820928513 "@jack.sparrow__") <br> -->
-<!-- 💬 [Session](https://getsession.org/) - [Session ID](/session.txt "Session ID: 05f16f9b407d69d5be0d2268129e40eccf4ae2440ddbaa74e208740f7a5e299339")<br> -->
 
 📡 [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat "IRC @ Wikipedia") - aftab700 @ [Libera.Chat](https://libera.chat/)<br>
 📡 [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat "IRC @ Wikipedia") - aftab700 @ [tilde.chat](https://tilde.chat/)<br>
