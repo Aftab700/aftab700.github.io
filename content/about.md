@@ -7,7 +7,7 @@ comments: false
 ---
 
 > "Information is power. But like all power, there are those who want to keep it for themselves."
-— [Aaron Swartz](https://en.wikipedia.org/wiki/Aaron_Swartz "Aaron Swartz @ Wikipedia")
+> — [Aaron Swartz](https://en.wikipedia.org/wiki/Aaron_Swartz "Aaron Swartz @ Wikipedia")
 
 <details>
 <summary> <code>$ whoami</code> </summary>
@@ -20,11 +20,11 @@ I am an Offensive Security enthusiast. I play Capture the Flag (CTF) challenges 
 <summary>Interests:</summary>
 
 > `Cyber security`, `GNU/Linux`, `*nix based systems`, `open source`,
-`FOSS`, `privacy`, `OPSEC`, `DFIR`, `OSINT`, `CTF`, `threat intelligence`,
-`reverse engineering`, `malware`, `cryptography`, `hardware hacking`,
-`physical security`, `lockpicking sport`, `cloud computing`, `operating systems`, `biohacking`, `IoT`, `blockchain`, `audiophile`, `AI`, `ML`, `DL`,
-`LLM`, `Anime`, `ham radio`, `science`, `psychology`, `philosophy`, `minimalism`,
-`permacomputing`, etc.
+> `FOSS`, `privacy`, `OPSEC`, `DFIR`, `OSINT`, `CTF`, `threat intelligence`,
+> `reverse engineering`, `malware`, `cryptography`, `hardware hacking`,
+> `physical security`, `lockpicking sport`, `cloud computing`, `operating systems`, `biohacking`, `IoT`, `blockchain`, `audiophile`, `AI`, `ML`, `DL`,
+> `LLM`, `Anime`, `ham radio`, `science`, `psychology`, `philosophy`, `minimalism`,
+> `permacomputing`, etc.
 
 </details>
 <br>
@@ -37,15 +37,14 @@ You can learn more about my professional experience on my [LinkedIn profile](htt
 
 ### Contacts:
 
-💬 [Matrix](https://matrix.to/#/@aftab700:matrix.org "@aftab700:matrix.org") \
-💬 [Discord](http://discordapp.com/users/759615120820928513 "@jack.sparrow__") \
-💬 [Session](https://getsession.org/) - [Session ID](/session.txt "Session ID: 05f16f9b407d69d5be0d2268129e40eccf4ae2440ddbaa74e208740f7a5e299339")
-
-<!-- 💬 [XMPP](https://en.wikipedia.org/wiki/XMPP "XMPP @ Wikipedia") - [hiiruki@yourdata.forsale](xmpp:hiiruki@yourdata.forsale) -->
+💬 [Matrix](https://matrix.to/#/@aftab700:matrix.org "@aftab700:matrix.org") <br>
+💬 [XMPP](https://en.wikipedia.org/wiki/XMPP "XMPP @ Wikipedia") - [aftab700@yourdata.forsale](xmpp:aftab700@yourdata.forsale)<br>
+<!-- 💬 [Discord](http://discordapp.com/users/759615120820928513 "@jack.sparrow__") <br> -->
+<!-- 💬 [Session](https://getsession.org/) - [Session ID](/session.txt "Session ID: 05f16f9b407d69d5be0d2268129e40eccf4ae2440ddbaa74e208740f7a5e299339")<br> -->
 
 📡 [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat "IRC @ Wikipedia") - aftab700 @ [Libera.Chat](https://libera.chat/)<br>
 📡 [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat "IRC @ Wikipedia") - aftab700 @ [tilde.chat](https://tilde.chat/)<br>
-<!-- 📡 [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat "IRC @ Wikipedia") - hiiruki @ [Rizon](https://www.rizon.net/)<br> -->
+📡 [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat "IRC @ Wikipedia") - aftab700 @ [Rizon](https://www.rizon.net/)<br>
 
 📧 [E-mail](mailto:hi@aftabsama.com)
 
@@ -59,6 +58,7 @@ curl -sL https://aftabsama.com/pgp | gpg --import
 ```
 
 [pgp.txt](/pgp.txt)
+
 </details>
 
 <details>
@@ -69,17 +69,18 @@ curl -sL https://aftabsama.com/pgp | gpg --import
 ```
 
 [ssh.txt](/ssh.txt)
+
 </details>
 
-<!-- <details>
+<details>
 <summary> 🔑 OMEMO Fingerprint </summary>
 
 ```
-F1085BD5 D359788F 05F936D8 3185A5BE
-75B227FE DE4E6909 9433113B DFE4D722
+18E6230C E3BC3162 4CE2BFA7 CA2CBF24
+8DBA1BAB C09487B8 D0265D98 798B8961
 ```
 
-</details> -->
+</details>
 
 <!-- <details>
 <summary> 🔑 OTR Fingerprint </summary>
