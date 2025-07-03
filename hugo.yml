@@ -113,10 +113,8 @@ params:
       url: "https://www.linkedin.com/in/aftab-sama/"
     - name: github
       url: "https://github.com/Aftab700"
-    - name: instagram
-      url: "https://www.instagram.com/aftab__sama/"
-    - name: X
-      url: "https://x.com/AftabSama700"
+    - name: matrix
+      url: "https://matrix.to/#/@aftab700:matrix.org"
     - name: mastodon
       url: "https://infosec.exchange/@Aftab"
     - name: youtube
@@ -125,14 +123,14 @@ params:
       url: "https://aftab700.medium.com/"
     - name: email
       url: "mailto:hi@aftabsama.com"
-    # - name: matrix
-    #   url: "https://matrix.to/#/@aftab700:matrix.org"
-    # - name: discord
-    #   url: "http://discordapp.com/users/759615120820928513"
+    - name: instagram
+      url: "https://www.instagram.com/aftab__sama/"
+    - name: X
+      url: "https://x.com/AftabSama700"
+    - name: rss
+      url: /index.xml
     # - name: pgp
     #   url: "/pgp.txt"
-    # - name: rss
-    #   url: /index.xml
 
   cover:
     hidden: true # hide everywhere but not in structured data

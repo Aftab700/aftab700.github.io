@@ -43,9 +43,9 @@ You can learn more about my professional experience on my [LinkedIn profile](htt
 
 <!-- 💬 [XMPP](https://en.wikipedia.org/wiki/XMPP "XMPP @ Wikipedia") - [hiiruki@yourdata.forsale](xmpp:hiiruki@yourdata.forsale) -->
 
-<!-- 📡 [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat "IRC @ Wikipedia") - hiiruki @ [Libera.Chat](https://libera.chat/)<br> -->
+📡 [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat "IRC @ Wikipedia") - aftab700 @ [Libera.Chat](https://libera.chat/)<br>
+📡 [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat "IRC @ Wikipedia") - aftab700 @ [tilde.chat](https://tilde.chat/)<br>
 <!-- 📡 [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat "IRC @ Wikipedia") - hiiruki @ [Rizon](https://www.rizon.net/)<br> -->
-<!-- 📡 [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat "IRC @ Wikipedia") - hiiruki @ [tilde.chat](https://tilde.chat/)<br> -->
 
 📧 [E-mail](mailto:hi@aftabsama.com)
 
