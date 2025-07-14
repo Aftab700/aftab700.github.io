@@ -40,3 +40,5 @@ The challenge's page is saving two cookies:
 ![Level 10 solution](files/level-10-1.png#center)
 
 Happy Hacking
+
+---

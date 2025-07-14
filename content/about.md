@@ -51,7 +51,7 @@ You can learn more about my professional experience on my [LinkedIn profile](htt
 <details>
 <summary> 🔑 PGP Public Key </summary>
 
-```shell
+```bash
 curl -sL https://aftabsama.com/pgp | gpg --import
 
 # Fingerprint: [0BE8B166C93FA382] • 52DD C5E6 F700 2761 BD9D  BFD6 0BE8 B166 C93F A382
@@ -64,7 +64,7 @@ curl -sL https://aftabsama.com/pgp | gpg --import
 <details>
 <summary> 🔑 SSH Public Key </summary>
 
-```shell
+```bash
 # Fingerprint: SHA256:41MeUrUNG63NyJ3du9v111UkYMUTv8eRGiXDntncHxw
 ```
 

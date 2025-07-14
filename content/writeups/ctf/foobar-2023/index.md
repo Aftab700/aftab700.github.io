@@ -341,3 +341,5 @@ this makes sense `inspect` is challenge name and `graphql` is endpoint.
 This is correct one.
 
 Happy Hacking
+
+---

@@ -70,3 +70,5 @@ Here, I have used the `"Lenovo_Tab_7_TB-7504X_MT6737M_HW20_India_S000041_180828_
 
 
 Thank you for reading this far. Happy hacking!
+
+---

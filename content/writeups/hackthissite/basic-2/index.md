@@ -33,3 +33,5 @@ Network Security Sam set up a password protection script. He made it load the re
 As we can see in the description that the password file was not uploaded so just submitting the NULL (empty) password will do the trick.
 
 Happy Hacking
+
+---

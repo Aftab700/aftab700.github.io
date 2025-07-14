@@ -34,3 +34,5 @@ we can bypass that with payload:`file/../../../../../../etc/passwd` path travers
 <img width="456" alt="image" src="https://user-images.githubusercontent.com/79740895/185414731-fda51955-9d13-4b60-893a-f700f29021eb.png">
 
 Happy Hacking
+
+---

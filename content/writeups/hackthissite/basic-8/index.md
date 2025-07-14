@@ -45,3 +45,5 @@ Output:
 Visiting the path of "**_au12ha39vc.php_**" file we get the password for this challenge.
 
 Happy Hacking
+
+---

@@ -1,0 +1,31 @@
+.dark {
+    --theme: rgb(3, 7, 18);
+    --entry: rgb(26, 26, 31);
+    --primary: rgb(243, 244, 246);
+    --code-block-bg: rgba(0, 0, 0, 0.5);
+    --code-bg: --theme;
+}
+
+.post-content a,
+.toc a:hover {
+    color: rgb(236, 72, 154);
+}
+
+.post-tags a {
+    color: rgb(236, 72, 154);
+    font-weight: 600;
+}
+
+.post-content a:hover {
+    color: #f472b6;
+}
+
+.paginav a:hover {
+    background: var(--theme);
+}
+
+.post-content code {
+    color: rgb(99, 102, 241);
+    margin: 0%;
+    font-weight: 600;
+}

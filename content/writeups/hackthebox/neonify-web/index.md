@@ -39,3 +39,5 @@ To read the file using Template-Injection, we can use a payload like `<%= File.o
 Flag: `HTB{r3pl4c3m3n7_s3cur1ty}`
 
 Happy Hacking
+
+---

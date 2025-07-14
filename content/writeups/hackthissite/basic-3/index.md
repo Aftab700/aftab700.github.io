@@ -40,3 +40,5 @@ Looks like the password file that Sam uploaded. Visiting this path, we can acces
 ![Level 3 solution.2](files/level-3-sol-2.webp#center)
 
 Happy Hacking
+
+---

@@ -37,3 +37,5 @@ The password is hidden in HTML source code. The challenge talks about HTML knowl
 ![Level 1 solution](files/level-1-sol.webp#center)
 
 Happy Hacking
+
+---

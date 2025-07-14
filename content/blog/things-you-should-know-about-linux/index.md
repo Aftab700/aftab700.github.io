@@ -331,3 +331,5 @@ echo "Hello $name"
 - https://www.youtube.com/watch?v=LKCVKw9CzFo
 - https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-i-o-redirection
 - https://www.freecodecamp.org/news/shell-scripting-crash-course-how-to-write-bash-scripts-in-linux/
+
+---

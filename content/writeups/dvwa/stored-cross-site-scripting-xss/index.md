@@ -35,3 +35,5 @@ payload=`<ImG src=x onerror="alert(document.cookie)">`
 
 
 Happy Hacking
+
+---

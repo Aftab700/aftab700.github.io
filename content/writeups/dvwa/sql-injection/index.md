@@ -39,3 +39,5 @@ Payload: `' UNION SELECT user, password FROM users#`
 <img width="281" alt="image" src="https://user-images.githubusercontent.com/79740895/185468611-17e12bd2-8513-4844-beac-b0d8d9c27725.png">
 
 Happy Hacking
+
+---

@@ -179,3 +179,5 @@ frida -U -l instagram-ssl-pinning-bypass.js -f com.instagram.android
 <br>
 
 Thank you for reading this far. Happy hacking!
+
+---

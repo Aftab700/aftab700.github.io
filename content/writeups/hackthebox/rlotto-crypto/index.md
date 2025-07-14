@@ -57,3 +57,5 @@ find_solution("40 8 6 17 63") # [+] EXTRACTION Value
 Flag: `HTB{n3v3r_u53_pr3d1c74bl3_533d5_1n_p53ud0-r4nd0m_numb3r_63n3r470r}`
 
 Happy Hacking
+
+---

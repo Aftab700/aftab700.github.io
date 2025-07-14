@@ -98,3 +98,5 @@ In PuTTY, connect to the correct `COM` port using a serial connection type.
 
 <br>
 Happy Hacking
+
+---

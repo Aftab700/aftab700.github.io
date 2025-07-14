@@ -75,3 +75,5 @@ function prompt { "`r`n$ESC[32m┌──PS($ESC[94m$env:UserName@$env:COMPUTERNA
 
 <br>
 Happy Hacking
+
+---
