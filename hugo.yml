@@ -32,7 +32,7 @@ minify:
 params:
   env: production
   title: "Aftab Sama"
-  description: "Thoughts and research on security, privacy, *nix based systems, and other IT stuff."
+  description: "Aftab Sama personal blog."
   keywords:
     [
       Blog,
