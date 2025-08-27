@@ -96,7 +96,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: Aftab Sama
-    subtitle: "_audentes Fortuna iuvat._"
+    subtitle: "_Fortis fortuna adiuvat._"
     imageUrl: "/images/profile.webp"
     imageWidth: 120
     imageHeight: 120
