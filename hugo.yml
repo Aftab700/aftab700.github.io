@@ -123,8 +123,8 @@ params:
       url: "https://aftab700.medium.com/"
     - name: email
       url: "mailto:hi@aftabsama.com"
-    - name: instagram
-      url: "https://www.instagram.com/aftab__sama/"
+    # - name: instagram  # remove instagram link - account deleted
+    # url: "https://www.instagram.com/aftab__sama/"
     - name: X
       url: "https://x.com/AftabSama700"
     - name: rss
