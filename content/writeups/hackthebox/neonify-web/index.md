@@ -3,7 +3,7 @@ title: "Neonify - HackTheBox"
 description: "https://app.hackthebox.com/challenges/Neonify"
 summary: "Hack The Box Web Challenge Neonify"
 date: 2024-06-19
-draft: true
+draft: false
 tags: ["Web", "HackTheBox", "Easy", "CTF", "Ruby", "SSTI"]
 ---
 
