@@ -81,6 +81,7 @@ hideFooter: true
 ## Achievements
 ---
 
+- NULL Bangalore Speaker
 - Ranked among the top 100 in TCS HackQuest Season 7 Capture the Flag competition, which led to an employment opportunity with TCS
 - Ranked among the top performers in a national CTF competition organized by the KPMG Cyber Security Team, leading to an internship opportunity with the Digital Trust-Cyber Defense Incident Response team
 - [Hacker](https://app.hackthebox.com/profile/668328) rank on HackTheBox
