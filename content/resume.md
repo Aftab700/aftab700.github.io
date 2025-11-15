@@ -46,7 +46,7 @@ hideFooter: true
 
 <div style="display: flex; justify-content: space-between;">
   <strong>Security Researcher Intern</strong>
-  <strong>April 2023 - August 2023</strong>
+  <strong>April 2023 - September 2023</strong>
 </div>
 
 - Created PoC exploits for RDP and SMB brute force attacks to test antivirus effectiveness
