@@ -15,7 +15,7 @@ showtoc: false
 Hi, My name is Aftab Sama! 👋
 </details><br>
 
-I'm a penetration tester and security researcher, ethical hacker and content creator with experience in Web, API, Mobile and Thick Client Application penetration testing. I hold Bachelor of Technology degree from Rashtriya Raksha University in Computer Science and Engineering with specialization in Cyber Security. 
+I'm an independent security researcher, ethical hacker and content creator with experience in Web, API, Mobile and Thick Client Application penetration testing. I hold Bachelor of Technology degree from Rashtriya Raksha University in Computer Science and Engineering with specialization in Cyber Security. 
 
 During my studies, I gained hands-on experience through internships at KPMG India and Quick Heal Technologies where I had the opportunity to work on various malware cases and learn about the investigation process.
 
@@ -40,7 +40,7 @@ You can learn more about my professional experience on my [LinkedIn profile](htt
 </details>
 <br>
 
-This blog serves as my digital notebook—a place where I document my research, share findings, and solidify my own understanding of complex topics. I've made it public in the hope that my notes can help others on their own learning journey. Sharing is caring, after all! ^^
+This blog serves as my digital notebook, a place where I document my research, share findings, and solidify my own understanding of complex topics. I've made it public in the hope that my notes can help others on their own learning journey. Sharing is caring, after all! ^^
 
 <br>
 
