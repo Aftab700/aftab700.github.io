@@ -15,7 +15,17 @@ showtoc: false
 Hi, My name is Aftab Sama! 👋
 </details><br>
 
-I am an Offensive Security enthusiast. I play Capture the Flag (CTF) challenges in my free time. Apart from security, I read Stoicism and Psychology.
+I'm a penetration tester and security researcher, ethical hacker and content creator with experience in Web, API, Mobile and Thick Client Application penetration testing. I hold Bachelor of Technology degree from Rashtriya Raksha University in Computer Science and Engineering with specialization in Cyber Security. 
+
+During my studies, I gained hands-on experience through internships at KPMG India and Quick Heal Technologies where I had the opportunity to work on various malware cases and learn about the investigation process.
+
+My passion for offensive security and penetration testing led me to obtain certifications such as CAPenX, BSCP, CNPen, CEH Practical, among others. I plan to enroll in further offensive security courses in the future. My long term goal is to present some innovative security research at DefCon.
+
+Capture the Flag (CTF) competitions helped me secure my first internship at KPMG India, as I was among the top performers in a national CTF competition organized by the KPMG Cyber Security Team. I also ranked among the top performers in TCS HackQuest Season 7 CTF competition, which led to an employment opportunity with Tata Consultancy Services, where I am currently working as Penetration Tester.
+
+In my free time, I continue to actively sharpen my skills on platforms like HackTheBox and participate in CTF events. I have taken part in several prestigious CTF competitions, winning multiple prizes. Besides my interest in security, I enjoy reading about stoicism and philosophy.
+
+You can learn more about my professional experience on my [LinkedIn profile](https://www.linkedin.com/in/aftab-sama/) or by viewing my [resume](/resume/).
 
 <details>
 <summary>Interests:</summary>
@@ -24,15 +34,13 @@ I am an Offensive Security enthusiast. I play Capture the Flag (CTF) challenges 
 > `FOSS`, `privacy`, `OPSEC`, `DFIR`, `OSINT`, `CTF`, `threat intelligence`,
 > `reverse engineering`, `malware`, `cryptography`, `hardware hacking`,
 > `physical security`, `lockpicking sport`, `cloud computing`, `operating systems`, `biohacking`, `IoT`, `blockchain`, `audiophile`, `AI`, `ML`, `DL`,
-> `LLM`, `Anime`, `ham radio`, `science`, `psychology`, `philosophy`, `minimalism`,
+> `LLM`, `Anime`, `ham radio`, `SDR`, `science`, `psychology`, `philosophy`, `minimalism`,
 > `permacomputing`, etc.
 
 </details>
 <br>
 
-I started this blog to jot down things I've learned, mainly because I tend to forget stuff I picked up earlier. But hey, I've made it public, so you're welcome to give it a read and pick up things too. Sharing is caring, after all! ^^
-
-You can learn more about my professional experience on my [LinkedIn profile](https://www.linkedin.com/in/aftab-sama/).
+This blog serves as my digital notebook—a place where I document my research, share findings, and solidify my own understanding of complex topics. I've made it public in the hope that my notes can help others on their own learning journey. Sharing is caring, after all! ^^
 
 <br>
 

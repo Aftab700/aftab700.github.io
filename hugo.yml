@@ -10,195 +10,195 @@ buildExpired: false
 enableGitInfo: true # https://gohugo.io/variables/git/#gitinfo-variables
 
 imaging:
-  quality: 100
-  hint: photo
-  resampleFilter: Lanczos
+    quality: 100
+    hint: photo
+    resampleFilter: Lanczos
 
 security:
-  funcs:
-    getenv:
-      - ^HUGO_
-      - ^CI$
-      - YouTube_Data_API_key
+    funcs:
+        getenv:
+            - ^HUGO_
+            - ^CI$
+            - YouTube_Data_API_key
 
 permalinks:
-  posts: "/:contentbasename"
+    posts: "/:contentbasename"
 
 minify:
-  disableXML: true
-  minifyOutput: true
+    disableXML: true
+    minifyOutput: true
 
 # Site parameters
 params:
-  env: production
-  title: "Aftab Sama"
-  description: "Aftab Sama personal blog."
-  keywords:
-    [
-      Blog,
-      Research,
-      Security,
-      Privacy,
-      Linux,
-      Programming,
-      CTF,
-      Writeups,
-      Walkthrough,
-      Infosec,
-      EthicalHacking,
-      "Aftab Sama",
-      "Cyber Security",
-      "Offensive Security",
-    ]
-  DateFormat: "January 2, 2006"
-  defaultTheme: dark # dark, light
-  disableThemeToggle: false
-  mainSections:
-    - blog
-    - writeups
-  author: "Aftab Sama"
-  showtoc: true
-  tocopen: false
-  ShowReadingTime: true
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: false
-  ShowShareButtons: true
-  ShareButtons: ["linkedin", "x"] # To customize which share buttons to be enabled on page
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-  ShowFullTextinRSS: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: true
-  hidemeta: false
-  hideSummary: false
-  hideFooter: false
-  footer:
-    text: "[Privacy Policy](/privacy) · [Disclaimer](/disclaimer) · [Status](https://status.aftabsama.com/)"
-
-  # Static assets
-  assets:
-    disableHLJS: true # disable highlight.js
-    disableFingerprinting: true
-    favicon: "/favicon.ico"
-    favicon16x16: "/favicon-16x16.png"
-    favicon32x32: "/favicon-32x32.png"
-    apple_touch_icon: "/apple-touch-icon.png"
-    safari_pinned_tab: "/favicon.svg"
-
-  # Home-info mode
-  homeInfoParams:
+    env: production
     title: "Aftab Sama"
-    content: Thoughts and research on security, privacy, *nix based systems, and other IT stuff.
+    description: "Aftab Sama personal blog."
+    keywords:
+        [
+            Blog,
+            Research,
+            Security,
+            Privacy,
+            Linux,
+            Programming,
+            CTF,
+            Writeups,
+            Walkthrough,
+            Infosec,
+            EthicalHacking,
+            "Aftab Sama",
+            "Cyber Security",
+            "Offensive Security",
+        ]
+    DateFormat: "January 2, 2006"
+    defaultTheme: dark # dark, light
+    disableThemeToggle: false
+    mainSections:
+        - blog
+        - writeups
+    author: "Aftab Sama"
+    showtoc: true
+    tocopen: false
+    ShowReadingTime: true
+    ShowWordCount: true
+    ShowRssButtonInSectionTermList: false
+    ShowShareButtons: true
+    ShareButtons: ["linkedin", "x"] # To customize which share buttons to be enabled on page
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowFullTextinRSS: true
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: true
+    hidemeta: false
+    hideSummary: false
+    hideFooter: false
+    footer:
+        text: "[Privacy Policy](/privacy) · [Disclaimer](/disclaimer) · [Status](https://status.aftabsama.com/)"
 
-  # profile-mode
-  profileMode:
-    enabled: true # needs to be explicitly set
-    title: Aftab Sama
-    subtitle: "_Fortis fortuna adiuvat._"
-    imageUrl: "/images/profile.webp"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: Aftab Sama's Profile Picture
-    buttons:
-      - name: Blog
-        url: blog
-      - name: Writeups
-        url: writeups
+    # Static assets
+    assets:
+        disableHLJS: true # disable highlight.js
+        disableFingerprinting: true
+        favicon: "/favicon.ico"
+        favicon16x16: "/favicon-16x16.png"
+        favicon32x32: "/favicon-32x32.png"
+        apple_touch_icon: "/apple-touch-icon.png"
+        safari_pinned_tab: "/favicon.svg"
 
-  # Social
-  socialIcons:
-    - name: linkedin
-      url: "https://www.linkedin.com/in/aftab-sama/"
-    - name: github
-      url: "https://github.com/Aftab700"
-    - name: matrix
-      url: "https://matrix.to/#/@aftab700:matrix.org"
-    - name: mastodon
-      url: "https://infosec.exchange/@Aftab"
-    - name: youtube
-      url: "https://youtube.com/@Aftab700"
-    - name: medium
-      url: "https://aftab700.medium.com/"
-    - name: email
-      url: "mailto:hi@aftabsama.com"
-    # - name: instagram  # remove instagram link - account deleted
-    # url: "https://www.instagram.com/aftab__sama/"
-    - name: X
-      url: "https://x.com/AftabSama700"
-    - name: rss
-      url: /index.xml
-    # - name: pgp
-    #   url: "/pgp.txt"
+    # Home-info mode
+    homeInfoParams:
+        title: "Aftab Sama"
+        content: Thoughts and research on security, privacy, *nix based systems, and other IT stuff.
 
-  cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    # profile-mode
+    profileMode:
+        enabled: true # needs to be explicitly set
+        title: Aftab Sama
+        subtitle: "_Fortis fortuna adiuvat._"
+        imageUrl: "/images/profile.webp"
+        imageWidth: 120
+        imageHeight: 120
+        imageTitle: Aftab Sama's Profile Picture
+        buttons:
+            - name: Blog
+              url: blog
+            - name: Writeups
+              url: writeups
 
-  # For search
-  fuseOpts: # https://fusejs.io/api/options.html
-    isCaseSensitive: false
-    shouldSort: true
-    # ignoreLocation: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    keys: ["title", "summary", "description"]
+    # Social
+    socialIcons:
+        - name: linkedin
+          url: "https://www.linkedin.com/in/aftab-sama/"
+        - name: github
+          url: "https://github.com/Aftab700"
+        - name: matrix
+          url: "https://matrix.to/#/@aftab700:matrix.org"
+        - name: mastodon
+          url: "https://infosec.exchange/@Aftab"
+        - name: youtube
+          url: "https://youtube.com/@Aftab700"
+        - name: medium
+          url: "https://aftab700.medium.com/"
+        - name: email
+          url: "mailto:hi@aftabsama.com"
+        - name: instagram
+          url: "https://www.instagram.com/aftab__sama/"
+        - name: X
+          url: "https://x.com/AftabSama700"
+        - name: rss
+          url: /index.xml
+        # - name: pgp
+        #   url: "/pgp.txt"
+
+    cover:
+        hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: true # hide on single page
+
+    # For search
+    fuseOpts: # https://fusejs.io/api/options.html
+        isCaseSensitive: false
+        shouldSort: true
+        # ignoreLocation: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "summary", "description"]
 
 #Enabling Search
 outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON # is necessary
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
 
 menu:
-  main:
-    - name: About
-      url: /about/
-      weight: 1
-    - name: Archives
-      url: /archives/
-      weight: 2
-    - name: Tags
-      url: /tags/
-      weight: 3
-    - name: Search
-      url: /search/
-      weight: 4
+    main:
+        - name: About
+          url: /about/
+          weight: 1
+        - name: Archives
+          url: /archives/
+          weight: 2
+        - name: Tags
+          url: /tags/
+          weight: 3
+        - name: Search
+          url: /search/
+          weight: 4
 
 # Taxonomies
 taxonomies:
-  tag: tags
+    tag: tags
 
 # Hugo and the General Data Protection Regulation (GDPR) <https://gohugo.io/about/hugo-and-gdpr/>
 privacy:
-  disqus:
-    disable: false
-  googleAnalytics:
-    disable: false
-    respectDoNotTrack: true
-  instagram:
-    disable: false
-    simple: true
-  # twitter:     # <- WARN  deprecated: site config key privacy.twitter.simple was deprecated in Hugo v0.141.0 and will be removed in a future release. Use privacy.x.simple instead.
-  #   disable: false
-  #   enableDNT: true
-  #   simple: true
-  vimeo:
-    disable: false
-    enableDNT: true
-    simple: true
-  x:
-    disable: false
-    enableDNT: true
-    simple: true
-  youTube:
-    disable: false
-    privacyEnhanced: true
+    disqus:
+        disable: false
+    googleAnalytics:
+        disable: false
+        respectDoNotTrack: true
+    instagram:
+        disable: false
+        simple: true
+    # twitter:     # <- WARN  deprecated: site config key privacy.twitter.simple was deprecated in Hugo v0.141.0 and will be removed in a future release. Use privacy.x.simple instead.
+    #   disable: false
+    #   enableDNT: true
+    #   simple: true
+    vimeo:
+        disable: false
+        enableDNT: true
+        simple: true
+    x:
+        disable: false
+        enableDNT: true
+        simple: true
+    youTube:
+        disable: false
+        privacyEnhanced: true
 
 # I will never add user tracking of any type because I simply do not care. I don't care how popular the site is or isn't - it exists for my personal satisfaction.
 # analytics:
@@ -211,13 +211,13 @@ privacy:
 
 # https://gohugo.io/getting-started/configuration-markup/
 markup:
-  highlight: # https://gohugo.io/content-management/syntax-highlighting/
-    style: dracula
-    lineNos: false
-    noClasses: false
-    guessSyntax: true
-    anchorLineNos: false
-  goldmark: # https://gohugo.io/getting-started/configuration-markup/#goldmark
-    renderer:
-      unsafe: true
-      xhtml: false
+    highlight: # https://gohugo.io/content-management/syntax-highlighting/
+        style: dracula
+        lineNos: false
+        noClasses: false
+        guessSyntax: true
+        anchorLineNos: false
+    goldmark: # https://gohugo.io/getting-started/configuration-markup/#goldmark
+        renderer:
+            unsafe: true
+            xhtml: false
