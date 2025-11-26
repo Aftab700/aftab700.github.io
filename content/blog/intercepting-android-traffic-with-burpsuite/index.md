@@ -67,6 +67,12 @@ adb shell mount -o remount,rw /system
 
 ![remount,rw](images/image-5.webp)
 
+If you are using Android Studio Emulator you need to start the AVD with `-writable-system` command argument.
+
+```
+/home/aftab/Android/Sdk/emulator/emulator -list-avds
+/home/aftab/Android/Sdk/emulator/emulator -avd Pixel_6_Pro  -writable-system
+```
 
 ## Setup Proxy
 
