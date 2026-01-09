@@ -238,7 +238,7 @@ reboot
 
 Install additional packages - some apps and tools that i use:
 ```sh
-sudo pacman -S --needed 7zip a52dec ark base base-devel bash-completion bluez-utils btrfs-progs chromium dolphin dosfstools exfatprogs faac faad2 firefox fwupd git go gst-libav gst-plugin-pipewire gst-plugins-bad gst-plugins-good gst-plugins-ugly guvcview hashcat hashcat-utils hugo iw jdk-openjdk john konsole less libdca libdv libmad libmpeg2 libreoffice-fresh libva-utils linux linux-firmware mesa mpv nano neochat networkmanager ntfs-3g obs-studio obsidian okular openssh partitionmanager pipewire-alsa plasma-meta python-pip qbittorrent qemu-full reflector sddm sof-firmware speech-dispatcher sudo symlinks thunderbird torbrowser-launcher unbound usbutils vim virt-manager virt-viewer wavpack weechat xfsprogs yt-dlp zed
+sudo pacman -S --needed 7zip a52dec ark base base-devel bash-completion bluez-utils btrfs-progs chromium dolphin dosfstools exfatprogs faac faad2 firefox fwupd git go gst-libav gst-plugin-pipewire gst-plugins-bad gst-plugins-good gst-plugins-ugly guvcview hashcat hashcat-utils iw jdk-openjdk john konsole less libdca libdv libmad libmpeg2 libreoffice-fresh libva-utils linux linux-firmware mesa mpv nano neochat networkmanager ntfs-3g obs-studio obsidian okular openssh partitionmanager pipewire-alsa plasma-meta python-pip qbittorrent qemu-full reflector sddm sof-firmware speech-dispatcher sudo symlinks thunderbird torbrowser-launcher unbound usbutils vim virt-manager virt-viewer wavpack weechat xfsprogs yt-dlp zed
 ```
 
 
