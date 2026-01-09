@@ -103,10 +103,8 @@ Sync the `pacman` repository and install `reflector` to update the mirror list b
 pacman -Syy
 pacman -S reflector
 cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-reflector --country India --country Singapore --protocol https --latest 20 --sort rate --save /etc/pacman.d/mirrorlist
+reflector --latest 100 --protocol https --sort rate --save /etc/pacman.d/mirrorlist --number 20
 ```
-
-Note: update the country in the `reflector` command to your desired location.
 
 ### Base Installation
 
