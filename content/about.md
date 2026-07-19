@@ -21,9 +21,9 @@ During my studies, I gained hands-on experience through internships at KPMG Indi
 
 My passion for offensive security and penetration testing led me to obtain certifications such as CAPenX, BSCP, CNPen, CEH Practical, among others. I plan to enroll in further offensive security courses in the future. My long term goal is to present some innovative security research at DefCon.
 
-Capture the Flag (CTF) competitions helped me secure my first internship at KPMG India, as I was among the top performers in a national CTF competition organized by the KPMG Cyber Security Team. I also ranked among the top performers in TCS HackQuest Season 7 CTF competition, which led to an employment opportunity with Tata Consultancy Services, where I am currently working as Penetration Tester.
+Capture the Flag (CTF) competitions helped me secure my first internship at KPMG India, as I was among the top performers in a national CTF competition organized by the KPMG Cyber Security Team. I also ranked among the top performers in TCS HackQuest Season 7 CTF competition, which led to an employment opportunity with Tata Consultancy Services as a Penetration Tester.
 
-In my free time, I continue to actively sharpen my skills on platforms like HackTheBox and participate in CTF events. I have taken part in several prestigious CTF competitions, winning multiple prizes. Besides my interest in security, I enjoy reading about stoicism and philosophy.
+In my free time, I continue to actively sharpen my skills on platforms like HackTheBox and participate in CTF events. I have taken part in several prestigious CTF competitions, winning multiple prizes. Besides my interest in security, I enjoy practicing calisthenics, as well as reading about stoicism and philosophy.
 
 You can learn more about my professional experience on my [LinkedIn profile](https://www.linkedin.com/in/aftab-sama/) or by viewing my [resume](/resume/).
 
@@ -33,9 +33,10 @@ You can learn more about my professional experience on my [LinkedIn profile](htt
 > `Cyber security`, `GNU/Linux`, `*nix based systems`, `open source`,
 > `FOSS`, `privacy`, `OPSEC`, `DFIR`, `OSINT`, `CTF`, `threat intelligence`,
 > `reverse engineering`, `malware`, `cryptography`, `hardware hacking`,
-> `physical security`, `lockpicking sport`, `cloud computing`, `operating systems`, `biohacking`, `IoT`, `blockchain`, `audiophile`, `AI`, `ML`, `DL`,
-> `LLM`, `Anime`, `ham radio`, `SDR`, `science`, `psychology`, `philosophy`, `minimalism`,
-> `permacomputing`, etc.
+> `cloud computing`, `operating systems`, `permacomputing`, 
+> `IoT`, `blockchain`, `audiophile`, `AI`, `ML`, `DL`, `LLM`, 
+> `physical security`, `lockpicking sport`, `Anime`, `ham radio`, `SDR`, `science`, `biohacking`, `psychology`, `philosophy`, `minimalism`, 
+>  `calisthenics`, etc.
 
 </details>
 <br>
@@ -90,45 +91,9 @@ curl -sL https://aftabsama.com/pgp | gpg --import
 
 </details>
 
-<!-- <details>
-<summary> 🔑 OTR Fingerprint </summary>
-
-```
-147B3144 705DADC6 E30F10D4 58EE07ED C9BFE1A6
-```
-
-</details> -->
 
 <br>
 
-<!-- ### Misc:
-
-<details>
-<summary>🎵 Now listening</summary>
-<p>
-<img src="https://api.spotify.hiiruki.dev/api?scan=true&theme=dark" align="center" alt="Current Spotify Song">
-</p>
-<br>
-
-[Full Visualizer](https://spotify.hiiruki.dev/ "Spotify Visualizer")
-</details>
-<br>
-
-<details>
-<summary>👨‍💻 Doing something</summary>
-<p>
-  <img src="https://lanyard-profile-readme.vercel.app/api/529270835341426708?hideTimestamp=false&hideDiscrim=true&idleMessage=Just%20chillin'%20at%20the%20moment..." align="center" alt="Discord Presence">
-</p>
-</details>
-<br> -->
-
-<!-- <details>
-<summary>🛜 Wi-Fi Pwned</summary>
-<p>
-  <img src="https://wigle.net/bi/hPCdvaBdwb9g+_8pGX6b8A.png" align="center" alt="Discord Presence">
-</p>
-</details>
-<br> -->
 
 📊 [Status](https://status.aftabsama.com/ "Aftab's Status Page")<br>
 

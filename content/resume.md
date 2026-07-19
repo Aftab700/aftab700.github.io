@@ -29,11 +29,21 @@ hideFooter: true
 
 ---
 
+### eClinicalWorks
+
+<div style="display: flex; justify-content: space-between;">
+  <strong>Application Security Analyst</strong>
+  <strong>May 2026 - Present</strong>
+</div>
+
+- Strengthening Healthcare Security Across the Software Development Lifecycle
+
+
 ### Tata Consultancy Services
 
 <div style="display: flex; justify-content: space-between;">
   <strong>Penetration Tester</strong>
-  <strong>October 2023 - Present</strong>
+  <strong>October 2023 - April 2026</strong>
 </div>
 
 - Executed over 100 comprehensive Web, API, Mobile and Thick Client Application penetration tests on staging and production environments while adhering to OWASP, SANS, and PCI-DSS standards, ensuring data security and compliance
